@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    background-color: blueviolet;
 }
 ol, ul {
     list-style: none;
@@ -45,4 +46,44 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+button, a {
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.login-button {
+    float: right;
+}
+
+button {
+    border-radius: 10px;
+    width: auto;
+    font-size: 18px;
+    background-color: darkviolet;
+}
+
+.blog-title {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 98px;
+    color: aquamarine;
+    font-family: "Bodoni MT";
+}
+
+.index-page-content {
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 30px;
+    color: aquamarine;
+    background-color: darkviolet;
+    padding: 9px;
 }

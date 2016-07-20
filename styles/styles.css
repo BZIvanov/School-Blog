@@ -67,6 +67,7 @@ button, a {
 
 .login-button {
     float: right;
+    font-family: Constantia;
 
 }
 
@@ -82,8 +83,8 @@ button {
     margin-bottom: 150px;
     text-align: center;
     font-size: 98px;
-    color: #98C0B8;
-    font-family: "monospace;
+    color: #C9F4FF;
+    font-family: Constantia;
 }
 
 .index-page-content {
@@ -108,5 +109,28 @@ th{
     color: white;
     padding: 9px 0px;
     border-radius: 10px;
-
+}
+.content{
+    border: solid 1px;
+    border-color: #5A4D70 ;
+    background: #2C2738;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 30px;
+    color: white;
+    padding: 8px 0px;
+    border-radius: 15px;
+}
+.background{
+    border: solid 1px;
+    border-color: #98C0B8;
+    border-radius: 5px;
+    padding: 20px 5px;
+    margin: 25px 20px;
+    background: #352D42;
+}
+footer{
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
 }

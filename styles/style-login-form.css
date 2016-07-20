@@ -1,0 +1,84 @@
+body {
+    line-height: 1;
+    background-color: #4D4160;
+}
+.loginForm{
+    float: right;
+    margin: 40pt 25px;
+    margin-right: 70pt;
+    font-size: 20pt;
+    font-family: Constantia;
+    background: #2C2738;
+    padding: 60pt 30pt;
+    border-radius: 20pt;
+    color: white;
+
+}
+.loginTitle{
+
+    float: right;
+    margin-left: 70%;
+    font-family: Constantia;
+    font-size: 60pt;
+    color: white;
+
+
+}
+.divTitleLogin{
+    margin-right: 70pt;
+    margin-top: 0pt;
+    text-align: left;
+}
+input[type=text] {
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #65567F;
+    border-radius: 15pt;
+    color: white;
+
+}
+input[type=password] {
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #65567F;
+    border-radius: 15pt;
+    color: white;
+
+}
+input[type=submit] {
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #657BD3;
+    border-radius: 15pt;
+    color: white;
+    float: right;
+
+}
+.signInText{
+    float: right;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+.blog-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: Constantia;
+    background: #65567F;
+    padding: 5px 2px;
+    margin: 2px 60px;
+    border-radius: 60px;
+}

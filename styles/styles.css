@@ -65,7 +65,7 @@ button, a {
     font-family: Constantia;
 
 }
-a:hover{
+.buttonHover{
     padding: 5px 5px;
 }
 .login-button {
@@ -185,10 +185,11 @@ button {
     font-size: 35px;
     margin-top: 260px;
     text-align: center;
+
     padding-left: 35px;
     padding-right: 35px;
 }
-.text-teachers{
+.text-teachers {
     color: #7A5435;
     font-size: 35px;
     display: inline-block;
@@ -205,7 +206,7 @@ button {
     text-align: center;
     margin-bottom: 35px;
     padding-left: 35px;
-    padding-right: 35px;
+    padding-right: 34px;
 }
 header{
     height: 960px;

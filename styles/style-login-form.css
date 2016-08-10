@@ -129,7 +129,7 @@ input[type=text] {
     border: none;
     /* background-color: #65567F;*/
     border-radius: 15pt;
-    color: white;
+    background-color: white;
     -webkit-box-shadow: inset 0px 4px 24px -6px rgba(120,120,120,1);
 
     -moz-box-shadow: inset 0px 4px 24px -6px rgba(120,120,120,1);
@@ -144,7 +144,7 @@ input[type=password] {
     border: none;
     /*background-color: #65567F;*/
     border-radius: 15pt;
-    color: white;
+    background-color: white;
     -webkit-box-shadow: inset 0px 4px 24px -6px rgba(120,120,120,1);
 
     -moz-box-shadow: inset 0px 4px 24px -6px rgba(120,120,120,1);

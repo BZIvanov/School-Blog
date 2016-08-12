@@ -175,7 +175,7 @@ input[type=password] {
     box-shadow: inset 0px 4px 24px -6px rgba(120,120,120,1);
 
 }
-input[type=submit] {
+input[type=button] {
     padding: 5px 20px;
     margin: 8px 0;
     box-sizing: border-box;

@@ -7,12 +7,12 @@ function login() {
     let loginUrl = kinveyBaseUrl + "user/" + kinveyAppID + "/login";
     let loginData = {
         username: $("#loginUser").val(),
-        pass: $("#loginPass").val()
+        password: $("#loginPass").val()
     };
     $.ajax({
         method: "POST",
         url: loginUrl,
-        data: JSON.stringify(loginData),
+        data: loginData,
         headers: {"Authorization": "Basic" + " " + authBase64},
     })
 
@@ -29,7 +29,7 @@ function register() {
     $.ajax({
         method: "POST",
         url: registerUrl,
-        data: JSON.stringify(registerData),
+        data: registerData,
         headers: {"Authorization": "Basic" + " " + authBase64},
     });
 }

@@ -39,8 +39,8 @@
     <a href="#" id="scrollToTop" class="button-to-top" style="display: block;"><span class="glyphicon glyphicon-chevron-up">↑</span></a>
     <script>
         $(document).ready(function () {
-            var offset = 220;
-            var duration = 500;
+            let offset = 220;
+            let duration = 500;
             $(window).scroll(function () {
                 if ($(this).scrollTop() > offset) {
                     $('#scrollToTop').fadeIn(duration);

@@ -2,6 +2,7 @@ const kinveyBaseUrl = 'https://baas.kinvey.com/';
 const kinveyAppID = 'kid_By6NFYOt';
 const appSecrets = '9887cd73e9a84e26875688775c120525';
 
+
 function login() {
     let loginData = {
         username: $('#loginUser').val(),
@@ -11,8 +12,9 @@ function login() {
         method: "POST",
         url: kinveyBaseUrl + 'user/' + kinveyAppID + '/login',
         data: loginData,
-        headers: {"Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)}
+        headers: {"Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)},
     });
+    alert("successfully logged in.");
 }
 function register() {
     let registerData = {
@@ -25,10 +27,10 @@ function register() {
         method: "POST",
         url: kinveyBaseUrl + 'user/' + kinveyAppID + '/',
         data: registerData,
-        headers:{
-            "Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)
-        }
-    });
+        headers: {
+            "Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)},
+        });
+    alert("user is created");
 }
 $(function() {
     $('#formLogin').submit(function(e){e.preventDefault(); login()});

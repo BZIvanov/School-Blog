@@ -1,0 +1,62 @@
+body{
+    background: #ffffff;
+}
+header{
+    background:#B5C68F;;
+    height: 550px;
+    width: 101.45%;
+    margin: -20px;
+}
+.blog-title{
+    color: white;
+    font-family: Lucida Sans Unicode;
+    margin: -10px auto;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 0.5px solid #fff;
+    width: 75%;
+
+}
+a{
+    text-decoration: none;
+    color:#fff;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+
+}
+a:hover{
+    border-bottom: 1px solid #fff;
+}
+.buttonsContent{
+    margin: -25px auto;
+    display: block;
+    padding: 20px;
+    background: #424147;
+    font-size: 20px;
+    height: 100px;
+    text-align: center;
+
+
+}
+.buttonsContent a {
+    margin: 55px;
+
+}
+.buttonsContent a:hover {
+    border-bottom: 1px solid #fff;
+    padding: -3px;
+}
+button{
+    background: #424147;
+    text-decoration: none;
+    color:#fff;
+}
+.buttonLogout{
+    float: right;
+    margin:  20px;
+}
+.buttonHome{
+    border-bottom: 1px solid #fff;
+}

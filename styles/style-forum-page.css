@@ -2,21 +2,30 @@ body{
     background: #ffffff;
 }
 header{
-    background:#A3954F;;
-    height: 550px;
+    background:#C1B576;;
+    height: auto;
     width: 101.45%;
     margin: -20px;
 }
 .blog-title{
     color: white;
     font-family: Lucida Sans Unicode;
-    margin: -10px auto;
+    margin: 100px auto;
     display: block;
     text-align: center;
     font-size: 50px;
     border-bottom: 0.5px solid #fff;
     width: 75%;
 
+}
+.page-title{
+    color: white;
+    font-family: Lucida Sans Unicode;
+    margin: 40px auto;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    width: 75%;
 }
 a{
     text-decoration: none;
@@ -32,16 +41,16 @@ a:hover{
 .buttonsContent{
     margin: -25px auto;
     display: block;
-    padding: 20px;
-    background: #424147;
+    padding: 10px;
+    background: #7F7E7E;
     font-size: 20px;
-    height: 100px;
+    height: auto;
     text-align: center;
 
 
 }
 .buttonsContent a {
-    margin: 55px;
+    margin: 30px;
 
 }
 .buttonsContent a:hover {
@@ -55,8 +64,33 @@ button{
 }
 .buttonLogout{
     float: right;
-    margin:  20px;
+    margin-top:  40px ;
+    margin-right: 20px;
 }
 .buttonHome{
     border-bottom: 1px solid #fff;
 }
+.image{
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+}
+
+footer{
+    background: #7F7E7E;
+    height: 200px;
+    margin-bottom: -200px;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    font-family: Lucida Sans Unicode;
+
+}
+.footerImg{
+    padding: 0px 20px;
+}
+.footerImg a:hover{
+    border: none;
+}
+

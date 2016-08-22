@@ -13,6 +13,11 @@ $(document).on({
 function showInfo(mesgText) {
     $('#infoBox').text(mesgText).show().delay(2000).fadeOut(2000);
 }
+function ajaxError(data) {
+    let errorMsg = "Try Again";
+    $('#infoBox').text(errorMsg).show().delay(2000).fadeOut(2000);
+
+}
 function login() {
     let loginData = {
         username: $('#loginUser').val(),
@@ -24,6 +29,7 @@ function login() {
         data: loginData,
         headers: {"Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)},
         success: loginSucces,
+        error: ajaxError
     });
     function loginSucces(data) {
         sessionStorage.authToken = data._kmd.authtoken;

@@ -15,7 +15,7 @@ function showInfo(mesgText) {
 }
 function ajaxError(data) {
     let errorMsg = "Try Again";
-    $('#infoBox').text(errorMsg).show().delay(2000).fadeOut(2000);
+    $('#errorBox').text(errorMsg).show().delay(2000).fadeOut(2000);
 
 }
 function login() {
@@ -27,7 +27,7 @@ function login() {
         method: "POST",
         url: kinveyBaseUrl + 'user/' + kinveyAppID + '/login',
         data: loginData,
-        headers: {"Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)},
+        headers: { "Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets) },
         success: loginSucces,
         error: ajaxError
     });
@@ -50,20 +50,29 @@ function register() {
         url: kinveyBaseUrl + 'user/' + kinveyAppID + '/',
         data: registerData,
         headers: {
-            "Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)},
-        });
-    alert("user is created");
+            "Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)
+        },
+        success: registerSucces,
+        error: ajaxError
+    });
+    function registerSucces(data) {
+        sessionStorage.authToken = data._kmd.authtoken;
+        showInfo("User registered successfully");
+    }
 }
-$(function() {
-    $('#formLogin').submit(function(e){e.preventDefault(); login()});
-    $('#formRegister').submit(function(e){e.preventDefault(); register()});
+$(function () {
+    $('#formLogin').submit(function (e) { e.preventDefault(); login() });
+    $('#formRegister').submit(function (e) { e.preventDefault(); register() });
 });
 
 function logout() {
     alert('logout');
-
+    sessionStorage.clear();
+    //showHomeView();
+    //showHideNavigationLinks();
 }
 
+/*scroll-to-top button*/
 $(document).ready(function () {
     var offset = 220;
     var duration = 500;

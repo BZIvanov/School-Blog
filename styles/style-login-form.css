@@ -234,3 +234,22 @@ a{
     height: 50px;
     display: none;
 }
+
+#infoBox, #errorBox {
+    display: none;
+    /*background: #AAA;*/
+    padding: 5px 10px;
+    border-radius: 3px;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#infoBox {
+    background: #393;
+}
+
+#errorBox {
+    background: #F50;
+    color: white;
+}

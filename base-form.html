@@ -1,201 +1,42 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>My Virtual School-Profile</title>
-    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="styles/home.css" type="text/css">
 
 </head>
 <body>
-    <header style="background:url(images/back1.jpg)">
+
+    <header >
         <div class="buttonsContent">
-            <button> <a href="#aboutTeachers" id="linkTeachers">TEACHERS</a> </button>
-            <button> <a href="#aboutStudents" id="linkStudents">STUDENTS</a> </button>
-            <button> <a href="#homework" id="linkHomework">HOMEWORK</a> </button>
-            <button> <a href="#forum" id="linkForum">FORUM</a> </button>
-            <button> <a href="#resources" id="linkResources">RESOURCES</a> </button>
-            <button> <a href="#library" id="linkLibrary">LIBRARY</a> </button>
-            <button> <a href="#contacts" id="linkContacts">CONTACTS</a> </button>
-            <button onclick="logout()"> LOGOUT</a> </button>
+        <a href="base-form.html" id="linkHome" class="buttonHome">HOME</a>
+        <a href="teacher-page.html" id="linkTeachers">TEACHERS</a>
+        <a href="student-page.html" id="linkStudents">STUDENTS</a>
+        <a href="homework-page.html" id="linkHomework">HOMEWORK</a>
+        <a href="forum-page.html" id="linkForum">FORUM</a>
+        <a href="resources-page.html" id="linkResources">RESOURCES</a>
+        <a href="#contacts" id="linkContacts">CONTACTS</a>
+        <button onclick="logout()" class="buttonLogout"> LOGOUT </button>
         </div>
-        <div class="background">
+        <div >
             <div class="blog-title">
-                <h1>MY VIRTUAL SCHOOL-PROFILE</h1>
+                <h1>MY VIRTUAL SCHOOL</h1>
             </div>
         </div>
 
     </header>
-    <main>
-        <div class="background-content" style="background-color: #E0D8BC ">
-            <div class="index-page-content"> FOR TEACHERS  </div>
-            <p>
-                <a name="aboutTeachers" class="text-teachers">
-                    <section id="viewListArticles">
-                        <h1>Recent Posts</h1>
-                    </section>
-                    <section id="viewCreateArticle">
-                        <h1>Create a new post:</h1><br />
-                        <span class="baseForm">
-                            <form id="formLogin">
-                                <span style="padding: 0 65px;" class="sectionsForm"> Title: </span>
-                                <input type="text" id="createTitle" required="true" style="font-size: 20pt"><br>
-                                <br>
 
-                                <span style="padding: 0 65px;" class="sectionsForm">Author:</span>
-                                <input type="text" id="createAuthor" required="true" style="font-size: 20pt" width="35pt"><br>
-                                <br>
-                                <div>
-                                    <span style="padding: 0 65px;" class="sectionsForm">Description:</span>
-                                    <textarea id="description" rows="10" style="font-size: 20pt" width="35pt"></textarea>
-                                </div>
-                                <br>
-                                <input type="submit" onclick="createArticle()" value="Create Article" style="font-size: 20pt" width="25pt">
+<main>
 
-                            </form>
-        </div>
-        </section>
+    <div><img src="images/Web-Design-11.jpg" class="image" ></div>
 
 
-        </a>
-        </p>
-        </div>
-        <div class="background-content" style="background-color: #E0D8BC ">
-            <div class="index-page-content"> FOR STUDENTS </div>
-            <img src="images/laptop_img.png" width="400px" class="images-students" />
-            <img src="images/back.png" width="400px" class="images-students-1">
-            <p>
-                <a name="aboutStudents" class="text-students">
-                    There are many opportunities for the
-                    students as well. They will be able
-                    to follow the schedule with their
-                    homework, do it on their computers
-                    and then quickly send it
-                    electronically to their teacher.
-                    The students’ contribution to the
-                    blog will be crucial. One of the
-                    pages will give them the opportunity
-                    to contact other students and discuss
-                    questions, occured in the process of
-                    executing the task and to share their
-                    experience and resources. They can also
-                    ask the teachers questions and get an answer.
-                    After handing in their homework, the students
-                    will receive a mark and remarks on the task.
-                </a>
-            </p>
-        </div>
-        <div class="background-content" style="background-color: #E0D8BC ">
-            <div class="index-page-content"> HOMEWORK </div>
-            <img src="images/homework.jpg" width="400px" class="images-students" />
-            <p>
-                <a name="aboutStudents" class="text-students">
-                    <form method="post" action="mailto:https://baas.kinvey.com/kid_By6NFYOt/posts" enctype="multipart/form-data">
-                        Attachment: <input type="file" name="attachedfile" maxlength=50 allow="text/*">
-                    </form>
 
-                </a>
-            </p>
-        </div>
-        <div class="background-content" style="background-color: #E0D8BC ">
-            <div class="index-page-content"> HOMEWORK </div>
-            <p>
-                <a name="homework" class="text-students">
-                    <section id="viewCreatePost"></section>
-                </a>
-            </p>
-        </div>
 
-        <div class="background-content" style="background-color: #E0D8BC ">
-            <div class="index-page-content"> FORUM </div>
-            <img src="images/forum.jpg" width="400px" class="images-students" />
-            <p>
-                <a name="forum" class="text-students">
-                    <section id="viewCreatePost">
-                        <h1 class="createForum">Create a new post</h1>
-                        <br />
-                        <form id="formCreatePost">
-                            <div>
-                                Title: <input type="text" id="postTitle" required="true" style="font-size: 20pt" />
-                                <div>Author: <input type="text" id="postAuthor" required="true" style="font-size: 20pt" /></div>
-                                <div>Description:</div> <br />
-                                <div><textarea id="postDescription" rows="10" style="font-size: 20pt"></textarea></div>
-                                <div><input type="submit" onclick="createPost" value="Create Post" style="font-size: 20pt" width="25pt" /></div>
-                        </form>
-                    </section>
-                </a>
-            </p>
-        </div>
-        <div class="background-content" style="background-color: #E0D8BC ">
-            <div class="index-page-content"> RESOURCES </div>
-            <p>
-                <a name="resources" class="text-students">
-                    <section>
-                        <table></table>
-                    </section>
-                </a>
-            </p>
-        </div>
-        <div class="background-content" style="background-color: #E0D8BC ">
-            <div class="index-page-content"> LIBRARY </div>
-            <p>
-                <a name="library" class="text-students">
-                    <section id="viewListBooks">
-                        <h1>Books listing</h1>
-                        <div id="books">No books</div>
-                    </section>
-                    <section id="viewCreateBook">
-                        <h1>Create a new book</h1>
-                        <form id="formCreateBook">
-                            <div>Title:</div>
-                            <div><input type="text" id="bookTitle" required="true" /></div>
-                            <div>Author:</div>
-                            <div><input type="text" id="bookAuthor" required="true" /></div>
-                            <div>Description:</div>
-                            <div><textarea id="bookDescription" rows="10"></textarea></div>
-                            <div><input type="submit" value="Create Book" /></div>
-                        </form>
-                    </section>
-                </a>
-            </p>
-        </div>
-        <div class="background-content" style="background-color: #E0D8BC ">
-            <div class="index-page-content"> CONTACTS </div>
-            <p>
-                <a name="contacts" class="text-students">
-                    <section>
-                        <h1>CONTACTS: </h1>
-                        <br />
-            <p>phone number:<br />(+359 2) 810 00 11</p>
-            <p>fax number:<br />(+359 898) 500 848</p>
-            <p>e-mail: <br /> office@myvirtschool.eu </p>
-            <p>Address: <br /> 1000 Sofia, <br /> 1st floor<br /> № 114 "Vasil Levski" Blvd.</p>
-            </section>
-            </a>
-            </p>
-        </div>
-    </main>
-    <footer>
-        (c) W h a t s W r o n g
-    </footer>
-    <!--scroll to top button-->
-    <a href="#" id="scrollToTop" class="button-to-top" style="display: block;"><span class="glyphicon glyphicon-chevron-up">↑</span></a>
-    <script>
-        $(document).ready(function () {
-            var offset = 220;
-            var duration = 500;
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > offset) {
-                    $('#scrollToTop').fadeIn(duration);
-                } else {
-                    $('#scrollToTop').fadeOut(duration);
-                }
-            });
-            $('#scrollToTop').click(function (event) {
-                event.preventDefault();
-                $('html, body').animate({ scrollTop: 0 }, 800)
-                return false;
-            });
-        });
-    </script>
+
+
+</main>
+
 </body>
 </html>

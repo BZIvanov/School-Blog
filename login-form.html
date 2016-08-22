@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="styles/style-login-form.css" type="text/css">
+    <script src="scripts/jquery-3.0.0.min.js"></script>
+    <script src="scripts/RegisterAndLogin.js"></script>
 
 </head>
 <body background="images/login-reg.png" style="background-repeat: ">
@@ -35,12 +37,31 @@
                             <span class="signInText" class="sectionsForm" ><a href="register-form.html"> Sign In </a> </span>
                         <br>
                         <br>
-                            <input type="submit" value="Login" style="font-size: 20pt" width="25pt" >
+                           <input type="button" onclick="login()" value="Login" style="font-size: 20pt" width="25pt" >
 
 
                 </form>
         </div>
-
+    <!--scroll to top button-->
+    <a href="#" id="scrollToTop" class="button-to-top" style="display: block;"><span class="glyphicon glyphicon-chevron-up">↑</span></a>
+    <script>
+        $(document).ready(function () {
+            let offset = 220;
+            let duration = 500;
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > offset) {
+                    $('#scrollToTop').fadeIn(duration);
+                } else {
+                    $('#scrollToTop').fadeOut(duration);
+                }
+            });
+            $('#scrollToTop').click(function (event) {
+                event.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, 800)
+                return false;
+            });
+        });
+    </script>
 
 </body>
 </html>

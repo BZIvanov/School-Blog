@@ -1,3 +1,8 @@
+body {
+    line-height: 1.3;
+    /*background-color: #4D4160;*/
+    font-family: Lucida Sans Unicode;
+}
 .blog-title{
     margin-top: -3%;
     margin-bottom: 20px;
@@ -5,7 +10,7 @@
     text-align: center;
     font-size: 30pt;
     color: white;
-    font-family: Constantia;
+
     /* background: #65567F;*/
     padding: 5px 2px;
 
@@ -71,19 +76,18 @@ a{
     text-align: center;
 }
 .regiserTitle{
-    float: right;
-    margin-left: 70%;
-    font-family: Constantia;
-    font-size: 60pt;
-    color: white ;
+    margin-left: 78%;
+    font-size: 40pt;
+    color: #fff ;
     text-shadow: 3px 3px #423022;
+
     display: inline-block;
     text-transform: uppercase;
     position: relative;
-    float: left;
+
     opacity: 0.0;
-    animation: porta 2s 1 forwards;
-    -webkit-animation: porta 2s 1 forwards;
+    animation: porta 1s 1 forwards;
+    -webkit-animation: porta 1s 1 forwards;
 }
 .regiserTitle:nth-of-type(2){
     animation-delay: 3s;
@@ -122,71 +126,53 @@ a{
 }
 
 
-.registerForm{
-    -webkit-box-shadow: 3px 4px 75px 0px rgba(64,34,0,1);
-    -moz-box-shadow: 3px 4px 75px 0px rgba(64,34,0,1);
-    box-shadow: 3px 4px 75px 0px rgba(64,34,0,1);
+.registerForm {
     float: right;
     margin: 40pt 25px;
     margin-right: 70pt;
     font-size: 25pt;
-    font-family: Constantia;
-    background: #C4A58D;
     padding: 45pt 30pt;
-    border-radius: 20pt;
+    border-radius: 5px;
     color: white;
     display: inline-block;
     text-transform: uppercase;
     position: relative;
-
+    border: 2px solid #fff;
     opacity: 0.0;
     animation: porta 1s 1 forwards;
     -webkit-animation: porta 1s 1 forwards;
-
 }
 .registerForm:nth-of-type(2){
     animation-delay: 3s;
     -webkit-animation-delay: 3s;
 }
 input[type=text] {
-    padding: 5px 20px;
+    padding: 5px;
     margin: 8px 0;
     box-sizing: border-box;
     border: none;
     /* background-color: #65567F;*/
-    border-radius: 15pt;
-    color: white;
-    -webkit-box-shadow: inset 0px 4px 24px -6px rgba(120,120,120,1);
-    -moz-box-shadow: inset 0px 4px 24px -6px rgba(120,120,120,1);
-    box-shadow: inset 0px 4px 24px -6px rgba(120,120,120,1);
+    background-color: white;
 
 
 }
 input[type=password] {
-    padding: 5px 20px;
+    padding: 5px;
     margin: 8px 0;
     box-sizing: border-box;
     border: none;
     /*background-color: #65567F;*/
-    border-radius: 15pt;
-    color: white;
-    -webkit-box-shadow: inset 0px 4px 24px -6px rgba(120,120,120,1);
-    -moz-box-shadow: inset 0px 4px 24px -6px rgba(120,120,120,1);
-    box-shadow: inset 0px 4px 24px -6px rgba(120,120,120,1);
 
 }
-input[type=submit] {
-    padding: 5px 20px;
+input[type=button] {
+    padding: 10px;
     margin: 8px 0;
     box-sizing: border-box;
     border: none;
-    background-color: #BC967E;
-    border-radius: 15pt;
+    background-color: #645d4c;
     color: white;
     float: right;
-    -webkit-box-shadow: inset 0px 4px 24px -6px rgba(120,120,120,1);
-    -moz-box-shadow: inset 0px 4px 24px -6px rgba(120,120,120,1);
-    box-shadow: inset 0px 4px 24px -6px rgba(120,120,120,1);
+    font-size: 25pt;
 
 }
 .sectionsForm{

@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>My Virtual School</title>
-    <link rel="stylesheet" href="styles/styles.css" type="text/css">
-    <script src="scripts/jquery3.1.js"></script>
+        <script src="scripts/jquery-3.0.0.min.js"></script>
+        <link rel="stylesheet" href="styles/styles.css" type="text/css">
+
 </head>
 
-<body >
+<body>
 
 <header style="background:url(images/back1.jpg)">
         <br>
         <br>
     <div  class="background" >
             <div class="wrapper">
-                    <div class="login-button">
-                            <button> <a href="login-form.html">LOGIN</a> </button>
-                            <button> <a href="register-form.html">SIGN IN</a> </button>
+                    <div class="login-button" style="outline: 0">
+                            <a href="login-form.html">LOGIN</a>
+                            <a href="register-form.html">SIGN IN</a>
                     </div>
             </div>
 
@@ -25,15 +26,16 @@
             </div>
     </div>
     <div class="buttonsContent">
-                    <button> <a href="#aboutUs">ABOUT US</a> </button>
-                    <button> <a href="#aboutTeachers">TEACHERS</a> </button>
-                    <button> <a href="#aboutStudents">STUDENTS</a> </button>
+                     <a href="#aboutUs">ABOUT US</a>
+                     <a href="#aboutTeachers">TEACHERS</a>
+        <a href="#aboutStudents">STUDENTS</a>
     </div>
 </header>
-        <div class="background-content" style="background-color: #E0D8BC ;
-         height: 500px; background: url(images/sleeping-students.jpg)" >
+        <div class="background-content" >
                     <div class="index-page-content" > ABOUT US </div>
-                    </p> <a name="aboutUs" class="text-aboutUs">
+                    <img src="images/Icon-set.jpg">
+                    <p> <a name="aboutUs" class="text-aboutUs">
+
                         The system " My virtual school " can be
                         used by both teachers and students.
                         It would be in great use for all
@@ -43,13 +45,13 @@
                         modules,which include a forum,
                         an electronic system for homework
                         and many useful resources.
-                    </a> </p>
+                    </a>
+                    </p>
         </div>
-        <div class="background-content" style="background-color: #E0D8BC ">
+        <div class="background-content" >
                     <div class="index-page-content"> FOR TEACHERS  </div>
-                    <img src="images/label.png" width="600px" class="image-teachers">
-                    <img src="images/hand5.png" width="300px" class="image-teachers" >
-                    <img src="images/label.png" width="600px" class="image-teachers">
+                    <img src="images/students.png">
+
                     <p> <a name="aboutTeachers" class="text-teachers">
                         <br><br>
                         Teachers would be able to post
@@ -65,10 +67,10 @@
                     </a> </p>
         </div>
 
-        <div class="background-content" style="background-color: #E0D8BC ">
+        <div class="background-content">
             <div class="index-page-content"> FOR STUDENTS </div>
-            <img src="images/laptop_img.png" width="400px" class="images-students"/>
-            <img src="images/back.png" width="400px" class="images-students-1">
+            <img src="images/studentss.jpg" />
+
             <p> <a name="aboutStudents" class="text-students">
                 There are many opportunities for the
                 students as well. They will be able
@@ -93,6 +95,28 @@
     <footer>
         (c) W h a t s W r o n g
     </footer>
+
+    <!--scroll to top button-->
+    <a href="#" id="scrollToTop" class="button-to-top" style="display: block;"><span class="glyphicon glyphicon-chevron-up">↑</span></a>
+
+<script>
+    $(document).ready(function () {
+        let offset = 220;
+        let duration = 500;
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > offset) {
+                $('#scrollToTop').fadeIn(duration);
+            } else {
+                $('#scrollToTop').fadeOut(duration);
+            }
+        });
+        $('#scrollToTop').click(function (event) {
+            event.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, 800)
+            return false;
+        });
+    });
+</script>
 </body>
 </html>
 

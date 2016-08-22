@@ -17,11 +17,13 @@ function login() {
     alert("successfully logged in.");
 }
 function register() {
+    let typeOfUser = $("input[name=check]:checked").val();
     let registerData = {
         name: $('#fullName').val(),
         username: $('#userName').val(),
         password: $('#passInput').val(),
-        passwordConf: $('#passwordConfirm').val()
+        passwordConf: $('#passwordConfirm').val(),
+        typeofuser: typeOfUser
     };
     $.ajax({
         method: "POST",

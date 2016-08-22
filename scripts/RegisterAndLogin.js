@@ -1,8 +1,18 @@
 const kinveyBaseUrl = 'https://baas.kinvey.com/';
 const kinveyAppID = 'kid_By6NFYOt';
 const appSecrets = '9887cd73e9a84e26875688775c120525';
-
-
+/* Ajax "Loading" event listener */
+$(document).on({
+    ajaxStart: function () {
+        $('#infoBox').show();
+    },
+    ajaxStart: function () {
+        $('#infoBox').hide();
+    }
+});
+function showInfo(mesgText) {
+    $('#infoBox').text(mesgText).show().delay(2000).fadeOut(2000);
+}
 function login() {
     let loginData = {
         username: $('#loginUser').val(),
@@ -13,8 +23,12 @@ function login() {
         url: kinveyBaseUrl + 'user/' + kinveyAppID + '/login',
         data: loginData,
         headers: {"Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)},
+        success: loginSucces,
     });
-    alert("successfully logged in.");
+    function loginSucces(data) {
+        sessionStorage.authToken = data._kmd.authtoken;
+        showInfo('Login successful');
+    }
 }
 function register() {
     let typeOfUser = $("input[name=check]:checked").val();

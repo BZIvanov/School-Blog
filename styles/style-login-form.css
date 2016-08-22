@@ -229,3 +229,8 @@ a{
     text-align: center;
     padding-bottom: 20px;
 }
+#infoBox{
+    background: #1D9B86;
+    height: 50px;
+    display: none;
+}

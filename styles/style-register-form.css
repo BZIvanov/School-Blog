@@ -234,3 +234,12 @@ input[type=submit] {
 
 
 }
+#loadingBox{
+    background: #80CD8B;
+    width: 80%;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+}

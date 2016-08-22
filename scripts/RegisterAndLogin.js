@@ -13,7 +13,7 @@ $(document).on({
 function showInfo(mesgText) {
     $('#infoBox').text(mesgText).show().delay(2000).fadeOut(2000);
 }
-function ajaxError(data) {
+function ajaxError() {
     let errorMsg = "Try Again";
     $('#infoBox').text(errorMsg).show().delay(2000).fadeOut(2000);
 
@@ -34,6 +34,9 @@ function login() {
     function loginSucces(data) {
         sessionStorage.authToken = data._kmd.authtoken;
         showInfo('Login successful');
+        window.setTimeout(function () {
+            location.href = 'base-form.html';
+        },3000);
     }
 }
 function register() {
@@ -50,9 +53,9 @@ function register() {
         url: kinveyBaseUrl + 'user/' + kinveyAppID + '/',
         data: registerData,
         headers: {
-            "Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)},
-        });
-    alert("user is created");
+            "Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)
+        },
+    });
 }
 $(function() {
     $('#formLogin').submit(function(e){e.preventDefault(); login()});

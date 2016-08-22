@@ -13,7 +13,7 @@ $(document).on({
 function showInfo(mesgText) {
     $('#infoBox').text(mesgText).show().delay(2000).fadeOut(2000);
 }
-function ajaxError() {
+function ajaxError(data) {
     let errorMsg = "Try Again";
     $('#infoBox').text(errorMsg).show().delay(2000).fadeOut(2000);
 
@@ -34,9 +34,6 @@ function login() {
     function loginSucces(data) {
         sessionStorage.authToken = data._kmd.authtoken;
         showInfo('Login successful');
-        window.setTimeout(function () {
-            location.href = 'base-form.html';
-        },3000);
     }
 }
 function register() {
@@ -53,11 +50,33 @@ function register() {
         url: kinveyBaseUrl + 'user/' + kinveyAppID + '/',
         data: registerData,
         headers: {
-            "Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)
-        },
-    });
+            "Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)},
+        });
+    alert("user is created");
 }
 $(function() {
     $('#formLogin').submit(function(e){e.preventDefault(); login()});
     $('#formRegister').submit(function(e){e.preventDefault(); register()});
+});
+
+function logout() {
+    alert('logout');
+
+}
+
+$(document).ready(function () {
+    var offset = 220;
+    var duration = 500;
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > offset) {
+            $('#scrollToTop').fadeIn(duration);
+        } else {
+            $('#scrollToTop').fadeOut(duration);
+        }
+    });
+    $('#scrollToTop').click(function (event) {
+        event.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 800)
+        return false;
+    });
 });

@@ -59,9 +59,11 @@ a:hover{
     padding: -3px;
 }
 button{
-    background: #424147;
+    background: #565656;
     text-decoration: none;
-    color:#fff;
+    color:#ffffff;
+    font-size: 30px;
+    float: right;
 }
 .buttonLogout{
     float: right;
@@ -72,9 +74,64 @@ button{
     border-bottom: 1px solid #fff;
 }
 .image{
-    margin: 20px auto;
+    margin: 20px 120px;
+    text-align: right;
+    display: inline-table;
+
+}
+.setHomework{
+    background:#1D9B86;
+    display: inline-block;
+    padding: 50px;
+    margin: 50px 30px;
+    font-size: 30px;
+    color: #ffffff;
+    width: 1000px;
+    height: auto;
+    filter: alpha(opacity=90); /* internet explorer */
+    -khtml-opacity: 0.8;      /* khtml, old safari */
+    -moz-opacity: 0.8;       /* mozilla, netscape */
+    opacity: 0.8;           /* fx, safari, opera */
+
+
+}
+input[type=text]{
+    height: 30px;
+    float: right;
+    width: 500px ;
+    font-size: 20px;
+}
+input[type=file]{
+    font-size: 30px;
+
+
+
+}
+textarea{
+    float: right;
+    height: 100px;
+    width: 700px ;
+    font-size: 20px;
+}
+h4{
     display: block;
+    border-bottom: 0.1px solid #5e5e5e;
+    color: #7F7E7E;
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 900px;
     text-align: center;
+}
+p{
+    display: block;
+    color: #7F7E7E;
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 10px;
+    width: auto;
+    text-align: center;
+
 }
 footer{
     background: #7F7E7E;
@@ -94,7 +151,7 @@ footer{
     border: none;
 }
 .button-to-top:hover{ 
-      #fff !important;   
+
       bacground-color: #ed702b;  
       text-decoration: none;  }  
  

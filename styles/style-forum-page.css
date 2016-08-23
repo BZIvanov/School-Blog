@@ -76,6 +76,17 @@ button{
     text-align: center;
 }
 
+table th {
+    background: #AAA;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+table td {
+    background: #DDD;
+    padding: 5px 10px;
+}
+
 footer{
     background: #7F7E7E;
     height: 200px;

@@ -57,7 +57,7 @@ function register() {
     });
     function registerSucces(data) {
         sessionStorage.authToken = data._kmd.authtoken;
-        showInfo("User registered successfully");
+        showInfo('User registered successfully');
     }
 }
 $(function () {

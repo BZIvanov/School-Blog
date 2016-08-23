@@ -5,8 +5,8 @@
     <title>Sign In</title>
     <link rel="stylesheet" href="styles/style-register-form.css" type="text/css">
     <script src="scripts/jquery-3.0.0.min.js"></script>
+    <script src="scripts/jquery.validate.min.js"></script>
     <script src="scripts/RegisterAndLogin.js"></script>
-
 </head>
 <header>
        <div id="infoBox" onclick="$(this).hide()"></div>
@@ -24,18 +24,18 @@
     <div class="registerForm">
         <form id="formRegister">
             <span style="padding: 0 100px;" class="sectionsForm">Full name:</span>
-            <input type="text" id="fullName" required="true" style="font-size: 20pt"> <br><br>
+            <input type="text" id="fullName" required = "true" style="font-size: 20pt"> <br><br>
             <span style="padding: 0 102px;" class="sectionsForm "> Username:</span>
-            <input type="text" id="userName" style="font-size: 20pt"> <br><br>
+            <input type="text" id="userName" required = "true" style="font-size: 20pt"> <br><br>
             <span style="padding: 0 102px;" class="sectionsForm ">Password:</span>
-            <input type="password" id="passInput" required="true" style="font-size: 20pt"> <br><br>
+            <input type="password" id="passInput" required = "true" style="font-size: 20pt"> <br><br>
             <span style="padding: 0 20px;" class="sectionsForm">Confirm password:</span>
-            <input type="password" id="passwordConfirm" style="font-size: 20pt"> <br><br>
+            <input type="password" id="passwordConfirm" required = "true" style="font-size: 20pt"> <br><br>
             <div class="schoolForm">
                 <br>
-                <input type="radio" value="teacher" name="check" style="font-size: 20pt"> I am a teacher
+                <input type="radio" value="teacher" name="check"  style="font-size: 20pt"> I am a teacher
                 <br>
-                <input type="radio" value="student" name="check" style="font-size: 20pt"> I am a student
+                <input type="radio" value="student" name="check"  style="font-size: 20pt"> I am a student
             </div>
 
             <span class="logInText" class="sectionsForm"><a href="login-form.html"> Log In </a> </span>

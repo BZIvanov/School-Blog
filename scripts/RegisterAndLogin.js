@@ -40,29 +40,53 @@ function login() {
     }
 }
 function register() {
-    let typeOfUser = $("input[name=check]:checked").val();
-    let registerData = {
-        name: $('#fullName').val(),
-        username: $('#userName').val(),
-        password: $('#passInput').val(),
-        passwordConf: $('#passwordConfirm').val(),
-        typeofuser: typeOfUser
-    };
-    $.ajax({
-        method: "POST",
-        url: kinveyBaseUrl + 'user/' + kinveyAppID + '/',
-        data: registerData,
-        headers: {
-            "Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)
-        },
-        success: registerSucces,
-        error: ajaxError
-    });
-    function registerSucces(data) {
-        sessionStorage.authToken = data._kmd.authtoken;
-        showInfo('User registered successfully');
+    let fName = $('#fullName').val();
+    let uName = $('#userName').val();
+    let password = $('#passInput').val();
+    let passwordConf = $('#passwordConfirm').val();
+    if (uName === "") {
+        alert("Try again,Username cant be empty");
     }
-}
+    else if(fName === ""){
+        alert("Try again.Full name cant be empty");
+    }
+    else if(password <= 4){
+        alert("The password must be minimum 4 symbols");
+    }
+    else if(password != passwordConf){
+     alert("the two fields with passwords must be much!");
+    }
+    else {
+        registerMe();
+    }
+        function registerMe() {
+            let typeOfUser = $("input[name=check]:checked").val();
+            let registerData = {
+                name: $('#fullName').val(),
+                username: $('#userName').val(),
+                password: $('#passInput').val(),
+                passwordConf: $('#passwordConfirm').val(),
+                typeofuser: typeOfUser,
+            };
+            $.ajax({
+                method: "POST",
+                url: kinveyBaseUrl + 'user/' + kinveyAppID + '/',
+                data: registerData,
+                headers: {
+                    "Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)
+                },
+                success: registerSucces,
+                error: ajaxError,
+
+            });
+
+            function registerSucces(data) {
+                sessionStorage.authToken = data._kmd.authtoken;
+                showInfo('User registered successfully');
+
+            }
+        }
+    };
 $(function () {
     $('#formLogin').submit(function (e) { e.preventDefault(); login() });
     $('#formRegister').submit(function (e) { e.preventDefault(); register() });

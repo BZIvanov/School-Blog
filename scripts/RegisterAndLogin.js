@@ -86,7 +86,7 @@ function register() {
 
             }
         }
-    };
+    }
 $(function () {
     $('#formLogin').submit(function (e) { e.preventDefault(); login() });
     $('#formRegister').submit(function (e) { e.preventDefault(); register() });

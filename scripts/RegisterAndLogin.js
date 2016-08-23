@@ -68,8 +68,7 @@ $(function () {
 function logout() {
     alert('logout');
     sessionStorage.clear();
-    //showHomeView();
-    //showHideNavigationLinks();
+    
 }
 
 /*scroll-to-top button*/

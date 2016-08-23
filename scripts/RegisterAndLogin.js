@@ -54,7 +54,7 @@ function register() {
         alert("The password must be minimum 4 symbols");
     }
     else if(password != passwordConf){
-     alert("the two fields with passwords must be much!");
+     alert("the two fields with passwords must be the same!");
     }
     else {
         registerMe();

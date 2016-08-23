@@ -7,6 +7,36 @@ header{
     width: 101.45%;
     margin: -20px;
 }
+.nav{
+    display:inline;
+}
+.container{
+    position: relative;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding: 20px;
+    display: inline-block;
+    text-align: left;
+    font-size: 20px;
+    border-bottom: 1.5px solid #fff;
+    width: 30%;
+    height: 150px;
+}
+
+.container>form {
+    background-color: #80CD8B;
+    border-radius: 10px;
+    padding: 15px;
+}
+.image{
+    position:relative;
+    padding-top: 30px;
+    margin: 20px;
+    display: inline-block;
+    //text-align: center;
+} 
+
 .blog-title{
     color: white;
     font-family: Lucida Sans Unicode;

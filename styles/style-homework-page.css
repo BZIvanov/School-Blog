@@ -94,9 +94,8 @@ footer{
 .footerImg a:hover{
     border: none;
 }
-.button-to-top:hover{ 
-      #fff !important;   
-      bacground-color: #ed702b;  
+.button-to-top:hover{
+      bacground-color: #ed702b;
       text-decoration: none;  }  
  
  .button-to-top {  

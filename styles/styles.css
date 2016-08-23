@@ -235,7 +235,7 @@ footer{
     margin: 10px 40px;
     border-color: #846852;
     border: solid 0.1px;
-    border-radius: 10px;
+
 
 }
 .buttonsContent{
@@ -257,7 +257,7 @@ footer{
     border-bottom: 1px solid #fff;
 }
 .button-to-top:hover{ 
-      #fff !important;   
+
       bacground-color: #ed702b;  
       text-decoration: none;  }  
  

@@ -8,6 +8,10 @@
     <script src="scripts/RegisterAndLogin.js"></script>
 
 </head>
+<header>
+    <div id="infoBox" onclick="$(this).hide()"></div>
+    <div id="errorBox" onclick="$(this).hide()"></div>
+</header>
 <body background="images/login-reg.png" style="background-repeat: ">
 
     <div class="blog-title">
@@ -17,8 +21,7 @@
     <div class="divTitleLogin">
         <h1 class="loginTitle">LOGIN</h1>
     </div>
-    <div id="infoBox" onclick="$(this).hide()"></div>
-    <div id="errorBox" onclick="$(this).hide()"></div>
+    <
     <div class="loginForm">
 
         <form id="formLogin">
@@ -32,10 +35,10 @@
             <input type="password" id="loginPass" required="true" style="font-size: 20pt" width="35pt"><br>
             <br>
             <br>
-
+            <br>
+            <br>
             <span class="signInText" class="sectionsForm"><a href="register-form.html"> Sign In </a> </span>
-            <br>
-            <br>
+
             <input type="button" onclick="login()" value="Login" style="font-size: 20pt" width="25pt">
 
 

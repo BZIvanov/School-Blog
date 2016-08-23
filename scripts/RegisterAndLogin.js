@@ -34,6 +34,9 @@ function login() {
     function loginSucces(data) {
         sessionStorage.authToken = data._kmd.authtoken;
         showInfo('Login successful');
+        window.setTimeout(function () {
+            location.href = 'base-form.html';
+            },3000);
     }
 }
 function register() {
@@ -68,7 +71,7 @@ $(function () {
 function logout() {
     alert('logout');
     sessionStorage.clear();
-    
+
 }
 
 /*scroll-to-top button*/

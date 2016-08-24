@@ -38,6 +38,26 @@ a{
 a:hover{
     border-bottom: 1px solid #fff;
 }
+h4{
+    display: block;
+    border-bottom: 0.1px solid #5e5e5e;
+    color: #7F7E7E;
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 1000px;
+    text-align: center;
+}
+p{
+    display: block;
+    color: #7F7E7E;
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 10px;
+    width: auto;
+    text-align: center;
+
+}
 .buttonsContent{
     margin: -25px auto;
     display: block;
@@ -75,7 +95,6 @@ button{
     display: block;
     text-align: center;
 }
-
 footer{
     background: #7F7E7E;
     height: 200px;
@@ -95,8 +114,7 @@ footer{
 }
 
 .button-to-top:hover{ 
-      #fff !important;   
-      bacground-color: #ed702b;  
+     bacground-color: #ed702b;
       text-decoration: none;  }  
  
  .button-to-top {  

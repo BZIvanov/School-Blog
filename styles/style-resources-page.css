@@ -89,19 +89,19 @@ p{
 }
 .titleContent{
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     margin: 15px auto;
     color: #7F7E7E;
     padding: 10px 0px;
-    border: 1px solid;
-    width: 75%;
+    border-bottom: 1px solid;
+    width: 35%;
     height: auto;
     font-weight: bold;
     display: block;
 }
 .bullet{
     text-align: left;
-    font-size: 25px;
+    font-size: 30px;
     color:#545454;
     margin-left: 15%;
 
@@ -130,17 +130,21 @@ button:hover{
 
 
 }
+.resCont{
+    margin: 100px auto;
+}
 .mathsPart{
-    margin: 25px auto;
-    margin-left: 25%;
-    display: inline-block;
-    padding: 10px;
+    margin: 0px auto;
+    text-align: center;
+    display: block;
+    padding: 15px;
     color: #0D1518;
-    font-size: 20px;
+    font-size: 25px;
     height: auto;
-    width: 10%;
+    width: 60%;
     font-family: Arial;
     border: 1px solid #CCA08A;
+
 
 }
 .mathsPart:hover{
@@ -148,14 +152,14 @@ button:hover{
     background: #E0CAC0;
 }
 .historyPart{
-    margin: 25px auto;
-    margin-left: 25%;
-    display: inline-block;
-    padding: 10px;
+    margin: 0px auto;
+    text-align: center;
+    display: block;
+    padding: 15px;
     color: #0D1518;
-    font-size: 20px;
+    font-size: 25px;
     height: auto;
-    width: 10%;
+    width: 60%;
     font-family: Arial;
     border: 1px solid #CCA08A;
 
@@ -166,16 +170,17 @@ button:hover{
 
 }
 .geoPart{
-    margin: 25px auto;
-    margin-left: 25%;
-    display: inline-block;
-    padding: 10px;
+    margin: 0px auto;
+    text-align: center;
+    display: block;
+    padding: 15px;
     color: #0D1518;
-    font-size: 20px;
+    font-size: 25px;
     height: auto;
-    width: 10%;
+    width: 60%;
     font-family: Arial;
     border: 1px solid #CCA08A;
+
 
 }
 .geoPart:hover{
@@ -184,16 +189,17 @@ button:hover{
 
 }
 .sciencePart{
-    margin: 25px auto;
-    margin-left: 25%;
-    display: inline-block;
-    padding: 10px;
+    margin: 0px auto;
+    text-align: center;
+    display: block;
+    padding: 15px;
     color: #0D1518;
-    font-size: 20px;
+    font-size: 25px;
     height: auto;
-    width: 10%;
+    width: 60%;
     font-family: Arial;
     border: 1px solid #CCA08A;
+
 
 }
 .sciencePart:hover{
@@ -202,16 +208,17 @@ button:hover{
 
 }
 .litPart{
-    margin: 25px auto;
-    margin-left: 25%;
-    display: inline-block;
-    padding: 10px;
+    margin: 0px auto;
+    text-align: center;
+    display: block;
+    padding: 15px;
     color: #0D1518;
-    font-size: 20px;
+    font-size: 25px;
     height: auto;
-    width: 10%;
+    width: 60%;
     font-family: Arial;
     border: 1px solid #CCA08A;
+
 
 }
 .litPart:hover{
@@ -220,16 +227,17 @@ button:hover{
 
 }
 .itPart{
-    margin: 25px auto;
-    margin-left: 25%;
-    display: inline-block;
-    padding: 10px;
+    margin: 0px auto;
+    text-align: center;
+    display: block;
+    padding: 15px;
     color: #0D1518;
-    font-size: 20px;
+    font-size: 25px;
     height: auto;
-    width: 10%;
+    width: 60%;
     font-family: Arial;
     border: 1px solid #CCA08A;
+
 
 }
 .itPart:hover{

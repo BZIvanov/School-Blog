@@ -65,6 +65,7 @@ p{
     background: #7F7E7E;
     font-size: 20px;
     height: auto;
+    width: auto;
     text-align: center;
 
 
@@ -95,10 +96,36 @@ button{
     display: block;
     text-align: center;
 }
+.titleContent{
+    text-align: center;
+    font-size: 30px;
+    margin: 15px auto;
+    color: #7F7E7E;
+    padding: 10px 0px;
+    border: 1px solid;
+    width: 75%;
+    height: auto;
+    font-weight: bold;
+    display: block;
+}
+.bullet{
+    text-align: left;
+    font-size: 25px;
+    color:#545454;
+    margin-left: 15%;
+
+}
+.downloadText{
+    text-align: left;
+    font-size: 20px;
+    color:#545454;
+    margin-left: 20%;
+
+}
 footer{
     background: #7F7E7E;
     height: 200px;
-    margin-bottom: -200px;
+    margin: 30px auto;
     color: #ffffff;
     font-size: 30px;
     text-align: center;

@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="resources-page.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="resources-page.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources-page.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="388">
-              <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
+              <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -33,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style-resources-page.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style-resources-page.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/style-resources-page.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="484">
@@ -81,8 +81,8 @@
         <option value="$PROJECT_DIR$/styles/style-student-page.css" />
         <option value="$PROJECT_DIR$/styles/style-forum-page.css" />
         <option value="$PROJECT_DIR$/forum-page.html" />
-        <option value="$PROJECT_DIR$/resources-page.html" />
         <option value="$PROJECT_DIR$/styles/style-resources-page.css" />
+        <option value="$PROJECT_DIR$/resources-page.html" />
       </list>
     </option>
   </component>
@@ -278,12 +278,12 @@
       <workItem from="1471938674501" duration="4860000" />
       <workItem from="1471956154996" duration="2699000" />
       <workItem from="1471981609107" duration="29000" />
-      <workItem from="1472030029130" duration="9462000" />
+      <workItem from="1472030029130" duration="9639000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37174000" />
+    <option name="totallyTimeSpent" value="37351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -654,21 +654,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources-page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/style-resources-page.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="139" column="17" selection-start-line="139" selection-start-column="17" selection-end-line="139" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

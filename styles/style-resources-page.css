@@ -78,16 +78,7 @@ p{
     border-bottom: 1px solid #fff;
     padding: -3px;
 }
-button{
-    background: #424147;
-    text-decoration: none;
-    color:#fff;
-}
-.buttonLogout{
-    float: right;
-    margin-top:  40px ;
-    margin-right: 20px;
-}
+
 .buttonHome{
     border-bottom: 1px solid #fff;
 }
@@ -120,6 +111,35 @@ button{
     font-size: 20px;
     color:#545454;
     margin-left: 20%;
+
+}
+button{
+    background: #CCA08A;
+    color: #ffffff;
+    font-size:15px;
+    padding: 5px 8px;
+}
+button:hover{
+    cursor: pointer;
+}
+.buttons{
+    text-align: left;
+    color:#545454;
+    margin-left:5% ;
+    display: inline;
+
+
+}
+.mathsPart{
+    margin: 25px auto;
+    margin-left: 25%;
+    display: inline-block;
+    padding: 10px;
+    background: #CC8561;
+    font-size: 20px;
+    height: auto;
+    width: 10%;
+
 
 }
 footer{

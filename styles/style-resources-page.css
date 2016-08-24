@@ -135,11 +135,106 @@ button:hover{
     margin-left: 25%;
     display: inline-block;
     padding: 10px;
-    background: #CC8561;
+    color: #0D1518;
     font-size: 20px;
     height: auto;
     width: 10%;
+    font-family: Arial;
+    border: 1px solid #CCA08A;
 
+}
+.mathsPart:hover{
+    border: 2px solid #ffffff;
+    background: #E0CAC0;
+}
+.historyPart{
+    margin: 25px auto;
+    margin-left: 25%;
+    display: inline-block;
+    padding: 10px;
+    color: #0D1518;
+    font-size: 20px;
+    height: auto;
+    width: 10%;
+    font-family: Arial;
+    border: 1px solid #CCA08A;
+
+}
+.historyPart:hover{
+    border: 2px solid #ffffff;
+    background: #E0CAC0;
+
+}
+.geoPart{
+    margin: 25px auto;
+    margin-left: 25%;
+    display: inline-block;
+    padding: 10px;
+    color: #0D1518;
+    font-size: 20px;
+    height: auto;
+    width: 10%;
+    font-family: Arial;
+    border: 1px solid #CCA08A;
+
+}
+.geoPart:hover{
+    border: 2px solid #ffffff;
+    background: #E0CAC0;
+
+}
+.sciencePart{
+    margin: 25px auto;
+    margin-left: 25%;
+    display: inline-block;
+    padding: 10px;
+    color: #0D1518;
+    font-size: 20px;
+    height: auto;
+    width: 10%;
+    font-family: Arial;
+    border: 1px solid #CCA08A;
+
+}
+.sciencePart:hover{
+    border: 2px solid #ffffff;
+    background: #E0CAC0;
+
+}
+.litPart{
+    margin: 25px auto;
+    margin-left: 25%;
+    display: inline-block;
+    padding: 10px;
+    color: #0D1518;
+    font-size: 20px;
+    height: auto;
+    width: 10%;
+    font-family: Arial;
+    border: 1px solid #CCA08A;
+
+}
+.litPart:hover{
+    border: 2px solid #ffffff;
+    background: #E0CAC0;
+
+}
+.itPart{
+    margin: 25px auto;
+    margin-left: 25%;
+    display: inline-block;
+    padding: 10px;
+    color: #0D1518;
+    font-size: 20px;
+    height: auto;
+    width: 10%;
+    font-family: Arial;
+    border: 1px solid #CCA08A;
+
+}
+.itPart:hover{
+    border: 2px solid #ffffff;
+    background: #E0CAC0;
 
 }
 footer{

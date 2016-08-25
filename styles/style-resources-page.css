@@ -86,6 +86,7 @@ p{
     margin: 20px auto;
     display: block;
     text-align: center;
+    width: auto;
 }
 .titleContent{
     text-align: center;
@@ -95,6 +96,18 @@ p{
     padding: 10px 0px;
     border-bottom: 1px solid;
     width: 35%;
+    height: auto;
+    font-weight: bold;
+    display: block;
+}
+.titleSecond{
+    text-align: center;
+    font-size: 30px;
+    margin: 15px auto;
+    color: #7F7E7E;
+    padding: 10px 0px;
+    border-bottom: 1px solid;
+    width: 20%;
     height: auto;
     font-weight: bold;
     display: block;
@@ -112,6 +125,24 @@ p{
     text-align: left;
     display: block;
     width: 75%;
+
+}
+.langPart{
+    margin: 0px auto;
+    text-align: left;
+    display: block;
+    padding: 15px;
+    color: #0D1518;
+    font-size: 25px;
+    height: auto;
+    width: 30%;
+    font-family: Arial;
+    border: 1px solid #CCA08A;
+
+}
+.langPart:hover{
+    border: 2px solid #ffffff;
+    background: #E0CAC0;
 
 }
 .resCont{
@@ -153,8 +184,13 @@ p{
     background: #E0CAC0;
 
 }
-.geoPart{
-    margin: 0px auto;
+#history{
+    margin: 50px auto;
+    display: block;
+    text-align: center;
+}
+.moreHistory{
+    margin: 20px auto;
     text-align: center;
     display: block;
     padding: 15px;
@@ -164,32 +200,82 @@ p{
     width: 60%;
     font-family: Arial;
     border: 1px solid #CCA08A;
-
+}
+.moreHistory:hover{
+    border: 2px solid #ffffff;
+    background: #DDB29F;
 
 }
+
+
+.geoPart{
+    margin: 0px auto;
+    text-align: left;
+    display: block;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 25px;
+    height: auto;
+    width: 30%;
+    font-family: Arial;
+
+}
+
 .geoPart:hover{
     border: 2px solid #ffffff;
-    background: #E0CAC0;
+    background: #75936D;
 
+}
+#geoBack{
+    height: 802px;
+}
+.readMoreGeo{
+    color:#ffffff;
+    text-align: center;
+    font-size: 30px;
+    margin: 15px auto;
+    padding: 10px 0px;
+    border-bottom: 1px solid;
+    width: 20%;
+    height: auto;
+    font-weight: bold;
+    display: block;
 }
 .sciencePart{
     margin: 0px auto;
-    text-align: center;
+    text-align: left;
     display: block;
     padding: 15px;
     color: #0D1518;
-    font-size: 25px;
+    font-size: 30px;
     height: auto;
-    width: 60%;
+    width: 30%;
     font-family: Arial;
-    border: 1px solid #CCA08A;
+
 
 
 }
 .sciencePart:hover{
     border: 2px solid #ffffff;
-    background: #E0CAC0;
+    background: #416358;
+    color: #ffffff;
 
+}
+#scienceBack{
+    height: 652px;
+    width: auto;
+}
+.readMoreScience{
+    color:#000000;
+    text-align: center;
+    font-size: 30px;
+    margin: 15px auto;
+    padding: 10px 0px;
+    border-bottom: 1px solid;
+    width: 20%;
+    height: auto;
+    font-weight: bold;
+    display: block;
 }
 .litPart{
     margin: 0px auto;
@@ -209,6 +295,11 @@ p{
     border: 2px solid #ffffff;
     background: #E0CAC0;
 
+}
+#litImg{
+    margin: 0 auto;
+    text-align: center;
+    display: block;
 }
 .itPart{
     margin: 0px auto;

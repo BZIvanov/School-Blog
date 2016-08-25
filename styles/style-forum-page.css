@@ -1,13 +1,16 @@
-body{
+body {
     background: #ffffff;
 }
-header{
-    background:#9BC16D;;
+
+header {
+    background: #9BC16D;
+    ;
     height: auto;
     width: 101.45%;
     margin: -20px;
 }
-.blog-title{
+
+.blog-title {
     color: white;
     font-family: Lucida Sans Unicode;
     margin: 100px auto;
@@ -16,9 +19,9 @@ header{
     font-size: 50px;
     border-bottom: 0.5px solid #fff;
     width: 75%;
-
 }
-.page-title{
+
+.page-title {
     color: white;
     font-family: Lucida Sans Unicode;
     margin: 40px auto;
@@ -27,7 +30,8 @@ header{
     font-size: 50px;
     width: 75%;
 }
-h4{
+
+h4 {
     display: block;
     border-bottom: 0.1px solid #5e5e5e;
     color: #7F7E7E;
@@ -37,7 +41,8 @@ h4{
     width: 900px;
     text-align: center;
 }
-p{
+
+p {
     display: block;
     color: #7F7E7E;
     font-size: 30px;
@@ -45,20 +50,21 @@ p{
     padding: 10px;
     width: auto;
     text-align: center;
-
 }
-a{
+
+a {
     text-decoration: none;
-    color:#fff;
+    color: #fff;
     margin: 0 auto;
     display: inline-block;
     text-align: center;
+}
 
-}
-a:hover{
-    border-bottom: 1px solid #fff;
-}
-.buttonsContent{
+    a:hover {
+        border-bottom: 1px solid #fff;
+    }
+
+.buttonsContent {
     margin: -25px auto;
     display: block;
     padding: 10px;
@@ -66,39 +72,44 @@ a:hover{
     font-size: 20px;
     height: auto;
     text-align: center;
-
-
 }
-.buttonsContent a {
-    margin: 30px;
 
-}
-.buttonsContent a:hover {
-    border-bottom: 1px solid #fff;
-    padding: -3px;
-}
-button{
+    .buttonsContent a {
+        margin: 30px;
+    }
+
+        .buttonsContent a:hover {
+            border-bottom: 1px solid #fff;
+            padding: -3px;
+        }
+
+button {
     background: #424147;
     text-decoration: none;
-    color:#fff;
+    color: #fff;
 }
-.buttonLogout{
+
+.buttonLogout {
     float: right;
-    margin-top:  40px ;
+    margin-top: 40px;
     margin-right: 20px;
 }
-.buttonHome{
+
+.buttonHome {
     border-bottom: 1px solid #fff;
 }
-.image{
+
+.image {
     margin: 20px auto;
     display: block;
     text-align: center;
 }
-.back{
+
+.back {
     width: auto;
     background-repeat: no-repeat;
 }
+
 table th {
     background: #AAA;
     font-size: 1.2em;
@@ -110,35 +121,50 @@ table td {
     padding: 5px 10px;
 }
 
-input[type=text] {
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 8px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+.search {
+    padding: 8px 15px;
+    background: rgba(50, 50, 50, 0.2);
+    border: 0px solid #dbdbdb;
 }
-.fake-input { position: relative; width:240px; }
 
-.fake-input img { position: absolute; top: 2px; right: 5px }
-/*.sbico{
-    background: url(/images/nac_logo242.png)
-    no-repeat -107px -55px;
-    color:transparent;
-    display:inline-block;
-    height:24px;
-    width:24px;
-    //margin:7px auto;
-}*/
-input[type=text]:focus {
-    width: 50%;
+.button {
+    position: relative;
+    padding: 6px 15px;
+    left: -8px;
+    border: 2px solid #808080;
+    background-color: #808080;
+    color: #fafafa;
 }
-footer{
+
+.button:hover {
+    border-radius:5px;
+    background-color:#DDD;
+    color: #207cca;
+}
+
+.arrow {
+    border-radius:5px;
+    position: relative;
+    left: -8px;
+    background: #808080;
+    padding: 8px 15px;
+}
+
+.arrow:after {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-color: rgba(32, 124, 202, 0);
+    border-right-color: #808080;
+    border-width: 10px;
+    margin-top: -10px;
+}
+
+footer {
     background: #7F7E7E;
     height: 200px;
     margin-bottom: -200px;
@@ -147,33 +173,34 @@ footer{
     text-align: center;
     display: block;
     font-family: Lucida Sans Unicode;
-
 }
-.footerImg{
+
+.footerImg {
     padding: 0px 20px;
 }
-.footerImg a:hover{
+
+.footerImg a:hover {
     border: none;
 }
 
-.button-to-top:hover{ 
+.button-to-top:hover {
+    bacground-color: #ed702b;
+    text-decoration: none;
+}
 
-      bacground-color: #ed702b;  
-      text-decoration: none;  }  
- 
- .button-to-top {  
-     display: none;  
-     position: fixed;   
-     bottom: 1rem;   
-     right:1rem;  
-     width:3.2rem;  
-     height: 3.2rem;  
-     line-height:3.0rem;   
-     font-size:1.4rem;   
-     color:#fff;  
-      background-color: rgba(0,0,0,0.3);  
-      text-decoration: none;   
-      border-radius: 3.2rem;   
-      text-align: center;   
-      cursor: pointer; 
- }
+.button-to-top {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    line-height: 3.0rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+    text-decoration: none;
+    border-radius: 3.2rem;
+    text-align: center;
+    cursor: pointer;
+}

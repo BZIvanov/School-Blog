@@ -45,16 +45,16 @@ function register() {
     let password = $('#passInput').val();
     let passwordConf = $('#passwordConfirm').val();
     if (uName === "") {
-        alert("Try again,Username cant be empty");
+        showInfo("Username cant be empty");
     }
     else if(fName === ""){
         alert("Try again.Full name cant be empty");
     }
     else if(password <= 4){
-        alert("The password must be minimum 4 symbols");
+        showInfo("The password must be minimum 4 symbols");
     }
     else if(password != passwordConf){
-     alert("the two fields with passwords must be the same!");
+        showInfo("The two fields with passwords must be the same!");
     }
     else {
         registerMe();

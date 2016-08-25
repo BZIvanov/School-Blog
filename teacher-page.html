@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <title>My Virtual School-Profile</title>
     <link rel="stylesheet" href="styles/style-teacher-page.css" type="text/css">
-
     <script src="scripts/jquery-3.0.0.min.js"></script>
-    <script src="scripts/RegisterAndLogin.js"></script>
+    <script src="scripts/teachersSetHomeWork.js"></script>
 </head>
 <body>
 <header>
@@ -40,13 +39,13 @@
         You have the chance to set student's homework and see their work.
     </p>
     <div class="setHomework">
-        NAME: <input type="text">
+        NAME: <input type="text" id="simpleName">
         <br>
         <br>
-        SUBJECT <input type="text">
+        SUBJECT <input type="text" id="subject">
         <br>
         <br>
-        DESCRIPTION: <textarea type="text"> </textarea>
+        DESCRIPTION: <textarea type="text" id="description"> </textarea>
         <br>
         <br>
         
@@ -54,7 +53,7 @@
         <br>
         <br>
 
-        <button type="submit"> Set Homework </button>
+        <input type="button" onclick="setHomerowk()" value="Set Homework">
     </div>
     <img src="images/teacher.jpg" class="image">
 

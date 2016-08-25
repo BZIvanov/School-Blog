@@ -44,11 +44,11 @@ function register() {
     let uName = $('#userName').val();
     let password = $('#passInput').val();
     let passwordConf = $('#passwordConfirm').val();
-    if (uName === "") {
-        showInfo("Username cant be empty");
+    if (fName === "") {
+        showInfo("Try again.Full name cant be empty");
     }
-    else if(fName === ""){
-        alert("Try again.Full name cant be empty");
+    else if(uName === ""){
+        showInfo("Try again.User name cant be empty");
     }
     else if(password <= 4){
         showInfo("The password must be minimum 4 symbols");

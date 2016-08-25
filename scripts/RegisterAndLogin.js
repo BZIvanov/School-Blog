@@ -115,3 +115,7 @@ $(document).ready(function () {
         return false;
     });
 });
+function link() {
+    var link_s = document.getElementById('link_id').value;
+    document.getElementById('link_str').innerHTML = link_s.link()
+}

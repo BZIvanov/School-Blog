@@ -116,7 +116,8 @@ p{
     text-align: left;
     font-size: 50px;
     color:#545454;
-    margin-left: 15%;
+    margin: 30px auto;
+    display: inline;
 
 }
 .englishText{
@@ -128,17 +129,55 @@ p{
 
 }
 .langPart{
-    margin: 0px auto;
-    text-align: left;
-    display: block;
+    margin: 0 auto ;
+    text-align: center;
+    display: inline-block;
     padding: 15px;
     color: #0D1518;
     font-size: 25px;
     height: auto;
-    width: 30%;
+    width: 16%;
     font-family: Arial;
     border: 1px solid #CCA08A;
 
+}
+#bulglangPart{
+    margin: 0 auto ;
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+    color: #0D1518;
+    font-size: 25px;
+    height: auto;
+    width: 12%;
+    font-family: Arial;
+    border: 1px solid #CCA08A;
+
+}
+#GermlangPart{
+    margin: 0 auto ;
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+    color: #0D1518;
+    font-size: 25px;
+    height: auto;
+    width: 15%;
+    font-family: Arial;
+    border: 1px solid #CCA08A;
+
+}
+#RuslangPart{
+    margin: 0 auto ;
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+    color: #0D1518;
+    font-size: 25px;
+    height: auto;
+    width: 15%;
+    font-family: Arial;
+    border: 1px solid #CCA08A;
 }
 .langPart:hover{
     border: 2px solid #ffffff;
@@ -223,7 +262,7 @@ p{
 
 .geoPart:hover{
     border: 2px solid #ffffff;
-    background: #75936D;
+    background: #003F6D;
 
 }
 #geoBack{
@@ -257,7 +296,7 @@ p{
 }
 .sciencePart:hover{
     border: 2px solid #ffffff;
-    background: #416358;
+    background: #738DB5;
     color: #ffffff;
 
 }

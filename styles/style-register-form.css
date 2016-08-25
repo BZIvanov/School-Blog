@@ -245,7 +245,7 @@ input[type=submit] {
 }
 #loadingBox{
     background: #80CD8B;
-    width: 80%;
+    width: 0%;
     margin: 10px auto;
     color: white;
     text-align: center;
@@ -254,12 +254,13 @@ input[type=submit] {
 }
 
 #errorBox {
-    background: #FF303E;
+    font-size:35px;
+    border-bottom: 2px solid red;
     display: none;
     /*background: #AAA;*/
     padding: 3px;
     border-radius: 3px;
-    width: 40%;
+    width: 20%;
     margin: 0px auto;
     text-align: center;
     color:#fff;
@@ -305,9 +306,9 @@ input[type=submit] {
 
 
 #infoBox {
-    background: #393;
+    font-size: 35px;
+    border-bottom: 2px solid green;
     display: none;
-    /*background: #AAA;*/
     padding: 3px;
     border-radius: 3px;
     width: 40%;

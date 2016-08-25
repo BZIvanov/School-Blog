@@ -107,6 +107,35 @@ table td {
     padding: 5px 10px;
 }
 
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url("searchicon.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 8px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.fake-input { position: relative; width:240px; }
+.fake-input input { border:none: background:#fff; display:block; width: 100%; box-sizing: border-box }
+.fake-input img { position: absolute; top: 2px; right: 5px }
+/*.sbico{
+    background: url(/images/nac_logo242.png)
+    no-repeat -107px -55px;
+    color:transparent;
+    display:inline-block;
+    height:24px;
+    width:24px;
+    //margin:7px auto;
+}*/
+input[type=text]:focus {
+    width: 50%;
+}
 footer{
     background: #7F7E7E;
     height: 200px;

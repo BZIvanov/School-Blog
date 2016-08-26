@@ -50,7 +50,7 @@ function register() {
     else if(uName === ""){
         showInfo("Try again.User name cant be empty");
     }
-    else if(password <= 4){
+    else if(password.length <= 4){
         showInfo("The password must be minimum 4 symbols");
     }
     else if(password != passwordConf){

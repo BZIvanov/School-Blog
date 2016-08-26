@@ -391,9 +391,9 @@ footer{
      line-height:3.0rem;   
      font-size:1.4rem;   
      color:#fff;  
-      background-color: rgba(0,0,0,0.3);  
-      text-decoration: none;   
-      border-radius: 3.2rem;   
-      text-align: center;   
-      cursor: pointer; 
+     background-color: rgba(0,0,0,0.3);
+     text-decoration: none;
+     border-radius: 3.2rem;
+     text-align: center;
+     cursor: pointer;
  }

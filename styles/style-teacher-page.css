@@ -1,43 +1,12 @@
 body{
     background: #ffffff;
+    font-family: Lucida Sans Unicode;
 }
 header{
     background:#1D9B86;;
     height: auto;
     width: 101.45%;
     margin: -20px;
-}
-
-.blog-title{
-    color: white;
-    font-family: Lucida Sans Unicode;
-    margin: 100px auto;
-    display: block;
-    text-align: center;
-    font-size: 50px;
-    border-bottom: 0.5px solid #fff;
-    width: 75%;
-
-}
-.page-title{
-    color: white;
-    font-family: Lucida Sans Unicode;
-    margin: 40px auto;
-    display: block;
-    text-align: center;
-    font-size: 50px;
-    width: 75%;
-}
-a{
-    text-decoration: none;
-    color:#fff;
-    margin: 0 auto;
-    display: inline-block;
-    text-align: center;
-
-}
-a:hover{
-    border-bottom: 1px solid #fff;
 }
 .buttonsContent{
     margin: -25px auto;
@@ -52,26 +21,63 @@ a:hover{
 }
 .buttonsContent a {
     margin: 30px;
-
+}
+a{
+    text-decoration: none;
+    color:#fff;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+}
+a:hover{
+    border-bottom: 1px solid #fff;
 }
 .buttonsContent a:hover {
     border-bottom: 1px solid #fff;
     padding: -3px;
 }
-button{
-    background: #565656;
-    text-decoration: none;
-    color:#ffffff;
-    font-size: 30px;
-    float: right;
-}
-.buttonLogout{
-    float: right;
-    margin-top:  40px ;
-    margin-right: 20px;
-}
 .buttonHome{
     border-bottom: 1px solid #fff;
+}
+.blog-title{
+    color: white;
+
+    margin: 100px auto;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 1px solid #fff;
+    width: 75%;
+
+}
+.page-title{
+    color: white;
+    margin: 40px auto;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    width: 75%;
+}
+h4{
+    display: block;
+    border-bottom: 1px solid #5e5e5e;
+    color: #7F7E7E;
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 900px;
+    text-align: center;
+    font-family: Constantia;}
+p{
+    display: block;
+    color: #7F7E7E;
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 10px;
+    width: auto;
+    text-align: center;
+    font-family: Constantia;
+
 }
 .image{
     margin: 20px 120px;
@@ -92,8 +98,6 @@ button{
     -khtml-opacity: 0.8;      /* khtml, old safari */
     -moz-opacity: 0.8;       /* mozilla, netscape */
     opacity: 0.8;           /* fx, safari, opera */
-
-
 }
 input[type=text]{
     height: 30px;
@@ -103,9 +107,6 @@ input[type=text]{
 }
 input[type=file]{
     font-size: 30px;
-
-
-
 }
 textarea{
     float: right;
@@ -113,25 +114,25 @@ textarea{
     width: 700px ;
     font-size: 20px;
 }
-h4{
-    display: block;
-    border-bottom: 0.1px solid #5e5e5e;
-    color: #7F7E7E;
-    font-size: 40px;
-    margin: 0 auto;
-    padding: 10px;
-    width: 900px;
-    text-align: center;
-}
-p{
-    display: block;
-    color: #7F7E7E;
-    font-size: 30px;
-    margin: 0 auto;
-    padding: 10px;
-    width: auto;
-    text-align: center;
+.button-to-top:hover{
+    bacground-color: #ed702b;
+    text-decoration: none;  }
 
+.button-to-top {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right:1rem;
+    width:3.2rem;
+    height: 3.2rem;
+    line-height:3.0rem;
+    font-size:1.4rem;
+    color:#fff;
+    background-color: rgba(0,0,0,0.3);
+    text-decoration: none;
+    border-radius: 3.2rem;
+    text-align: center;
+    cursor: pointer;
 }
 footer{
     background: #7F7E7E;
@@ -141,8 +142,6 @@ footer{
     font-size: 30px;
     text-align: center;
     display: block;
-    font-family: Lucida Sans Unicode;
-
 }
 .footerImg{
     padding: 0px 20px;
@@ -150,24 +149,3 @@ footer{
 .footerImg a:hover{
     border: none;
 }
-.button-to-top:hover{ 
-
-      bacground-color: #ed702b;  
-      text-decoration: none;  }  
- 
- .button-to-top {  
-     display: none;  
-     position: fixed;   
-     bottom: 1rem;   
-     right:1rem;  
-     width:3.2rem;  
-     height: 3.2rem;  
-     line-height:3.0rem;   
-     font-size:1.4rem;   
-     color:#fff;  
-      background-color: rgba(0,0,0,0.3);  
-      text-decoration: none;   
-      border-radius: 3.2rem;   
-      text-align: center;   
-      cursor: pointer; 
- }

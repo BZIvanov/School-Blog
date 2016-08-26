@@ -1,5 +1,6 @@
 body{
     background: #2F2E33;
+    font-family: "Lucida Sans Unicode";
 }
 
 header{
@@ -7,37 +8,6 @@ header{
     height: auto;
     width: 101.45%;
     margin: -20px;
-}
-.blog-title{
-    color: white;
-    font-family: Lucida Sans Unicode;
-    margin: 100px auto;
-    display: block;
-    text-align: center;
-    font-size: 50px;
-    border-bottom: 0.5px solid #fff;
-    width: 75%;
-
-}
-.page-title{
-    color: white;
-    font-family: Lucida Sans Unicode;
-    margin: 40px auto;
-    display: block;
-    text-align: center;
-    font-size: 50px;
-    width: 75%;
-}
-a{
-    text-decoration: none;
-    color:#fff;
-    margin: 0 auto;
-    display: inline-block;
-    text-align: center;
-
-}
-a:hover{
-    border-bottom: 1px solid #fff;
 }
 .buttonsContent{
     margin: -25px auto;
@@ -47,7 +17,13 @@ a:hover{
     font-size: 20px;
     height: auto;
     text-align: center;
-
+}
+a{
+    text-decoration: none;
+    color:#fff;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
 
 }
 .buttonsContent a {
@@ -58,18 +34,26 @@ a:hover{
     border-bottom: 1px solid #fff;
     padding: -3px;
 }
-button{
-    background: #424147;
-    text-decoration: none;
-    color:#fff;
-}
-.buttonLogout{
-    float: right;
-    margin-top:  40px ;
-    margin-right: 20px;
-}
 .buttonHome{
     border-bottom: 1px solid #fff;
+}
+.blog-title{
+    color: white;
+    margin: 100px auto;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 1px solid #fff;
+    width: 75%;
+
+}
+.page-title{
+    color: white;
+    margin: 40px auto;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    width: 75%;
 }
 .image{
     margin: 20px auto;
@@ -77,8 +61,7 @@ button{
     text-align: center;
 }
 
-.button-to-top:hover{ 
-      #fff !important;   
+.button-to-top:hover{
       bacground-color: #ed702b;  
       text-decoration: none;  }  
  
@@ -92,9 +75,9 @@ button{
      line-height:3.0rem;   
      font-size:1.4rem;   
      color:#fff;  
-      background-color: rgba(0,0,0,0.3);  
-      text-decoration: none;   
-      border-radius: 3.2rem;   
-      text-align: center;   
-      cursor: pointer; 
+     background-color: rgba(0,0,0,0.3);
+     text-decoration: none;
+     border-radius: 3.2rem;
+     text-align: center;
+     cursor: pointer;
  }

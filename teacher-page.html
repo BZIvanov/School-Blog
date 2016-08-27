@@ -26,6 +26,7 @@
 <!--TITLES-->
                         <div class="blog-title">
                                 <h1>MY VIRTUAL SCHOOL</h1>
+
                         </div>
                         <h3 class="page-title" >TEACHERS</h3>
                 </div>
@@ -34,13 +35,15 @@
         <main>
                 <h4>Be SOMEBODY who makes everybody feel like a SOMEBODY</h4>
                 <p>You have the chance to set student's homework and see their work.</p>
+            <div id="infoTeachers" onclick="$(this).hide()"></div>
+            <div id="errorTeach" onclick="$(this).hide()"></div>
 <!--SET HOMEWORK FORM-->
                 <div class="setHomework">
                     NAME: <input type="text" id="simpleName" required="true">
                     <br><br>
-                    SUBJECT <input type="text" id="subject">
+                    SUBJECT <input type="text" id="subject" required="true">
                     <br><br>
-                    DESCRIPTION: <textarea type="text" id="description"> </textarea>
+                    DESCRIPTION: <textarea type="text" id="dHomeWork" required="true"> </textarea>
                     <br><br><br><br>
                     <input type="button" onclick="checkFields()" value="Set Homework"><br>
                     <input type="button" onclick="showHomeW()" value="Show homeworks">

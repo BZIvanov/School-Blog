@@ -1,0 +1,109 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Virtual School-Profile</title>
+    <link rel="stylesheet" href="styles/style-student-page.css" type="text/css">
+    <script src="scripts/jquery-3.0.0.min.js"></script>
+    <script src="scripts/studentsUploadHomeworks.js"></script>
+</head>
+<body>
+
+<!--NAVIGATION-->
+
+        <header>
+                <div class="buttonsContent">
+                        <a href="base-form.html" id="linkHome" >НАЧАЛО</a>
+                        <a href="teacher-page.html" id="linkTeachers"  >УЧИТЕЛИ</a>
+                        <a href="student-page.html" id="linkStudents" class="buttonHome">УЧЕНИЦИ</a>
+                        <a href="homework-page.html" id="linkHomework">ДОМАШНИ</a>
+                        <a href="forum-page.html" id="linkForum">ФОРУМ</a>
+                        <a href="resources-page.html" id="linkResources">РЕСУРСИ</a>
+                        <a href="index.html">ИЗХОД</a>
+                </div>
+                <div >
+
+<!--TITLES-->
+
+                    <div class="blog-title">
+                        <h1>МОЕТО ВИРТУАЛНО УЧИЛИЩЕ</h1>
+                    </div>
+                    <h3 class="page-title" >УЧЕНИЦИ</h3>
+                </div>
+
+        </header>
+
+        <main>
+
+            <h4>
+                Учи,докато другите спят,работи докато другите мързелуват,подготвяй,докато другите играят
+                и мечтай,докато другите само си пожелават.
+            </h4>
+            <p>
+                Трябва да провериш "ДОМАШНИ" и "РЕСУРСИ" и ако все още имаш въпроси,може да попиташ за помощ своите
+                съученици във форума,долу,или да потърсиш помощ от преподавателите си във "ФОРУМ".
+
+            </p>
+
+<!--SUBMIT HOMEWORK FORM-->
+
+            <div class="submitHomework">
+                        ИМЕ: <input type="text" id="studentName">
+                    <br><br>
+                        ТЕМА: <input type="text" id="themeOfHomework">
+                    <br><br>
+                        ПОЯСНЕНИЕ: <textarea type="text" id="descriptionOfHomeWork"> </textarea>
+                    <br><br><br><br><br>
+
+                        <input type="button" onclick="uploadHomeworks()" value="Предай домашна">
+            </div>
+                <img src="images/011.jpg" class="image">
+                <h3 class="forumTitle">THE SECRET FORUM</h3>
+
+<!--CREATE POSTS IN SECRET FORUM-->
+
+            <div style="background:url(images/classroom.jpg) repeat-y" class="forumPart">
+                <div class="submitPost">
+                            NAME: <input type="text">
+                            <br><br>
+                            ABOUT <input type="text">
+                            <br><br>
+                             <textarea type="text"> </textarea>
+                            <br><br><br><br><br>
+                            <button type="submit"> Publish </button>
+                 </div>
+
+<!--RECENT POSTS-->
+
+                <div class="posts">
+                        No recent posts <br>
+                        AUTHOR:
+                        <br><br>
+                        ABOUT
+                        <br><br>
+                        CONTENT
+                        <p class="content"></p>
+                </div>
+            </div>
+        </main>
+
+<!--FOOTER-->
+
+        <footer>
+            СВЪРЖИ СЕ С НАС
+            <br>
+            <br>
+            <div class="footerImg">
+                <a href="https://github.com/BZIvanov/School-Blog" class="footerImg"> <img src="images/github-512.png"> </a>
+                <a href="https://www.facebook.com/groups/789752401160176/" class="footerImg"><img src="images/icon-facebook.png"></a>
+                <a href="https://twitter.com/?request_context=signup " class="footerImg"><img src="images/Twitterbird.png"></a>
+                <a href="https://plus.google.com/117078375229903786708/posts" class="footerImg"> <img src="images/google-plus-icon.png"></a>
+            </div>
+        </footer>
+
+<!--scroll to top button-->
+
+            <a href="#" id="scrollToTop" class="button-to-top" style="display: block;"><span class="glyphicon glyphicon-chevron-up">↑</span></a>
+</body>
+</html>

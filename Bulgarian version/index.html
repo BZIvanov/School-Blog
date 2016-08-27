@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Virtual School</title>
+        <script src="scripts/jquery-3.0.0.min.js"></script>
+        <link rel="stylesheet" href="styles/styles.css" type="text/css">
+</head>
+
+<body>
+
+<!-- TITLE -->
+
+    <header style="background:url(images/back1.jpg)">
+                <br><br>
+            <div  class="background" >
+                    <div class="wrapper">
+                            <div class="login-button" style="outline: 0">
+                                
+                                    <a href="login-form.html">ВХОД</a>
+                                    <a href="register-form.html">РЕГИСТРАЦИЯ</a><br><br>
+
+                            </div>
+                        <a href="#" style="float: left">BG</a>
+                        <a href="" style="float: left">EN</a>
+                    </div>
+
+                    <div class="blog-title">
+                            <h1>МОЕТО ВИРТУАЛНО УЧИЛИЩЕ</h1>
+                    </div>
+            </div>
+            <div class="buttonsContent">
+                             <a href="#aboutUs">ЗА НАС </a>
+                             <a href="#aboutTeachers">ЗА УЧИТЕЛИ</a>
+                <a href="#aboutStudents">ЗА УЧЕНИЦИ</a>
+            </div>
+    </header>
+
+<!--ABOUT US-->
+
+            <div>
+                        <div class="index-page-content" > ЗА НАС </div>
+                        <img src="images/Icon-set.jpg" class="images-aboutUs">
+                        <p> <a name="aboutUs" class="text-aboutUs">
+                            Системата  „Моето виртуално училище“ е
+                            предназначена както за ученици,така и
+                            за учители. Би била от голяма полза за
+                            всички степени на обучение в България.
+                            След като се регистрирате ще имате възможност
+                            да видите интересните модули,които включват форум,
+                            електронна система за предаване на домашни и много
+                            полезни ресурси.
+                            </a>
+                        </p>
+            </div>
+
+<!--FOR TEACHERS-->
+
+            <div>
+                        <div class="index-page-content"> ЗА УЧИТЕЛИТЕ  </div>
+                        <img src="images/students.png" class="image-teachers">
+
+                        <p> <a name="aboutTeachers" class="text-teachers">
+                            <br><br>
+                            Учителите ще имат възможността да
+                            публикуват домашна работа за съответните
+                            ученици. Те също могат да публикуват
+                            статии във форума, които биха мили от
+                            полза на учениците за успешното справяне
+                            с домашната работа. По всяко време ще могат да
+                            отговарят на въпроси зададени от учениците.
+                            След получаване на домашната и след проверката ѝ
+                            съответно,те ще могат да върнат в отговор оценка и забележки.
+                             </a>
+                        </p>
+            </div>
+
+            <div>
+                <div class="index-page-content"> ЗА УЧЕНИЦИТЕ </div>
+                <img src="images/studentss.jpg" class="images-students">
+
+<!--FOR STUDENTS-->
+
+
+                <p> <a name="aboutStudents" class="text-students">
+               <div>
+                    Предоставени са и много възможности и за
+                    учениците. Те ще могат да следят графика
+                    с домашните си работи, да я напишат на компютъра
+                    и бързо да я изпратят на учителя на електронен носител.
+                    Участието им в писането на статии в блога ще бъде ключово.
+                    Една от страниците ще дава шанс на учениците да обсъждат помежду
+                    си въпроси възникнали по време на изпълението
+                    на задачата, да споделят опит и ресусрси. Могат
+                    да напишат и своите въпроси към преподавателите
+                    си и да получи отговор. След предаване на домашната,
+                    има възможност да получи своята оценка и забележки
+                    за изпълнението на задачата.
+            </div>
+
+
+
+ <!--scroll to top button-->
+        <a href="#" id="scrollToTop" class="button-to-top" style="display: block;"><span class="glyphicon glyphicon-chevron-up">↑</span></a>
+
+    <script>
+        $(document).ready(function () {
+            let offset = 220;
+            let duration = 500;
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > offset) {
+                    $('#scrollToTop').fadeIn(duration);
+                } else {
+                    $('#scrollToTop').fadeOut(duration);
+                }
+            });
+            $('#scrollToTop').click(function (event) {
+                event.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, 800)
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>
+
+

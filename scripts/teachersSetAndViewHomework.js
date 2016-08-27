@@ -49,7 +49,7 @@ function checkFields() {
         });
         function setOk(data) {
             sessionStorage.authToken = data._kmd.authtoken;
-            showInfo('Homework added successful');
+            showInfo('Homework added successful!');
         }
     }
 }

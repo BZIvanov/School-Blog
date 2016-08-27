@@ -83,3 +83,7 @@ function showHomeW() {
 
     });
 }
+$(function () {
+    $('#formSet').submit(function (e) { e.preventDefault(); checkFields();showHomeW() });
+
+});

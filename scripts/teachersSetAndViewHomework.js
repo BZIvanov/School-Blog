@@ -18,7 +18,8 @@ function setHomerowk() {
         data:homeWorkData,
         headers:authHeaders,
     })
-}function showHomeW() {
+}
+function showHomeW() {
     let method = "GET";
     let userAtuh = "Kinvey " + sessionStorage.getItem('authToken');
     let headers = {};

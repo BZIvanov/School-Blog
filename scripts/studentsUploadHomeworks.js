@@ -1,5 +1,23 @@
-const kinveyBaseUrl = 'https://baas.kinvey.com/';
-const kinveyAppID = 'kid_By6NFYOt';
+//const kinveyBaseUrl = 'https://baas.kinvey.com/';
+//const kinveyAppID = 'kid_By6NFYOt';
+function studentsValidation() {
+    let nameOfStudent = $('#studentName').val();
+    let nameOfTheme = $('#themeOfHomework').val();
+    let descrOfHmrkSt = $('#descriptionOfHomeWork').val();
+    if(nameOfStudent === ""){
+        alert("Name field cant be empty");
+    }
+    else if(nameOfTheme === ""){
+        alert("Theme field cant be empty");
+    }
+    else if(descrOfHmrkSt.length <= 4){
+        alert("Homework is too short!");
+    }
+    else {
+        uploadHomeworks();
+    }
+}
+
 function uploadHomeworks() {
     let setHomeWorkUrl =  kinveyBaseUrl + "appdata/" + kinveyAppID + "/Homeworks";
     let authHeaders = {

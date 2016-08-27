@@ -2,18 +2,28 @@ const kinveyBaseUrl = 'https://baas.kinvey.com/';
 const kinveyAppID = 'kid_By6NFYOt';
 const appSecrets = '9887cd73e9a84e26875688775c120525';
 
+$(document).on({
+    ajaxStart: function () {
+        $('#infoTeachers').show();
+    },
+    ajaxStart: function () {
+        $('#infoTeachers').hide();}
+});
+function showInfo(mesgText) {
+    $('#infoTeachers').text(mesgText).show().delay(2000).fadeOut(2000);
+}
 function checkFields() {
     let nameOfTeach = $('#simpleName').val();
     let subj = $('#subject').val();
-    let descrHomeWork = $('#descrHomeWork').val();
+    let descrHomeWork = $('#dHomeWork').val();
     if (nameOfTeach === "") {
-        alert("Please insert name of teacher.Try again");
+       showInfo("Name of teacher cant be empty!")
     }
     else if (subj === "") {
-        alert("Please input subject field.Try again");
+        showInfo("Please input subject field.Try again");
     }
-    else if(descrHomeWork.length <= 2){
-        alert("The description is too short!");
+    else if(descrHomeWork.length <= 3){
+        showInfo("The description is too short!");
     }
     else {
         setHomerowk();
@@ -27,7 +37,7 @@ function checkFields() {
         let homeWorkData = {
             name: $("#simpleName").val(),
             subject: $("#subject").val(),
-            description: $("#descrHomeWork").val()
+            description: $("#dHomeWork").val(),
         };
 
         $.ajax({

@@ -17,12 +17,12 @@ function checkFields() {
     let subj = $('#subject').val();
     let descrHomeWork = $('#dHomeWork').val();
     if (nameOfTeach === "") {
-       showInfo("Name of teacher cant be empty!")
+        showInfo("Name of teacher cant be empty!")
     }
     else if (subj === "") {
         showInfo("Please input subject field.Try again");
     }
-    else if(descrHomeWork.length <= 3){
+    else if (descrHomeWork.length <= 3) {
         showInfo("The description is too short!");
     }
     else {
@@ -45,7 +45,12 @@ function checkFields() {
             url: homeWorkUrl,
             data: homeWorkData,
             headers: authHeaders,
+            success: setOk,
         });
+        function setOk(data) {
+            sessionStorage.authToken = data._kmd.authtoken;
+            showInfo('Homework added successful');
+        }
     }
 }
 function showHomeW() {

@@ -11,11 +11,11 @@ $(document).on({
     }
 });
 function showInfo(mesgText) {
-    $('#infoBox').text(mesgText).show().delay(2000).fadeOut(2000);
+    $('#infoBox').text(mesgText).show().delay(1500).fadeOut(2000);
 }
 function ajaxError(data) {
     let errorMsg = "Try Again";
-    $('#errorBox').text(errorMsg).show().delay(2000).fadeOut(2000);
+    $('#errorBox').text(errorMsg).show().delay(1500).fadeOut(2000);
 
 }
 function login() {
@@ -97,10 +97,10 @@ $(function () {
 
 function logout() {
     alert('Logout');
+    sessionStorage.clear();
     window.setTimeout(function () {
         location.href='index.html';
     },1500);
-    sessionStorage.clear();
 
 }
 

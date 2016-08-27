@@ -27,6 +27,32 @@ header{
     font-size: 50px;
     width: 75%;
 }
+.buttonsContent{
+    margin: -25px auto;
+    display: block;
+    padding: 10px;
+    background: #7F7E7E;
+    font-size: 20px;
+    height: auto;
+    width: auto;
+    text-align: center;
+
+
+}
+.buttonsContent a {
+    margin: 30px;
+
+}
+.buttonsContent a:hover {
+    border-bottom: 1px solid #fff;
+    padding: -3px;
+}
+
+.buttonHome{
+    border-bottom: 1px solid #fff;
+    font-size:22px
+}
+
 a{
     text-decoration: none;
     color:#fff;
@@ -58,30 +84,10 @@ p{
     text-align: center;
 
 }
-.buttonsContent{
-    margin: -25px auto;
-    display: block;
-    padding: 10px;
-    background: #7F7E7E;
-    font-size: 20px;
-    height: auto;
-    width: auto;
-    text-align: center;
-
-
-}
-.buttonsContent a {
-    margin: 30px;
-
-}
-.buttonsContent a:hover {
-    border-bottom: 1px solid #fff;
-    padding: -3px;
+.resCont{
+    margin: 100px auto;
 }
 
-.buttonHome{
-    border-bottom: 1px solid #fff;
-}
 .image{
     margin: 20px auto;
     display: block;
@@ -141,6 +147,12 @@ p{
     border: 1px solid #CCA08A;
 
 }
+.langPart:hover{
+    border: 2px solid #ffffff;
+    background: #E0CAC0;
+
+}
+
 #bulglangPart{
     margin: 0 auto ;
     text-align: center;
@@ -152,6 +164,11 @@ p{
     width: 12%;
     font-family: Arial;
     border: 1px solid #CCA08A;
+
+}
+#bulglangPart:hover{
+    border: 2px solid #ffffff;
+    background: #E0CAC0;
 
 }
 #GermlangPart{
@@ -167,6 +184,10 @@ p{
     border: 1px solid #CCA08A;
 
 }
+#GermlangPart:hover{
+    border: 2px solid #ffffff;
+    background: #E0CAC0;
+}
 #RuslangPart{
     margin: 0 auto ;
     text-align: center;
@@ -179,14 +200,11 @@ p{
     font-family: Arial;
     border: 1px solid #CCA08A;
 }
-.langPart:hover{
+#RuslangPart:hover{
     border: 2px solid #ffffff;
     background: #E0CAC0;
+}
 
-}
-.resCont{
-    margin: 100px auto;
-}
 .mathsPart{
     margin: 0px auto;
     text-align: center;
@@ -243,10 +261,7 @@ p{
 .moreHistory:hover{
     border: 2px solid #ffffff;
     background: #DDB29F;
-
 }
-
-
 .geoPart{
     margin: 0px auto;
     text-align: left;
@@ -257,13 +272,10 @@ p{
     height: auto;
     width: 30%;
     font-family: Arial;
-
 }
-
 .geoPart:hover{
     border: 2px solid #ffffff;
     background: #003F6D;
-
 }
 #geoBack{
     height: 802px;
@@ -290,15 +302,11 @@ p{
     height: auto;
     width: 30%;
     font-family: Arial;
-
-
-
 }
 .sciencePart:hover{
     border: 2px solid #ffffff;
     background: #738DB5;
     color: #ffffff;
-
 }
 #scienceBack{
     height: 652px;
@@ -327,13 +335,10 @@ p{
     width: 60%;
     font-family: Arial;
     border: 1px solid #CCA08A;
-
-
 }
 .litPart:hover{
     border: 2px solid #ffffff;
     background: #E0CAC0;
-
 }
 #litImg{
     margin: 0 auto;
@@ -351,13 +356,10 @@ p{
     width: 60%;
     font-family: Arial;
     border: 1px solid #CCA08A;
-
-
 }
 .itPart:hover{
     border: 2px solid #ffffff;
     background: #E0CAC0;
-
 }
 footer{
     background: #7F7E7E;
@@ -370,6 +372,26 @@ footer{
     font-family: Lucida Sans Unicode;
 
 }
+.button-to-top:hover{
+    bacground-color: #ed702b;
+    text-decoration: none;  }
+
+.button-to-top {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right:1rem;
+    width:3.2rem;
+    height: 3.2rem;
+    line-height:3.0rem;
+    font-size:1.4rem;
+    color:#fff;
+    background-color: rgba(0,0,0,0.3);
+    text-decoration: none;
+    border-radius: 3.2rem;
+    text-align: center;
+    cursor: pointer;
+}
 .footerImg{
     padding: 0px 20px;
 }
@@ -377,23 +399,3 @@ footer{
     border: none;
 }
 
-.button-to-top:hover{ 
-     bacground-color: #ed702b;
-      text-decoration: none;  }  
- 
- .button-to-top {  
-     display: none;  
-     position: fixed;   
-     bottom: 1rem;   
-     right:1rem;  
-     width:3.2rem;  
-     height: 3.2rem;  
-     line-height:3.0rem;   
-     font-size:1.4rem;   
-     color:#fff;  
-     background-color: rgba(0,0,0,0.3);
-     text-decoration: none;
-     border-radius: 3.2rem;
-     text-align: center;
-     cursor: pointer;
- }

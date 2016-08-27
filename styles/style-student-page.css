@@ -42,6 +42,7 @@ a:hover{
 }
 .buttonHome{
     border-bottom: 1px solid #fff;
+    font-size:22px
 }
 .blog-title{
     color: white;
@@ -93,10 +94,6 @@ p{
 }
 .submitHomework{
     background:#77ADA2;
-    filter: alpha(opacity=90); /* internet explorer */
-    -khtml-opacity: 0.8;      /* khtml, old safari */
-    -moz-opacity: 0.8;       /* mozilla, netscape */
-    opacity: 0.8;           /* fx, safari, opera */
     display: inline-block;
     padding: 50px;
     margin: 50px 30px;
@@ -104,16 +101,27 @@ p{
     color: #ffffff;
     width: auto;
     height: auto;
+    filter: alpha(opacity=90); /* internet explorer */
+    -khtml-opacity: 0.8;      /* khtml, old safari */
+    -moz-opacity: 0.8;       /* mozilla, netscape */
+    opacity: 0.8;           /* fx, safari, opera */
 
+}
+input[type=button]{
+    color: #ffffff;
+    background: #4C4C4C;
+    float: right;
+    margin: 0 auto;
+    font-size: 20px;
+}
+input[type=button]:hover{
+    cursor: pointer;
 }
 input[type=text]{
     height: 30px;
     float: right;
-    width: 200px ;
+    width: 500px ;
     font-size: 20px;
-}
-input[type=file]{
-    font-size: 30px;
 }
 textarea{
     float: right;

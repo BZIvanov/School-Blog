@@ -118,6 +118,7 @@ button{
 }
 .buttonHome{
     border-bottom: 1px solid #fff;
+    font-size:22px
 }
 .image{
     margin: 20px auto;

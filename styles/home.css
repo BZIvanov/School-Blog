@@ -1,6 +1,6 @@
 body{
     background: #2F2E33;
-    font-family: "Lucida Sans Unicode";
+
 }
 
 header{
@@ -17,13 +17,7 @@ header{
     font-size: 20px;
     height: auto;
     text-align: center;
-}
-a{
-    text-decoration: none;
-    color:#fff;
-    margin: 0 auto;
-    display: inline-block;
-    text-align: center;
+
 
 }
 .buttonsContent a {
@@ -34,8 +28,20 @@ a{
     border-bottom: 1px solid #fff;
     padding: -3px;
 }
+a{
+    text-decoration: none;
+    color:#fff;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+
+}
+a:hover{
+    border-bottom: 1px solid #fff;
+}
 .buttonHome{
     border-bottom: 1px solid #fff;
+    font-size:22px
 }
 .blog-title{
     color: white;

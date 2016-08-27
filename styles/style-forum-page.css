@@ -74,29 +74,19 @@ a {
     text-align: center;
 }
 
-    .buttonsContent a {
-        margin: 30px;
-    }
-
-        .buttonsContent a:hover {
-            border-bottom: 1px solid #fff;
-            padding: -3px;
-        }
-
-button {
-    background: #424147;
-    text-decoration: none;
-    color: #fff;
+.buttonsContent a {
+    margin: 30px;
 }
 
-.buttonLogout {
-    float: right;
-    margin-top: 40px;
-    margin-right: 20px;
+.buttonsContent a:hover {
+    border-bottom: 1px solid #fff;
+    padding: -3px;
 }
+
 
 .buttonHome {
     border-bottom: 1px solid #fff;
+    font-size:22px
 }
 
 .image {

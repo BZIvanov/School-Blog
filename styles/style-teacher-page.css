@@ -1,6 +1,6 @@
 body{
     background: #ffffff;
-    font-family: Lucida Sans Unicode;
+
 }
 header{
     background:#1D9B86;;
@@ -21,6 +21,11 @@ header{
 }
 .buttonsContent a {
     margin: 30px;
+
+}
+.buttonsContent a:hover {
+    border-bottom: 1px solid #fff;
+    padding: -3px;
 }
 a{
     text-decoration: none;
@@ -28,16 +33,14 @@ a{
     margin: 0 auto;
     display: inline-block;
     text-align: center;
+
 }
 a:hover{
     border-bottom: 1px solid #fff;
 }
-.buttonsContent a:hover {
-    border-bottom: 1px solid #fff;
-    padding: -3px;
-}
 .buttonHome{
     border-bottom: 1px solid #fff;
+    font-size:22px
 }
 .blog-title{
     color: white;
@@ -48,6 +51,7 @@ a:hover{
     font-size: 50px;
     border-bottom: 1px solid #fff;
     width: 75%;
+    font-family: Lucida Sans Unicode;
 
 }
 .page-title{
@@ -57,6 +61,7 @@ a:hover{
     text-align: center;
     font-size: 50px;
     width: 75%;
+    font-family: Lucida Sans Unicode;
 }
 h4{
     display: block;
@@ -67,7 +72,8 @@ h4{
     padding: 10px;
     width: 900px;
     text-align: center;
-    font-family: Constantia;}
+    font-family: Constantia;
+}
 p{
     display: block;
     color: #7F7E7E;
@@ -98,6 +104,16 @@ p{
     -khtml-opacity: 0.8;      /* khtml, old safari */
     -moz-opacity: 0.8;       /* mozilla, netscape */
     opacity: 0.8;           /* fx, safari, opera */
+}
+input[type=button]{
+    color: #ffffff;
+    background: #4C4C4C;
+    float: right;
+    margin: 0 auto;
+    font-size: 20px;
+}
+input[type=button]:hover{
+    cursor: pointer;
 }
 input[type=text]{
     height: 30px;
@@ -142,6 +158,7 @@ footer{
     font-size: 30px;
     text-align: center;
     display: block;
+    font-family: Lucida Sans Unicode;
 }
 .footerImg{
     padding: 0px 20px;

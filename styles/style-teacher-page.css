@@ -121,9 +121,7 @@ input[type=text]{
     width: 500px ;
     font-size: 20px;
 }
-input[type=file]{
-    font-size: 30px;
-}
+
 textarea{
     float: right;
     height: 100px;
@@ -132,8 +130,24 @@ textarea{
 }
 .button-to-top:hover{
     bacground-color: #ed702b;
-    text-decoration: none;  }
+    text-decoration: none;
+}
+div#field.fields ul{
+    font-size: 25px;
+    font-family: Constantia;
+    color:#076868;
+    display: block;
+    border: 1px solid #108975;
+    margin: 50px auto;
+    padding: 30px;
+    list-style-type: none;
+    width: auto;
 
+}
+div#field.fields li{
+    font-size: 40px;
+
+}
 .button-to-top {
     display: none;
     position: fixed;
@@ -150,6 +164,108 @@ textarea{
     text-align: center;
     cursor: pointer;
 }
+#errorTeach {
+    font-size:35px;
+    border-bottom: 2px solid red;
+    display: none;
+    /*background: #AAA;*/
+    padding: 3px;
+    border-radius: 3px;
+    width: 20%;
+    margin: 0px auto;
+    text-align: center;
+    color:red;
+    opacity: 0.0;
+    animation: porta 2s 1 forwards;
+    -webkit-animation: porta 2s 1 forwards;
+}
+.blog-title:nth-of-type(2){
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+}
+@keyframes porta {
+    0%{
+        transform: rotateY(7deg) translateY(5%);
+        opacity: 0.0;
+    }
+    100%{
+        transform: rotateY(0deg) translateY(0%);
+        opacity: 4.0;
+    }
+}
+
+@-webkit-keyframes porta {
+    0%{
+        -webkit-transform: rotateY(7deg) translateY(5%);
+        opacity: 0.0;
+    }
+    100%{
+        -webkit-transform: rotateY(0deg) translateY(0%);
+        opacity: 1.0;
+    }
+}
+
+@keyframes reseta {
+    0%{}
+    50%{}
+}
+
+@-webkit-keyframes reseta {
+    0%{}
+    50%{}
+}
+
+
+#infoTeachers {
+    font-size: 35px;
+    border-bottom: 2px solid green;
+    display: none;
+    padding: 3px;
+    border-radius: 3px;
+    width: 40%;
+    margin: 0px auto;
+    text-align: center;
+    color:green;
+    opacity: 0.0;
+    animation: porta 2s 1 forwards;
+    -webkit-animation: porta 2s 1 forwards;
+}
+.blog-title:nth-of-type(2){
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+}
+@keyframes porta {
+    0%{
+        transform: rotateY(7deg) translateY(5%);
+        opacity: 0.0;
+    }
+    100%{
+        transform: rotateY(0deg) translateY(0%);
+        opacity: 4.0;
+    }
+}
+
+@-webkit-keyframes porta {
+    0%{
+        -webkit-transform: rotateY(7deg) translateY(5%);
+        opacity: 0.0;
+    }
+    100%{
+        -webkit-transform: rotateY(0deg) translateY(0%);
+        opacity: 1.0;
+    }
+}
+
+@keyframes reseta {
+    0%{}
+    50%{}
+}
+
+@-webkit-keyframes reseta {
+    0%{}
+    50%{}
+}
+
 footer{
     background: #7F7E7E;
     height: 200px;

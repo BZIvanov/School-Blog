@@ -70,7 +70,7 @@ function showHomeW() {
          let inner = document.createElement('ul');
          let nameOfTeacher = document.createElement('li');
          let subj = document.createElement('li');
-         let descr = document.createElement('li');
+         let descr = document.createElement('ul');
 
          nameOfTeacher.appendChild(document.createTextNode(obj.name));
          subj.appendChild(document.createTextNode(obj.subject));

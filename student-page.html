@@ -49,23 +49,25 @@
 <!--SUBMIT HOMEWORK FORM-->
 
             <div class="submitHomework">
-                        NAME: <input type="text" id="studentName">
+                        NAME: <input type="text" id="studentName" value="name:    ">
                     <br><br>
-                        THEME: <input type="text" id="themeOfHomework">
+                        THEME: <input type="text" id="themeOfHomework" value="theme:    ">
                     <br><br>
                         DESCRIPTION: <textarea type="text" id="descriptionOfHomeWork"> </textarea>
                     <br><br><br><br><br>
-                        <input type="button" onclick="showAvailableHomeworks()" value="View available homeworks">
-                    <br><br>
-                        <input type="button" onclick="uploadHomeworks()" value="Set Homework">
+                <input type="button" onclick="uploadHomeworks()" value="Upload Homework">
+                    <br>
+                <input type="button" onclick="showAvailableHomeworks()" value="View available homework">
 
             </div>
+
             <main>
-                <main>
-                    <div class="fields" id="fieldInStudents"></div>
-                </main>
+
+                <div class="fields" id="fieldInStudents"></div>
+
             </main>
-                <img src="images/011.jpg" class="image">
+
+
                 <h3 class="forumTitle">THE SECRET FORUM</h3>
 
 <!--CREATE POSTS IN SECRET FORUM-->

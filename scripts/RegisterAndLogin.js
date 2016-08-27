@@ -96,7 +96,10 @@ $(function () {
 });
 
 function logout() {
-    alert('logout');
+    alert('Logout');
+    window.setTimeout(function () {
+        location.href='index.html';
+    },1500);
     sessionStorage.clear();
 
 }

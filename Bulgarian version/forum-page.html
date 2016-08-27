@@ -1,0 +1,85 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Virtual School-Profile</title>
+    <link rel="stylesheet" href="styles/style-forum-page.css" type="text/css">
+
+    <script src="scripts/jquery-3.0.0.min.js"></script>
+    <script src="scripts/RegisterAndLogin.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="buttonsContent">
+        <a href="base-form.html" id="linkHome" >НАЧАЛО</a>
+        <a href="teacher-page.html" id="linkTeachers"  >УЧИТЕЛИ</a>
+        <a href="student-page.html" id="linkStudents" >УЧЕНИЦИ</a>
+        <a href="homework-page.html" id="linkHomework" >ДОМАШНИ</a>
+        <a href="forum-page.html" id="linkForum" class="buttonHome">ФОРУМ</a>
+        <a href="resources-page.html" id="linkResources">РЕСУРСИ</a>
+        <a href="index.html">ИЗХОД</a>
+    </div>
+    <div >
+        <div class="blog-title">
+            <h1>МОЕТО ВИРТУАЛНО УЧИЛИЩЕ</h1>
+        </div>
+        <h3 class="page-title" >ФОРУМ</h3>
+    </div>
+
+</header>
+
+<main>
+    <h4>
+        Геният задава глупавите въпроси,който никой друг не задава,
+        идиотът задава умните въпроси,който вече имат отговор.
+    </h4>
+
+
+    <p>
+       Попитай преподавателите за помощ.
+    </p>
+    <p2>
+        <span style="color: blueviolet"><i>Teacher:</i></span> Did you do your homework? <br /><span style="color: chocolate"><i>Student:</i></span> Did you grade my test?<br /><span style="color: blueviolet"><i>Teacher:</i></span> I have other students' tests to grade.<br /><span style="color: chocolate"><i>Student:</i></span> I have other teachers homework to do.
+    </p2>
+    <br /><br />
+
+    <div>
+        <form>
+            <input type="text" placeholder="Search..." required>
+            <span class="arrow">
+                <input type="button" onclick="link()" value="Search" class="button" id="link_str">
+            </span>
+        </form>
+    </div>
+    <div>
+        <table style="position:relative; width: 100%; text-align:center">
+            <tr>
+                <td>Theme:</td>
+                <td>Author:</td>
+                <td>Date:</td>
+            </tr>
+            <tr>
+                <td><a href="#">#1...</a></td>
+                <td><a href="#">#...</a></td>
+                <td>#...</td>
+            </tr>
+        </table>
+    </div>
+</main>
+<footer>
+    Свържи се с нас
+    <br>
+    <br>
+    <div class="footerImg">
+        <a href="https://github.com/BZIvanov/School-Blog" class="footerImg"> <img src="images/github-512.png"> </a>
+        <a href="https://www.facebook.com/groups/789752401160176/" class="footerImg"><img src="images/icon-facebook.png"></a>
+        <a href="https://twitter.com/?request_context=signup " class="footerImg"><img src="images/Twitterbird.png"></a>
+        <a href="https://plus.google.com/117078375229903786708/posts" class="footerImg"> <img src="images/google-plus-icon.png"></a>
+    </div>
+</footer>
+    <!--scroll to top button-->
+    <a href="#" id="scrollToTop" class="button-to-top" style="display: block;"><span class="glyphicon glyphicon-chevron-up">↑</span></a>
+</body>
+</html>

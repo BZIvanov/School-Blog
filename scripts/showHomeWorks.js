@@ -16,3 +16,6 @@ function showHomeW() {
        alert(JSON.stringify(response));
     });
 }
+function showFinished() {
+
+}

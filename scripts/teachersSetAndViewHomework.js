@@ -31,6 +31,21 @@ function showHomeW() {
         url:requestUrl,
     };
     $.ajax(request).then(function (response) {
-        alert(JSON.stringify(response));
+     for(let obj of response){
+         let list = $('#field');
+         let inner = document.createElement('ul');
+         let nameOfTeacher = document.createElement('li');
+         let subj = document.createElement('li');
+         let descr = document.createElement('li');
+
+         nameOfTeacher.appendChild(document.createTextNode(obj.name));
+         subj.appendChild(document.createTextNode(obj.subject));
+         descr.appendChild(document.createTextNode(obj.description));
+         inner.appendChild(nameOfTeacher);
+         inner.appendChild(subj);
+         inner.appendChild(descr);
+         list.append(inner);
+     }
+
     });
 }

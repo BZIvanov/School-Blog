@@ -140,6 +140,15 @@ button{
     font-size: 30px;
     float: right;
 }
+button[type=button]{
+    background: #565656;
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 20px;
+    float: right;
+    margin: 10px ;
+
+}
 div#fieldInStudents.fields ul{
     font-size: 25px;
     font-family: Constantia;

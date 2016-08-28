@@ -37,7 +37,7 @@ function checkFields() {
         let homeWorkData = {
             name: $("#simpleName").val(),
             subject: $("#subject").val(),
-            description: $("#dHomeWork").val(),
+            description: $("#dHomeWork").val()
         };
 
         $.ajax({

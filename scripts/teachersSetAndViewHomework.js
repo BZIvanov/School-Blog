@@ -7,7 +7,8 @@ $(document).on({
         $('#infoTeachers').show();
     },
     ajaxStart: function () {
-        $('#infoTeachers').hide();}
+        $('#infoTeachers').hide();
+    }
 });
 function showInfo(mesgText) {
     $('#infoTeachers').text(mesgText).show().delay(2000).fadeOut(2000);

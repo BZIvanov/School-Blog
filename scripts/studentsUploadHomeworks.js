@@ -1,17 +1,28 @@
 //const kinveyBaseUrl = 'https://baas.kinvey.com/';
 //const kinveyAppID = 'kid_By6NFYOt';
+$(document).on({
+    ajaxStart: function () {
+        $('#infoStudent').show();
+    },
+    ajaxStart: function () {
+        $('#errorStudent').hide();
+    }
+});
+function showInfoStuden(mesgText) {
+    $('#infoStudent').text(mesgText).show().delay(1500).fadeOut(2000);
+}
 function studentsValidation() {
     let nameOfStudent = $('#studentName').val();
     let nameOfTheme = $('#themeOfHomework').val();
     let descrOfHmrkSt = $('#descriptionOfHomeWork').val();
     if(nameOfStudent === ""){
-        alert("Name field cant be empty");
+        showInfoStuden("Name field cant be empty");
     }
     else if(nameOfTheme === ""){
-        alert("Theme field cant be empty");
+        showInfoStuden("Theme field cant be empty");
     }
     else if(descrOfHmrkSt.length <= 4){
-        alert("Homework is too short!");
+        showInfoStuden("Homework is too short!");
     }
     else {
         uploadHomeworks();
@@ -23,6 +34,7 @@ function uploadHomeworks() {
     let authHeaders = {
         "Authorization": "Kinvey " + sessionStorage.getItem('authToken'),
     };
+
     let upload = {
         name:$('#studentName').val(),
         theme:$('#themeOfHomework').val(),
@@ -33,7 +45,9 @@ function uploadHomeworks() {
         url:setHomeWorkUrl,
         data:upload,
         headers:authHeaders,
-    })
+        success:showInfoStuden,
+
+    });
 
 }
 function showAvailableHomeworks() {

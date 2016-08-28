@@ -86,6 +86,11 @@ function showHomeW() {
      }
 
     });
+  $(document).ready(function () {
+      $('#hide').click(function () {
+          $('#field').hide();
+      })
+  })
 }
 $(function () {
     $('#formSet').submit(function (e) { e.preventDefault(); checkFields();showHomeW() });

@@ -47,7 +47,8 @@
                 You have to check pages "HOMEWORK" and "RECOURCES"  and if you still have questions
                 you can ask for help your classmates down below or your teachers in "FORUM" page
             </p>
-
+            <div id="infoTeacher" onclick="$(this).hide()"></div>
+            <div id="errorTeach" onclick="$(this).hide()"></div>
 <!--SUBMIT HOMEWORK FORM-->
 
             <div class="submitHomework">
@@ -57,15 +58,14 @@
                     <br><br>
                         DESCRIPTION: <textarea type="text" id="descriptionOfHomeWork"> </textarea>
                     <br><br><br><br><br>
-<<<<<<< HEAD
+
+                <input type="button" onclick="studentsValidation()" value="Check">
+                <br>
                 <input type="button" onclick="uploadHomeworks()" value="Upload Homework">
-                    <br>
+                <br><br>
                 <input type="button" onclick="showAvailableHomeworks()" value="View available homework">
-=======
-                        <input type="button" onclick="showAvailableHomeworks()" value="View available homeworks">
-                    <br><br>
-                        <input type="button" onclick="studentsValidation()" value="Set Homework">
->>>>>>> 8b08a3ece5e07bdf591f225ce3fafe94cb876916
+
+
 
             </div>
 

@@ -50,7 +50,10 @@ function uploadHomeworks() {
     });
 
 }
-function showAvailableHomeworks() {
+$(document).ready(function () {
+    $('#showHomeWorkStudents').click(function () {
+        $('#fieldInStudents').show();
+    });
     let method = "GET";
     let userAtuh = "Kinvey " + sessionStorage.getItem('authToken');
     let headers = {};
@@ -79,8 +82,8 @@ function showAvailableHomeworks() {
         }
     });
     $(document).ready(function () {
-        $('#hideHomeworks').click(function () {
+        $('#hideHomeworksStudents').click(function () {
             $('#fieldInStudents').hide();
-        })
-    })
-}
+        });
+    });
+});

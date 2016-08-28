@@ -57,41 +57,44 @@ function checkFields() {
         }
     }
 }
-function showHomeW() {
+$(document).ready(function () {
+    $('#showHomeworkForTeach').click(function () {
+        $('#field').show();
+    });
     let method = "GET";
     let userAtuh = "Kinvey " + sessionStorage.getItem('authToken');
     let headers = {};
     headers['Authorization'] = userAtuh;
     let requestUrl = kinveyBaseUrl + "appdata/" + kinveyAppID + "/Teachers";
     let request = {
-        method:method,
-        headers:headers,
-        url:requestUrl,
+        method: method,
+        headers: headers,
+        url: requestUrl,
     };
     $.ajax(request).then(function (response) {
-     for(let obj of response){
-         let list = $('#field');
-         let inner = document.createElement('ul');
-         let nameOfTeacher = document.createElement('li');
-         let subj = document.createElement('li');
-         let descr = document.createElement('ul');
+        for (let obj of response) {
+            let list = $('#field');
+            let inner = document.createElement('ul');
+            let nameOfTeacher = document.createElement('li');
+            let subj = document.createElement('li');
+            let descr = document.createElement('ul');
 
-         nameOfTeacher.appendChild(document.createTextNode(obj.name));
-         subj.appendChild(document.createTextNode(obj.subject));
-         descr.appendChild(document.createTextNode(obj.description));
-         inner.appendChild(nameOfTeacher);
-         inner.appendChild(subj);
-         inner.appendChild(descr);
-         list.append(inner);
-     }
+            nameOfTeacher.appendChild(document.createTextNode(obj.name));
+            subj.appendChild(document.createTextNode(obj.subject));
+            descr.appendChild(document.createTextNode(obj.description));
+            inner.appendChild(nameOfTeacher);
+            inner.appendChild(subj);
+            inner.appendChild(descr);
+            list.append(inner);
+        }
 
     });
-  $(document).ready(function () {
-      $('#hide').click(function () {
-          $('#field').hide();
-      })
-  })
-}
+    $(document).ready(function () {
+        $('#hide').click(function () {
+            $('#field').hide();
+        });
+    });
+});
 $(function () {
     $('#formSet').submit(function (e) { e.preventDefault(); checkFields();showHomeW() });
 

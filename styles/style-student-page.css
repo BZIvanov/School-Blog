@@ -258,7 +258,7 @@ footer{
     font-family: Lucida Sans Unicode;
 
 }
-#errorTeach {
+#errorStudent {
     font-size:35px;
     border-bottom: 2px solid red;
     display: none;
@@ -310,7 +310,7 @@ footer{
 }
 
 
-#infoTeachers {
+#infoStudent {
     font-size: 35px;
     border-bottom: 2px solid green;
     display: none;

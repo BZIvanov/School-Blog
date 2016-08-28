@@ -48,8 +48,11 @@ function checkFields() {
             success: setOk,
         });
         function setOk(data) {
-            sessionStorage.authToken = data._kmd.authtoken;
+           // sessionStorage.authToken = data._kmd.authtoken;
             showInfo('Homework added successfully!');
+            window.setTimeout(function () {
+                location.href = 'teacher-page.html';
+            },1500);
         }
     }
 }

@@ -61,7 +61,7 @@ header{
 button, a {
     text-decoration: none;
     color: #ffffff;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-right: 10px;
     text-align: center;
 }
@@ -78,6 +78,16 @@ button {
     border: none;
     width: auto;
     font-size: 18px;
+}
+.choice{
+    float: right;
+    padding: 5px;
+    font-size: 15px;
+    width: auto;
+
+}
+.choice:hover{
+    border: 1px solid #fff;
 }
 .blog-title {
     margin-top: 300px;
@@ -155,7 +165,7 @@ button {
 }
 .index-page-content {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     margin: 15px auto;
     color: #543925;
     padding: 20px 0px;

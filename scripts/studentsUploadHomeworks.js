@@ -78,4 +78,9 @@ function showAvailableHomeworks() {
             list.append(inner);
         }
     });
+    $(document).ready(function () {
+        $('#hideHomeworks').click(function () {
+            $('#fieldInStudents').hide();
+        })
+    })
 }

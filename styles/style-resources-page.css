@@ -47,6 +47,10 @@ header{
     border-bottom: 1px solid #fff;
     padding: -3px;
 }
+input[type=image]{
+    margin: 20px;
+    float:right;
+}
 
 .buttonHome{
     border-bottom: 1px solid #fff;

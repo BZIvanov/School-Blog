@@ -43,6 +43,10 @@ a:hover{
     border-bottom: 1px solid #fff;
     font-size:22px
 }
+input[type=image]{
+    margin: 20px;
+    float:right;
+}
 .blog-title{
     color: white;
     margin: 100px auto;

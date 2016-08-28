@@ -22,7 +22,9 @@
                         <a href="homework-page.html" id="linkHomework">HOMEWORK</a>
                         <a href="forum-page.html" id="linkForum">FORUM</a>
                         <a href="resources-page.html" id="linkResources">RESOURCES</a>
-                        <input type="button" onclick="logout()" id="logout" value="LogOut">
+                        <input type="image" src="images/logout.png" alt="Submit" onclick="logout()"
+                           width="48" height="48"
+                           value="LogOut" title="EXIT">
                 </div>
                 <div >
 <!--TITLES-->
@@ -47,12 +49,14 @@
                     <br><br>
                     DESCRIPTION: <textarea type="text" id="dHomeWork" required="true"  > </textarea>
                     <br><br><br><br>
+                    <form id="formSet">
+                        <button type="button" onclick="checkFields()">Set Homeworks</button>
+                        <br>
+                        <button type="button" onclick="showHomeW()">Show Homework</button>
+                    </form>
 
                 </div>
-            <form id="formSet">
-                <button type="button" onclick="checkFields()">Set Homeworks</button>
-                <button type="button" onclick="showHomeW()">Show Homework</button>
-            </form>
+
                 <img src="images/teacher.jpg" class="image">
         </main>
 

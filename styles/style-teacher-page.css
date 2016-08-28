@@ -42,6 +42,10 @@ a:hover{
     border-bottom: 1px solid #fff;
     font-size:22px
 }
+input[type=image]{
+    margin: 20px;
+    float:right;
+}
 .blog-title{
     color: white;
 
@@ -119,6 +123,13 @@ input[type=text]{
     height: 30px;
     float: right;
     width: 500px ;
+    font-size: 20px;
+}
+button[type=button]{
+    color: #ffffff;
+    background: #4C4C4C;
+    float: right;
+    margin: 0 auto;
     font-size: 20px;
 }
 

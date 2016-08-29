@@ -8,6 +8,7 @@
 
     <script src="scripts/jquery-3.0.0.min.js"></script>
     <script src="scripts/RegisterAndLogin.js"></script>
+    <script src="scripts/ForumPosts.js"></script>
 </head>
 <body>
 
@@ -44,6 +45,8 @@
     <p2>
         <span style="color: blueviolet"><i>Teacher:</i></span> Did you do your homework? <br /><span style="color: chocolate"><i>Student:</i></span> Did you grade my test?<br /><span style="color: blueviolet"><i>Teacher:</i></span> I have other students' tests to grade.<br /><span style="color: chocolate"><i>Student:</i></span> I have other teachers homework to do.
     </p2>
+    <div id="infoPosts" onclick="$(this).hide()"></div>
+    <div id="errorPosts" onclick="$(this).hide()"></div>
     <br /><br />
 
     <div>
@@ -54,22 +57,43 @@
             </span>
         </form>
     </div>
-    <div class="table">
+    <div class="table" id="posts">
         <table>
             <tr>
-                <td>Theme:</td>
-                <td>Author:</td>    
-                <td>Post: </td>
-                <td>Date:</td>
+                <th><b>Theme: </b></th>
+                <th><b> Author: </b></th>    
+                <th><b> Description: </b></th>
             </tr>
             <tr>
-                <td><a href="#">Homework Schedule</a></td>
-                <td><a href="#">Mrs Petrova</a></td>
-                <td><a href="#">something posted...</a></td>
-                <td>29.08.2016</td>
+                <td>Grography</td>
+                <td>Zemyarski</td>
+                <td>South Africa - some info.</td>
+            </tr>
+            <tr>
+                <td>Programming</td>
+                <td>C# - what is decimal type</td>
+                <td>Describe what exactly is decimal in C#</td>
+            </tr>
+            <tr>
+            <td>hackering</td>
+            <td>mr.Robot</td>
+            <td>hack fbi</td>
             </tr>
         </table>
     </div>
+    <div id="viewCreatePost">
+        <h1>Create new post</h1>
+        <form id="formCreatePost">
+            <div>Theme:</div>
+            <div><input type="text" id="postTitle" required="true"></div>
+            <div>Author:</div>
+            <div><input type="text" id="postAuthor" required="true"></div>
+            <div>Description:</div>
+            <div><textarea id="postDescription" rows="10"></textarea></div>
+            <div><input type="submit" onclick="createPost()" value="Create Post"></div>
+        </form>
+    </div>
+    <br />
 </main>
 <footer>
     Contact us

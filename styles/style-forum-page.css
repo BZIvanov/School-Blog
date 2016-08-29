@@ -100,6 +100,19 @@ a {
     background-repeat: no-repeat;
 }
 
+table {
+    position:relative; 
+    width: 100%; 
+    text-align:center;
+    
+    //color: #0026ff;
+}
+.table a:link{
+    color: #0026ff;
+}
+.table a:visited{
+    color: #4800ff;
+}
 table th {
     background: #AAA;
     font-size: 1.2em;

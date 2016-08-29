@@ -150,12 +150,12 @@ p{
     height: auto;
     width: 16%;
     font-family: Arial;
-    border: 1px solid #CCA08A;
+    border: 1px solid #7F7E7E;
 
 }
 .langPart:hover{
     border: 2px solid #ffffff;
-    background: #E0CAC0;
+    background: #CCCCCC;
 
 }
 
@@ -169,12 +169,12 @@ p{
     height: auto;
     width: 12%;
     font-family: Arial;
-    border: 1px solid #CCA08A;
+    border: 1px solid #7F7E7E;
 
 }
 #bulglangPart:hover{
     border: 2px solid #ffffff;
-    background: #E0CAC0;
+    background: #CCCCCC;
 
 }
 #GermlangPart{
@@ -187,12 +187,12 @@ p{
     height: auto;
     width: 15%;
     font-family: Arial;
-    border: 1px solid #CCA08A;
+    border: 1px solid #7F7E7E;
 
 }
 #GermlangPart:hover{
     border: 2px solid #ffffff;
-    background: #E0CAC0;
+    background: #CCCCCC;
 }
 #RuslangPart{
     margin: 0 auto ;
@@ -204,11 +204,11 @@ p{
     height: auto;
     width: 15%;
     font-family: Arial;
-    border: 1px solid #CCA08A;
+    border: 1px solid #7F7E7E;
 }
 #RuslangPart:hover{
     border: 2px solid #ffffff;
-    background: #E0CAC0;
+    background: #CCCCCC;
 }
 
 .mathsPart{
@@ -221,13 +221,13 @@ p{
     height: auto;
     width: 60%;
     font-family: Arial;
-    border: 1px solid #CCA08A;
+    border: 1px solid #7F7E7E;
 
 
 }
 .mathsPart:hover{
     border: 2px solid #ffffff;
-    background: #E0CAC0;
+    background: #CCCCCC;
 }
 .historyPart{
     margin: 0px auto;
@@ -239,12 +239,12 @@ p{
     height: auto;
     width: 60%;
     font-family: Arial;
-    border: 1px solid #CCA08A;
+    border: 1px solid #7F7E7E;
 
 }
 .historyPart:hover{
     border: 2px solid #ffffff;
-    background: #E0CAC0;
+    background: #CCCCCC;
 
 }
 #history{
@@ -262,11 +262,11 @@ p{
     height: auto;
     width: 60%;
     font-family: Arial;
-    border: 1px solid #CCA08A;
+    border: 1px solid #7F7E7E;
 }
 .moreHistory:hover{
     border: 2px solid #ffffff;
-    background: #DDB29F;
+    background: #CCCCCC;
 }
 .geoPart{
     margin: 0px auto;
@@ -340,11 +340,11 @@ p{
     height: auto;
     width: 60%;
     font-family: Arial;
-    border: 1px solid #CCA08A;
+    border: 1px solid #7F7E7E;
 }
 .litPart:hover{
     border: 2px solid #ffffff;
-    background: #E0CAC0;
+    background: #CCCCCC;
 }
 #litImg{
     margin: 0 auto;
@@ -361,11 +361,11 @@ p{
     height: auto;
     width: 60%;
     font-family: Arial;
-    border: 1px solid #CCA08A;
+    border: 1px solid #7F7E7E;
 }
 .itPart:hover{
     border: 2px solid #ffffff;
-    background: #E0CAC0;
+    background: #CCCCCC;
 }
 footer{
     background: #7F7E7E;

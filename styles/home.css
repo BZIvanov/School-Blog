@@ -1,6 +1,4 @@
 body{
-    background: #2F2E33;
-
 }
 
 header{
@@ -55,6 +53,8 @@ input[type=image]{
     font-size: 50px;
     border-bottom: 1px solid #fff;
     width: 75%;
+    font-family: Lucida Sans Unicode;
+    text-shadow: 1px 3px #7F7E7E;
 
 }
 .page-title{
@@ -64,13 +64,18 @@ input[type=image]{
     text-align: center;
     font-size: 50px;
     width: 75%;
+    font-family: Lucida Sans Unicode;
+    text-shadow: 1px 3px #7F7E7E;
 }
+
 .image{
     margin: 20px auto;
     display: block;
     text-align: center;
 }
-
+button[type=button]{
+    font-size: 30px;
+}
 .button-to-top:hover{
       bacground-color: #ed702b;  
       text-decoration: none;  }  

@@ -56,6 +56,7 @@ input[type=image]{
     border-bottom: 1px solid #fff;
     width: 75%;
     font-family: Lucida Sans Unicode;
+    text-shadow: 1px 3px #7F7E7E;
 
 }
 .page-title{
@@ -66,6 +67,7 @@ input[type=image]{
     font-size: 50px;
     width: 75%;
     font-family: Lucida Sans Unicode;
+    text-shadow: 1px 3px #7F7E7E;
 }
 h4{
     display: block;
@@ -95,19 +97,24 @@ p{
     display: inline-table;
 
 }
-.setHomework{
-    background:#1D9B86;
+.setHomework{;
+    background: #E8E8E8;
+    border: 2px solid #7F7E7E;
     display: inline-block;
     padding: 50px;
     margin: 50px 30px;
     font-size: 30px;
-    color: #ffffff;
+    color: #606060;
     width: auto;
     height: auto;
     filter: alpha(opacity=90); /* internet explorer */
     -khtml-opacity: 0.8;      /* khtml, old safari */
     -moz-opacity: 0.8;       /* mozilla, netscape */
     opacity: 0.8;           /* fx, safari, opera */
+    -webkit-box-shadow: 11px 14px 54px -10px rgba(53,96,97,1);
+    -moz-box-shadow: 11px 14px 54px -10px rgba(53,96,97,1);
+    box-shadow: 11px 14px 54px -10px rgba(53,96,97,1);
+
 }
 input[type=button]{
     color: #ffffff;
@@ -144,20 +151,25 @@ textarea{
     text-decoration: none;
 }
 div#field.fields ul{
-    font-size: 25px;
-    font-family: Constantia;
-    color:#076868;
+    font-size: 40px;
+    font-family:"Microsoft Yi Baiti";
+    color:#ffffff;
     display: block;
-    border: 1px solid #108975;
-    margin: 50px auto;
-    padding: 30px;
+    margin: 20px auto;
+    padding: 5px;
     list-style-type: none;
-    width: auto;
+    width: 90%;
+    border-bottom: 1px solid #fff;
+
 
 }
 div#field.fields li{
     font-size: 40px;
-
+    padding: 5px;
+    margin: 20px auto;
+    list-style-type: none;
+    color: #ffffff;
+    padding-left: 50px;
 }
 .button-to-top {
     display: none;

@@ -74,7 +74,7 @@ $(document).ready(function () {
     $.ajax(request).then(function (response) {
         for (let obj of response) {
             let list = $('#field');
-            let inner = document.createElement('ul');
+            let inner = document.createElement('li');
             let nameOfTeacher = document.createElement('li');
             let subj = document.createElement('li');
             let descr = document.createElement('ul');

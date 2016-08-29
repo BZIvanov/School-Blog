@@ -59,7 +59,7 @@ function checkFields() {
 }
 $(document).ready(function () {
     $('#showHomeworkForTeach').click(function () {
-        $('#field').show();
+        $('#field').slideDown();
     });
     let method = "GET";
     let userAtuh = "Kinvey " + sessionStorage.getItem('authToken');
@@ -91,7 +91,7 @@ $(document).ready(function () {
     });
     $(document).ready(function () {
         $('#hide').click(function () {
-            $('#field').hide();
+            $('#field').slideUp();
         });
     });
 });

@@ -50,7 +50,7 @@ function studentsValidation() {
     }
         $(document).ready(function () {
             $('#showHomeWorkStudents').click(function () {
-                $('#fieldInStudents').show();
+                $('#fieldInStudents').slideDown();
             });
             let method = "GET";
             let userAtuh = "Kinvey " + sessionStorage.getItem('authToken');
@@ -81,7 +81,7 @@ function studentsValidation() {
             });
             $(document).ready(function () {
                 $('#hideHomeworksStudents').click(function () {
-                    $('#fieldInStudents').hide();
+                    $('#fieldInStudents').slideUp();
                 });
             });
         });

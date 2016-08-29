@@ -51,7 +51,7 @@ function register() {
         showInfo("Try again.User name cant be empty");
     }
     else if(password.length <= 4){
-        showInfo("The password must be minimum 4 symbols");
+        showInfo("The password must be more than 4 symbols");
     }
     else if(password != passwordConf){
         showInfo("The two fields with passwords must be the same!");

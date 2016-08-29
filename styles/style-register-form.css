@@ -78,9 +78,9 @@ body {
 
 .registerForm {
     float: right;
-    margin: 10pt 10px;
+    margin: 0 10px;
     margin-right: 70pt;
-    font-size: 25pt;
+    font-size: 20pt;
     padding: 10pt 30pt;
     border-radius: 5px;
     color: white;
@@ -92,7 +92,9 @@ body {
     animation: porta 1s 1 forwards;
     -webkit-animation: porta 1s 1 forwards;
 }
-
+.passwordConfirm{
+    margin-right: 20px;
+}
 input[type=text] {
     padding: 5px;
     margin: 8px 0;

@@ -8,7 +8,7 @@ header{
     margin: -20px;
 }
 .nav{
-    display:inline;
+    display:block;
 }
 .container{
     position: relative;
@@ -21,7 +21,7 @@ header{
     font-size: 20px;
     border-bottom: 1.5px solid #fff;
     width: 30%;
-    height: 150px;
+    height: 250px;
 }
 
 .container>form {
@@ -29,7 +29,7 @@ header{
     padding: 15px;
 }
 .image{
-    position:relative;
+    position: relative;
     padding-top: 30px;
     margin: 20px;
     display: inline-block;

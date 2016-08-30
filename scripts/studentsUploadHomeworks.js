@@ -35,16 +35,22 @@ function studentsValidation() {
         let upload = {
             name: $('#studentName').val(),
             theme: $('#themeOfHomework').val(),
-            description: $('#descriptionOfHomeWork').val(),
+            description: $('#descriptionOfHomeWork').val()
         };
         $.ajax({
             method: "POST",
             url: setHomeWorkUrl,
             data: upload,
             headers: authHeaders,
-            success: showInfoStuden,
+            success:uploadOk(),
 
         });
+        function uploadOk() {
+            showInfoStuden('Homework added successfully!');
+            window.setTimeout(function () {
+                location.href = 'student-page.html';
+            },1500);
+        }
     }
         $(document).ready(function () {
             $('#showHomeWorkStudents').click(function () {

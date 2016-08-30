@@ -1,5 +1,5 @@
 body{
-    background: #ffffff;
+    background: #FFE8C6;
 }
 header{
     background:#80CD8B;;
@@ -109,13 +109,23 @@ div#showStHome.homeworksFromSt ul{
     padding: 20px;
     list-style-type: none;
     width: auto;
-    border-bottom:  1px solid #707070;
+    border-bottom:  1px solid #ffffff;
     background: transparent;
+
+}
+div#showStHome.homeworksFromSt li{
+    width: auto;
+    font-size: 40px;
+    padding: 20px;
+    margin: 0px auto;
+    list-style-type: none;
+    color: #fff;
+    padding-left: 50px;
 
 
 
 }
-div#showStHome.homeworksFromSt li{
+div#showStHome.homeworksFromSt div{
     width: auto;
     font-size: 40px;
     padding: 20px;
@@ -123,10 +133,7 @@ div#showStHome.homeworksFromSt li{
     list-style-type: none;
     color: #fff;
     padding-left: 50px;
-    border:  1px solid #707070;
     background-image: url("../images/books-1.jpg")
-
-
 
 }
 

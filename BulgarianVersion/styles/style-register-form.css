@@ -4,22 +4,18 @@ body {
     font-family: Lucida Sans Unicode;
 }
 .blog-title{
-    margin-top: -1%;
-    margin-bottom: 5px;
-    margin-left: 28%;
     text-align: center;
     font-size: 30pt;
-    color: white;
+    color: #fff;
+    margin: 30px auto;
+    display: block;
     padding: 5px 2px;
     border-radius: 60px;
     text-shadow: 3px 3.5px #000000;
-    display: inline-block;
     text-transform: uppercase;
-    position: relative;
-    float: left;
     opacity: 0.0;
-    animation: porta 2s 1 forwards;
-    -webkit-animation: porta 2s 1 forwards;
+    animation: porta 1s 1 forwards;
+    -webkit-animation: porta 1s 1 forwards;
 }
 .blog-title:nth-of-type(2){
     animation-delay: 3s;
@@ -132,7 +128,15 @@ input[type=button] {
     float: right;
     font-size: 25pt;
 }
-
+#fullName{
+    margin-left: 50px;
+ }
+#userName{
+    margin-left: -70px;
+}
+#passInput{
+    margin-left: -10px;
+}
 .sectionsForm{
     text-shadow: 1px 1px  #2C2738;
 }

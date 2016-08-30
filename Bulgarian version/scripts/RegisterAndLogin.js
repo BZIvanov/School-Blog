@@ -11,11 +11,11 @@ $(document).on({
     }
 });
 function showInfo(mesgText) {
-    $('#infoBox').text(mesgText).show().delay(2000).fadeOut(2000);
+    $('#infoBox').text(mesgText).show().delay(1500).fadeOut(2000);
 }
 function ajaxError(data) {
-    let errorMsg = "ОПИТАЙ ПАК";
-    $('#errorBox').text(errorMsg).show().delay(2000).fadeOut(2000);
+    let errorMsg = "Try Again";
+    $('#errorBox').text(errorMsg).show().delay(1500).fadeOut(2000);
 
 }
 function login() {
@@ -33,7 +33,7 @@ function login() {
     });
     function loginSucces(data) {
         sessionStorage.authToken = data._kmd.authtoken;
-        showInfo('Успешен вход!');
+        showInfo('Login successful');
         window.setTimeout(function () {
             location.href = 'base-form.html';
             },3000);
@@ -45,16 +45,16 @@ function register() {
     let password = $('#passInput').val();
     let passwordConf = $('#passwordConfirm').val();
     if (fName === "") {
-        showInfo("Oпитай пак! - ИМЕ-  е празно");
+        showInfo("Try again.Full name cant be empty");
     }
     else if(uName === ""){
-        showInfo("Опитай пак! -ПОТРЕБИТЕЛ- е празно");
+        showInfo("Try again.User name cant be empty");
     }
     else if(password.length <= 4){
-        showInfo("Паролата трябва да бъде минимум 4 символа");
+        showInfo("The password must be more than 4 symbols");
     }
     else if(password != passwordConf){
-        showInfo("Несъвпадение в паролите!");
+        showInfo("The two fields with passwords must be the same!");
     }
     else {
         registerMe();
@@ -82,7 +82,7 @@ function register() {
 
             function registerSucces(data) {
                 sessionStorage.authToken = data._kmd.authtoken;
-                showInfo('Успешна регистрация!');
+                showInfo('User registered successfully');
                 window.setTimeout(function () {
                     location.href = 'login-form.html';
                 },3000);
@@ -96,8 +96,11 @@ $(function () {
 });
 
 function logout() {
-    alert('logout');
+    showInfo('Log out');
     sessionStorage.clear();
+    window.setTimeout(function () {
+        location.href='index.html';
+    },3000);
 
 }
 
@@ -114,7 +117,7 @@ $(document).ready(function () {
     });
     $('#scrollToTop').click(function (event) {
         event.preventDefault();
-        $('html, body').animate({ scrollTop: 0 }, 800)
+        $('html, body').animate({ scrollTop: 0 }, 800);
         return false;
     });
 });

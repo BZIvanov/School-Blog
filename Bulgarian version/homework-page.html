@@ -5,54 +5,44 @@
     <meta charset="UTF-8">
     <title>My Virtual School-Profile</title>
     <link rel="stylesheet" href="styles/style-homework-page.css" type="text/css">
-
     <script src="scripts/jquery-3.0.0.min.js"></script>
     <script src="scripts/RegisterAndLogin.js"></script>
+    <script src="scripts/teachersSetAndViewHomework.js"></script>
+    <script src="scripts/studentsUploadHomeworks.js"></script>
+    <script src="scripts/finishedHomeWorks.js"></script>
 </head>
 <body>
-    <header>
+    <header style="background:url(images/homework.gif)">
         <div class="buttonsContent">
-            <a href="base-form.html" id="linkHome">НАЧАЛО</a>
-            <a href="teacher-page.html" id="linkTeachers">УЧИТЕЛИ</a>
-            <a href="student-page.html" id="linkStudents">УЧЕНИЦИ</a>
-            <a href="homework-page.html" id="linkHomework" class="buttonHome">ДОМАШНИ</a>
-            <a href="forum-page.html" id="linkForum">ФОРУМ</a>
-            <a href="resources-page.html" id="linkResources">РЕСУРСИ</a>
-            <a href="index.html">ИЗХОД</a>
+            <a href="base-form.html" id="linkHome">HOME</a>
+            <a href="teacher-page.html" id="linkTeachers">TEACHERS</a>
+            <a href="student-page.html" id="linkStudents">STUDENTS</a>
+            <a href="homework-page.html" id="linkHomework" class="buttonHome">HOMEWORK</a>
+            <a href="forum-page.html" id="linkForum">FORUM</a>
+            <a href="resources-page.html" id="linkResources">RESOURCES</a>
+            <input type="image" src="images/logout.png" alt="Submit" onclick="logout()"
+                       width="48" height="48"
+                       value="LogOut" title="EXIT">
         </div>
+
         <div>
             <div class="blog-title">
-                <h1>МОЕТО ВИРТУАЛНО УЧИЛИЩЕ</h1>
+                <h1>MY VIRTUAL SCHOOL</h1>
             </div>
-            <h3 class="page-title">ДОМАШНИ</h3>
+            <h3 class="page-title">HOMEWORK</h3>
         </div>
 
     </header>
 
     <main>
-        <h4>Направи нещо днес,за което твоето бъдещо "АЗ" ще ти благодари.</h4>
+        <h4>Do something today that your future self will thank you for.</h4>
 
 
-        <p>
-            Списък с домашни.
-        </p>
+        <p>Ready homework.</p>
 
-        <div class="nav">
-            <div class="container">
-                <form>
-                    Teacher's Name: <br />
+                <div class="homeworksFromSt" id="showStHome"  ></div>
 
-                    Deadline for submission: <br />
 
-                    <a href="#" style="text-decoration-color: black">#Link1: </a><br />
-                    <a href="#" style="text-decoration-color: black">#Link2: </a><br />
-                    <a href="#" style="text-decoration-color: black">#Link3: </a><br />
-                    <a href="#" style="text-decoration-color: black">#Link4: </a><br />
-
-                </form>
-            </div>
-            <div class="container"><img src="images/happy-homework.jpg" width="300px" class="image" /></div>
-        </div>
     </main>
     <footer>
         Contact us

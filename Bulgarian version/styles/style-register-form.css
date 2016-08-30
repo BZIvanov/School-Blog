@@ -4,18 +4,22 @@ body {
     font-family: Lucida Sans Unicode;
 }
 .blog-title{
+    margin-top: -1%;
+    margin-bottom: 5px;
+    margin-left: 28%;
     text-align: center;
     font-size: 30pt;
-    color: #fff;
-    margin: 30px auto;
-    display: block;
+    color: white;
     padding: 5px 2px;
     border-radius: 60px;
     text-shadow: 3px 3.5px #000000;
+    display: inline-block;
     text-transform: uppercase;
+    position: relative;
+    float: left;
     opacity: 0.0;
-    animation: porta 1s 1 forwards;
-    -webkit-animation: porta 1s 1 forwards;
+    animation: porta 2s 1 forwards;
+    -webkit-animation: porta 2s 1 forwards;
 }
 .blog-title:nth-of-type(2){
     animation-delay: 3s;
@@ -60,13 +64,13 @@ body {
 }
 
 .regiserTitle{
-    margin-left: 70%;
+    margin-left: 78%;
     font-size: 30pt;
     color: #fff ;
     text-shadow: 3px 3px #423022;
     display: inline-block;
     text-transform: uppercase;
-    float: right;
+    position: relative;
     opacity: 0.0;
     animation: porta 1s 1 forwards;
     -webkit-animation: porta 1s 1 forwards;
@@ -74,9 +78,9 @@ body {
 
 .registerForm {
     float: right;
-    margin: 10pt 10px;
+    margin: 0 10px;
     margin-right: 70pt;
-    font-size: 25pt;
+    font-size: 20pt;
     padding: 10pt 30pt;
     border-radius: 5px;
     color: white;
@@ -88,12 +92,8 @@ body {
     animation: porta 1s 1 forwards;
     -webkit-animation: porta 1s 1 forwards;
 }
-#namefull{
-    margin-right: 50px;
-}
-#user{
-    margin-right: -85px;
-
+.passwordConfirm{
+    margin-right: 20px;
 }
 input[type=text] {
     padding: 5px;

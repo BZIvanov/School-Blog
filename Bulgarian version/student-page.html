@@ -6,30 +6,36 @@
     <title>My Virtual School-Profile</title>
     <link rel="stylesheet" href="styles/style-student-page.css" type="text/css">
     <script src="scripts/jquery-3.0.0.min.js"></script>
+    <script src="scripts/RegisterAndLogin.js"></script>
+    <script src="scripts/teachersSetAndViewHomework.js"></script>
     <script src="scripts/studentsUploadHomeworks.js"></script>
 </head>
 <body>
 
 <!--NAVIGATION-->
 
-        <header>
+        <header style="background:url(images/students.gif)">
                 <div class="buttonsContent">
-                        <a href="base-form.html" id="linkHome" >НАЧАЛО</a>
-                        <a href="teacher-page.html" id="linkTeachers"  >УЧИТЕЛИ</a>
-                        <a href="student-page.html" id="linkStudents" class="buttonHome">УЧЕНИЦИ</a>
-                        <a href="homework-page.html" id="linkHomework">ДОМАШНИ</a>
-                        <a href="forum-page.html" id="linkForum">ФОРУМ</a>
-                        <a href="resources-page.html" id="linkResources">РЕСУРСИ</a>
-                        <a href="index.html">ИЗХОД</a>
-                </div>
+                        <a href="base-form.html" id="linkHome" >HOME</a>
+                        <a href="teacher-page.html" id="linkTeachers"  >TEACHERS</a>
+                        <a href="student-page.html" id="linkStudents" class="buttonHome">STUDENTS</a>
+                        <a href="homework-page.html" id="linkHomework">HOMEWORK</a>
+                        <a href="forum-page.html" id="linkForum">FORUM</a>
+                        <a href="resources-page.html" id="linkResources">RESOURCES</a>
+
+                        <input type="image" src="images/logout.png" alt="Submit" onclick="logout()"
+                             width="48" height="48"
+                             value="LogOut" title="EXIT">
+            </div>
+
                 <div >
 
 <!--TITLES-->
 
                     <div class="blog-title">
-                        <h1>МОЕТО ВИРТУАЛНО УЧИЛИЩЕ</h1>
+                        <h1>MY VIRTUAL SCHOOL</h1>
                     </div>
-                    <h3 class="page-title" >УЧЕНИЦИ</h3>
+                    <h3 class="page-title" >STUDENTS</h3>
                 </div>
 
         </header>
@@ -37,31 +43,45 @@
         <main>
 
             <h4>
-                Учи,докато другите спят,работи докато другите мързелуват,подготвяй,докато другите играят
-                и мечтай,докато другите само си пожелават.
+                Study while others are sleeping,
+                work while others are loafing, prepare while others are
+                playing, and dream while others are wishing.
             </h4>
             <p>
-                Трябва да провериш "ДОМАШНИ" и "РЕСУРСИ" и ако все още имаш въпроси,може да попиташ за помощ своите
-                съученици във форума,долу,или да потърсиш помощ от преподавателите си във "ФОРУМ".
-
+                You have to check the homework down below and if you find something difficult
+                chek the "RESOURCES" section.
             </p>
-
+            <div id="infoStudent" onclick="$(this).hide()"></div>
+            <div id="errorStudent" onclick="$(this).hide()"></div>
 <!--SUBMIT HOMEWORK FORM-->
 
+
             <div class="submitHomework">
-                        ИМЕ: <input type="text" id="studentName">
+                        NAME: <input type="text" id="studentName" placeholder="name:">
                     <br><br>
-                        ТЕМА: <input type="text" id="themeOfHomework">
+                        THEME/SUBJECT: <input type="text" id="themeOfHomework" placeholder="theme:">
                     <br><br>
-                        ПОЯСНЕНИЕ: <textarea type="text" id="descriptionOfHomeWork"> </textarea>
+                        DESCRIPTION: <textarea type="text" id="descriptionOfHomeWork"> </textarea>
                     <br><br><br><br><br>
 
-                        <input type="button" onclick="uploadHomeworks()" value="Предай домашна">
+                <br>
+
+                <button type="button" id="showHomeWorkStudents">Show Homework</button>
+                <button type="button" id="hideHomeworksStudents">Hide homework</button>
+                <button type="button" onclick="studentsValidation()">Upload Homework</button><br>
+
             </div>
-                <img src="images/011.jpg" class="image">
+            <img src="images/GraduationGifts.jpg" class="image">
+            <main>
+                <p> HOMEWORK </p>
+                <div class="fields" id="fieldInStudents" style="background:url(images/laptop.jpg)"></div>
+
+            </main>
+
+<!--
                 <h3 class="forumTitle">THE SECRET FORUM</h3>
 
-<!--CREATE POSTS IN SECRET FORUM-->
+
 
             <div style="background:url(images/classroom.jpg) repeat-y" class="forumPart">
                 <div class="submitPost">
@@ -74,7 +94,7 @@
                             <button type="submit"> Publish </button>
                  </div>
 
-<!--RECENT POSTS-->
+
 
                 <div class="posts">
                         No recent posts <br>
@@ -87,11 +107,11 @@
                 </div>
             </div>
         </main>
-
+ -->
 <!--FOOTER-->
 
         <footer>
-            СВЪРЖИ СЕ С НАС
+            Contact us
             <br>
             <br>
             <div class="footerImg">

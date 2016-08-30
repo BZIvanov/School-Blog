@@ -15,90 +15,99 @@
                 <br><br>
             <div  class="background" >
                     <div class="wrapper">
+
+                        <a href="Bulgarian version/index.html" class="choice">BG</a>
+                        <a href="#" class="choice">EN</a> <br><br>
                             <div class="login-button" style="outline: 0">
-                                
-                                    <a href="login-form.html">ВХОД</a>
-                                    <a href="register-form.html">РЕГИСТРАЦИЯ</a><br><br>
+                                    <a href="login-form.html">LOGIN</a>
+                                    <a href="register-form.html">SIGN IN</a><br><br>
 
                             </div>
-                        <a href="#" style="float: left">BG</a>
-                        <a href="" style="float: left">EN</a>
                     </div>
 
                     <div class="blog-title">
-                            <h1>МОЕТО ВИРТУАЛНО УЧИЛИЩЕ</h1>
+                            <h1>MY VIRTUAL SCHOOL</h1>
                     </div>
             </div>
             <div class="buttonsContent">
-                             <a href="#aboutUs">ЗА НАС </a>
-                             <a href="#aboutTeachers">ЗА УЧИТЕЛИ</a>
-                <a href="#aboutStudents">ЗА УЧЕНИЦИ</a>
+                             <a href="#aboutUs">ABOUT US</a>
+                             <a href="#aboutTeachers">TEACHERS</a>
+                <a href="#aboutStudents">STUDENTS</a>
             </div>
     </header>
 
 <!--ABOUT US-->
 
             <div>
-                        <div class="index-page-content" > ЗА НАС </div>
+                        <div class="index-page-content" ><a name="aboutUs" style="color:#543925">ABOUT US</a></div>
                         <img src="images/Icon-set.jpg" class="images-aboutUs">
-                        <p> <a name="aboutUs" class="text-aboutUs">
-                            Системата  „Моето виртуално училище“ е
-                            предназначена както за ученици,така и
-                            за учители. Би била от голяма полза за
-                            всички степени на обучение в България.
-                            След като се регистрирате ще имате възможност
-                            да видите интересните модули,които включват форум,
-                            електронна система за предаване на домашни и много
-                            полезни ресурси.
-                            </a>
+                        <p class="text-aboutUs" >
+
+                            The system " My virtual school " can be
+                            used by both teachers and students.
+                            It would be in great use for all
+                            levels of education in Bulgaria.
+                            After you sign in,you would be
+                            able to see the interesting
+                            modules,which include a forum,
+                            an electronic system for homework
+                            and many useful resources.
+
                         </p>
             </div>
 
 <!--FOR TEACHERS-->
 
             <div>
-                        <div class="index-page-content"> ЗА УЧИТЕЛИТЕ  </div>
+                       <div  class="index-page-content"><a name="aboutTeachers" style="color:#543925"> FOR TEACHERS  </a></div>
                         <img src="images/students.png" class="image-teachers">
 
-                        <p> <a name="aboutTeachers" class="text-teachers">
+                        <p class="text-teachers">
                             <br><br>
-                            Учителите ще имат възможността да
-                            публикуват домашна работа за съответните
-                            ученици. Те също могат да публикуват
-                            статии във форума, които биха мили от
-                            полза на учениците за успешното справяне
-                            с домашната работа. По всяко време ще могат да
-                            отговарят на въпроси зададени от учениците.
-                            След получаване на домашната и след проверката ѝ
-                            съответно,те ще могат да върнат в отговор оценка и забележки.
-                             </a>
+                            Teachers would be able to post
+                            homework for students.
+                            They would also be able
+                            to post articles in the forum,
+                            which would help the students
+                            manage their homework correctly.
+                            They would be able to answer the students'
+                            questions at any time. After receiving the
+                            homework and checking it,they would be
+                            able to mark it and send notes.
+
                         </p>
             </div>
 
             <div>
-                <div class="index-page-content"> ЗА УЧЕНИЦИТЕ </div>
+                <div class="index-page-content"> FOR STUDENTS </div>
                 <img src="images/studentss.jpg" class="images-students">
 
 <!--FOR STUDENTS-->
 
-
                 <p> <a name="aboutStudents" class="text-students">
-               <div>
-                    Предоставени са и много възможности и за
-                    учениците. Те ще могат да следят графика
-                    с домашните си работи, да я напишат на компютъра
-                    и бързо да я изпратят на учителя на електронен носител.
-                    Участието им в писането на статии в блога ще бъде ключово.
-                    Една от страниците ще дава шанс на учениците да обсъждат помежду
-                    си въпроси възникнали по време на изпълението
-                    на задачата, да споделят опит и ресусрси. Могат
-                    да напишат и своите въпроси към преподавателите
-                    си и да получи отговор. След предаване на домашната,
-                    има възможност да получи своята оценка и забележки
-                    за изпълнението на задачата.
+                    There are many opportunities for the
+                    students as well. They will be able
+                    to follow the schedule with their
+                    homework, do it on their computers
+                    and then quickly send it
+                    electronically to their teacher.
+                    The students’ contribution to the
+                    blog will be crucial. One of the
+                    pages will give them the opportunity
+                    to contact other students and discuss
+                    questions, occured in the process of
+                    executing the task and to share their
+                    experience and resources. They can also
+                    ask the teachers questions and get an answer.
+                    After handing in their homework, the students
+                    will receive a mark and remarks on the task.
+                </a> </p>
             </div>
 
 
+        <footer>
+            (c) W h a t s W r o n g
+        </footer>
 
  <!--scroll to top button-->
         <a href="#" id="scrollToTop" class="button-to-top" style="display: block;"><span class="glyphicon glyphicon-chevron-up">↑</span></a>
@@ -116,7 +125,7 @@
             });
             $('#scrollToTop').click(function (event) {
                 event.preventDefault();
-                $('html, body').animate({ scrollTop: 0 }, 800)
+                $('html, body').animate({ scrollTop: 0 }, 800);
                 return false;
             });
         });

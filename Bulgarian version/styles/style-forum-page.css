@@ -1,13 +1,41 @@
 body {
-    background: #ffffff;
+    background: #9BC16D;
 }
 
 header {
     background: #9BC16D;
-    ;
     height: auto;
     width: 101.45%;
     margin: -20px;
+}
+#infoPosts {
+    font-size: 35px;
+    border-bottom: 2px solid green;
+    display: none;
+    padding: 3px;
+    border-radius: 3px;
+    width: 40%;
+    margin: 0px auto;
+    text-align: center;
+    color:green;
+    opacity: 0.0;
+    animation: porta 2s 1 forwards;
+    -webkit-animation: porta 2s 1 forwards;
+}
+#errorPosts {
+    font-size:35px;
+    border-bottom: 2px solid red;
+    display: none;
+    /*background: #AAA;*/
+    padding: 3px;
+    border-radius: 3px;
+    width: 20%;
+    margin: 0px auto;
+    text-align: center;
+    color:red;
+    opacity: 0.0;
+    animation: porta 2s 1 forwards;
+    -webkit-animation: porta 2s 1 forwards;
 }
 
 .blog-title {
@@ -16,7 +44,7 @@ header {
     margin: 100px auto;
     display: block;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     border-bottom: 0.5px solid #fff;
     width: 75%;
 }
@@ -100,15 +128,38 @@ a {
     background-repeat: no-repeat;
 }
 
+table {
+    position:relative; 
+    width: 100%; 
+    text-align:center;
+    
+    
+    //color: #0026ff;
+}
+.table a:link{
+    color: #0026ff;
+}
+.table a:visited{
+    color: #4800ff;
+}
 table th {
     background: #AAA;
     font-size: 1.2em;
     padding: 10px;
+    border-radius:5px;
+}
+
+input, textarea{
+    width: 150px;
+    padding: 5px;
+    border-radius:5px;
+    color:#9BC16D;
 }
 
 table td {
     background: #DDD;
     padding: 5px 10px;
+    border-radius:5px;
 }
 
 .search {

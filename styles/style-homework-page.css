@@ -129,7 +129,27 @@ input[type=image]{
     display: block;
     text-align: center;
 }
+div#showStHome.homeworksFromSt ul{
+    font-size: 40px;
+    font-family:"Microsoft Yi Baiti";
+    color:#000000;
+    display: block;
+    margin: 20px auto;
+    padding: 5px;
+    list-style-type: none;
+    width: 90%;
+    border-bottom: 1px solid #000000;
 
+
+}
+div#showStHome.homeworksFromSt li{
+    font-size: 40px;
+    padding: 5px;
+    margin: 20px auto;
+    list-style-type: none;
+    color: #000000;
+    padding-left: 50px;
+}
 
 footer{
     background: #7F7E7E;

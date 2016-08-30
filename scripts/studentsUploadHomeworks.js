@@ -1,5 +1,3 @@
-//const kinveyBaseUrl = 'https://baas.kinvey.com/';
-//const kinveyAppID = 'kid_By6NFYOt';
 $(document).on({
     ajaxStart: function () {
         $('#infoStudent').show();

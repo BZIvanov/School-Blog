@@ -48,7 +48,7 @@ $.ajax(requestStudent).then(function (responseSt) {
         let subj1 = document.createElement('li');
         let descr1 = document.createElement('ul');
         nameOfSt.appendChild(document.createTextNode(objSt.name));
-        subj1.appendChild(document.createTextNode(objSt.subject));
+        subj1.appendChild(document.createTextNode(objSt.theme));
         descr1.appendChild(document.createTextNode(objSt.description));
         innerSt.appendChild(nameOfSt);
         innerSt.appendChild(subj1);

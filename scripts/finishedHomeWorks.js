@@ -10,7 +10,6 @@ headersStudent['Authorization'] = userAtuhStudent;
 let requestUrlStudent = kinveyBaseUrl + "appdata/" + kinveyAppID + "/Homeworks";
 let requestStudent = {
     method: methodShow,
-    method: methodShow,
     headers: headersStudent,
     url: requestUrlStudent,
 };

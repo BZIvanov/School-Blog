@@ -146,6 +146,10 @@ textarea{
     width: 700px ;
     font-size: 20px;
 }
+#msg{
+    font-size: 17px;
+
+}
 .button-to-top:hover{
     bacground-color: #ed702b;
     text-decoration: none;

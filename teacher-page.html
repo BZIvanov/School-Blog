@@ -37,8 +37,8 @@
         </header>
 
         <main>
-                <h4>Be SOMEBODY who makes everybody feel like a SOMEBODY</h4>
-                <p>You have the chance to set student's homework and see their work.</p>
+                <h4>Be SOMEBODY who makes everybody feel like a SOMEBODY.</h4>
+                <p>IF YOU ARE A TEACHER you have the chance to set student's homework.</p>
             <div id="infoTeachers" onclick="$(this).hide()"></div>
             <div id="errorTeach" onclick="$(this).hide()"></div>
 
@@ -47,9 +47,11 @@
                 <div class="setHomework">
                     NAME: <input type="text" id="simpleName" required="true" placeholder="name:">
                     <br><br>
-                    SUBJECT <input type="text" id="subject" required="true" placeholder="subject:" >
+                    THEME/SUBJECT: <input type="text" id="subject" required="true" placeholder="subject:" >
                     <br><br>
                     DESCRIPTION: <textarea type="text" id="dHomeWork" required="true"  > </textarea>
+                    <br>
+                    <span id="msg">(Don't forget to mention the deadline)</span>
                     <br><br><br><br>
                     <form id="formSet">
                     <br>
@@ -62,6 +64,8 @@
 
                 <img src="images/teacher.jpg" class="image">
         </main>
+
+            <p> HOMEWORK </p>
 
             <div class="fields" id="field" style="background:url(images/class.jpg)"></div>
 

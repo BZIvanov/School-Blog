@@ -7,35 +7,6 @@ header{
     width: 101.45%;
     margin: -20px;
 }
-.nav{
-    display:block;
-}
-.container{
-    position: relative;
-    margin: 10px;
-    margin-bottom: 30px;
-    padding-left: 30px;
-    padding: 20px;
-    display: inline-block;
-    text-align: left;
-    font-size: 20px;
-    border-bottom: 1.5px solid #fff;
-    width: 30%;
-    height: 250px;
-}
-
-.container>form {
-    background-color: #80CD8B;
-    padding: 15px;
-}
-.image{
-    position: relative;
-    padding-top: 30px;
-    margin: 20px;
-    display: inline-block;
-    //text-align: center;
-} 
-
 .blog-title{
     color: white;
     font-family: Lucida Sans Unicode;
@@ -59,7 +30,7 @@ header{
 h4{
     display: block;
     border-bottom: 0.1px solid #5e5e5e;
-    color: #7F7E7E;
+    color: #707070;
     font-size: 40px;
     margin: 0 auto;
     padding: 10px;
@@ -68,7 +39,7 @@ h4{
 }
 p{
     display: block;
-    color: #7F7E7E;
+    color: #707070;
     font-size: 30px;
     margin: 0 auto;
     padding: 10px;
@@ -132,23 +103,31 @@ input[type=image]{
 div#showStHome.homeworksFromSt ul{
     font-size: 40px;
     font-family:"Microsoft Yi Baiti";
-    color:#000000;
+    color:#fff;
     display: block;
     margin: 20px auto;
-    padding: 5px;
+    padding: 20px;
     list-style-type: none;
-    width: 90%;
-    border-bottom: 1px solid #000000;
+    width: auto;
+    border-bottom:  1px solid #707070;
+    background: transparent;
+
 
 
 }
 div#showStHome.homeworksFromSt li{
+    width: auto;
     font-size: 40px;
-    padding: 5px;
-    margin: 20px auto;
+    padding: 20px;
+    margin: 65px auto;
     list-style-type: none;
-    color: #000000;
+    color: #fff;
     padding-left: 50px;
+    border:  1px solid #707070;
+    background-image: url("../images/books-1.jpg")
+
+
+
 }
 
 footer{
@@ -172,7 +151,7 @@ footer{
       bacground-color: #ed702b;
       text-decoration: none;  }  
  
- .button-to-top {  
+.button-to-top {
      display: none;  
      position: fixed;   
      bottom: 1rem;   

@@ -19,8 +19,8 @@ $.ajax(requestStudent).then(function (responseSt) {
     for (let objSt of responseSt) {
         let listSt = $('#showStHome');
         let innerSt = document.createElement('li');
-        let nameOfSt = document.createElement('li');
-        let subj1 = document.createElement('li');
+        let nameOfSt = document.createElement('ul');
+        let subj1 = document.createElement('ul');
         let descr1 = document.createElement('ul');
         nameOfSt.appendChild(document.createTextNode(objSt.name));
         subj1.appendChild(document.createTextNode(objSt.theme));

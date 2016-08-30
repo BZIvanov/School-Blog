@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <title>My Virtual School-Profile</title>
     <link rel="stylesheet" href="styles/style-forum-page.css" type="text/css">
-
     <script src="scripts/jquery-3.0.0.min.js"></script>
     <script src="scripts/RegisterAndLogin.js"></script>
     <script src="scripts/ForumPosts.js"></script>
 </head>
 <body>
 
+<!--NAVIGATION-->
 <header>
     <div class="buttonsContent">
         <a href="base-form.html" id="linkHome" >HOME</a>
@@ -20,10 +20,12 @@
         <a href="homework-page.html" id="linkHomework" >HOMEWORK</a>
         <a href="forum-page.html" id="linkForum" class="buttonHome">FORUM</a>
         <a href="resources-page.html" id="linkResources">RESOURCES</a>
-
-        <a href="index.html">LOGOUT</a>
+        <input type="image" src="images/logout.png" alt="Submit" onclick="logout()"
+               width="48" height="48"
+               value="LogOut" title="EXIT">
     </div>
     <div >
+<!--TITLES-->
         <div class="blog-title">
             <h1>MY VIRTUAL SCHOOL</h1>
         </div>
@@ -37,8 +39,6 @@
         A genius is someone who asks dumb questions that nobody else would ask,an idiot ask the smart questions that have
         already been answered.
     </h4>
-
-
     <p>
         Ask your teachers for help.
     </p>
@@ -48,7 +48,7 @@
     <div id="infoPosts" onclick="$(this).hide()"></div>
     <div id="errorPosts" onclick="$(this).hide()"></div>
     <br /><br />
-
+    <!--SEARCHING BUTTON-->
     <div>
         <form>
             <input type="text" placeholder="Search..." required>
@@ -57,15 +57,19 @@
             </span>
         </form>
     </div>
+    <!--SET TABLE POSTS-->
+    <div id="posts" class="table">
+
+    </div>
     <div class="table" id="posts">
         <table>
             <tr>
-                <th><b>Theme: </b></th>
-                <th><b> Author: </b></th>    
+                <th><b> Author: </b></th> 
+                <th><b>Theme: </b></th>   
                 <th><b> Description: </b></th>
             </tr>
             <tr>
-                <td>Grography</td>
+                <td>Geography</td>
                 <td>Zemyarski</td>
                 <td>South Africa - some info.</td>
             </tr>
@@ -81,16 +85,16 @@
             </tr>
         </table>
     </div>
-    <div id="viewCreatePost">
+    <div id="viewCreatePost" class="createPost">
         <h1>Create new post</h1>
         <form id="formCreatePost">
             <div>Theme:</div>
-            <div><input type="text" id="postTitle" required="true"></div>
+            <div><input type="text" id="postTitle" required="true" placeholder="Theme"></div>
             <div>Author:</div>
-            <div><input type="text" id="postAuthor" required="true"></div>
+            <div><input type="text" id="postAuthor" required="true" placeholder="Author"></div>
             <div>Description:</div>
-            <div><textarea id="postDescription" rows="10"></textarea></div>
-            <div><input type="submit" onclick="createPost()" value="Create Post"></div>
+            <div><textarea id="postDescription" rows="10" required="true"></textarea></div>
+            <div><input type="submit" onclick="postsValidation()" value="Create Post"></div>
         </form>
     </div>
     <br />

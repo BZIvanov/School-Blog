@@ -96,11 +96,11 @@ $(function () {
 });
 
 function logout() {
-    alert('Logout');
+    showInfo('Log out');
     sessionStorage.clear();
     window.setTimeout(function () {
         location.href='index.html';
-    },1500);
+    },3000);
 
 }
 

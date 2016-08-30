@@ -14,7 +14,7 @@ function showInfo(mesgText) {
     $('#infoBox').text(mesgText).show().delay(1500).fadeOut(2000);
 }
 function ajaxError(data) {
-    let errorMsg = "Try Again";
+    let errorMsg = "Опитай пак!";
     $('#errorBox').text(errorMsg).show().delay(1500).fadeOut(2000);
 
 }
@@ -45,16 +45,16 @@ function register() {
     let password = $('#passInput').val();
     let passwordConf = $('#passwordConfirm').val();
     if (fName === "") {
-        showInfo("Try again.Full name cant be empty");
+        showInfo("Опитай пак! -Име- не може да бъде празно");
     }
     else if(uName === ""){
-        showInfo("Try again.User name cant be empty");
+        showInfo("Оитай пак! -Потрбител- не може да бъде празно");
     }
     else if(password.length <= 4){
-        showInfo("The password must be more than 4 symbols");
+        showInfo("Паролата трябва да бъде повече от 4 символа.");
     }
     else if(password != passwordConf){
-        showInfo("The two fields with passwords must be the same!");
+        showInfo("Паролите не съвпадат");
     }
     else {
         registerMe();
@@ -82,7 +82,7 @@ function register() {
 
             function registerSucces(data) {
                 sessionStorage.authToken = data._kmd.authtoken;
-                showInfo('User registered successfully');
+                showInfo('Успешна регистрация');
                 window.setTimeout(function () {
                     location.href = 'login-form.html';
                 },3000);

@@ -14,13 +14,13 @@ function studentsValidation() {
     let nameOfTheme = $('#themeOfHomework').val();
     let descrOfHmrkSt = $('#descriptionOfHomeWork').val();
     if (nameOfStudent === "") {
-        showInfoStuden("Name field cant be empty");
+        showInfoStuden("-ИМЕ на ученик- не може да бъде празно");
     }
     else if (nameOfTheme === "") {
-        showInfoStuden("Theme field cant be empty");
+        showInfoStuden("-ТЕМА/ПРЕДМЕТ- не може да бъде празно");
     }
     else if (descrOfHmrkSt.length <= 4) {
-        showInfoStuden("Homework is too short!");
+        showInfoStuden("Домашната е прекалено кратка");
     }
     else {
         uploadHomeworks();
@@ -46,7 +46,7 @@ function studentsValidation() {
 
         });
         function uploadOk() {
-            showInfoStuden('Homework added successfully!');
+            showInfoStuden('Усешно предаване на домашна');
             window.setTimeout(function () {
                 location.href = 'student-page.html';
             },1500);

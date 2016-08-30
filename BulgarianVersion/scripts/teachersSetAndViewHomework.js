@@ -18,13 +18,13 @@ function checkFields() {
     let subj = $('#subject').val();
     let descrHomeWork = $('#dHomeWork').val();
     if (nameOfTeach === "") {
-        showInfo("Name of teacher cant be empty!")
+        showInfo("-ИМЕ- на учител не може да бъде празно")
     }
     else if (subj === "") {
-        showInfo("Please input subject field.Try again");
+        showInfo("Въведи -ТЕМА/ПРЕДМЕТ-");
     }
     else if (descrHomeWork.length <= 3) {
-        showInfo("The description is too short!");
+        showInfo("Описанието е твърде кратко");
     }
     else {
         setHomerowk();
@@ -50,7 +50,7 @@ function checkFields() {
         });
         function setOk(data) {
            // sessionStorage.authToken = data._kmd.authtoken;
-            showInfo('Homework added successfully!');
+            showInfo('Успешно добавена домашна');
             window.setTimeout(function () {
                 location.href = 'teacher-page.html';
             },1500);

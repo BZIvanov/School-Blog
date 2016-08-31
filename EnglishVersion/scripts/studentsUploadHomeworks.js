@@ -89,3 +89,11 @@ function studentsValidation() {
                 });
             });
         });
+function logout() {
+    showInfoStuden('Log out');
+    sessionStorage.clear();
+    window.setTimeout(function () {
+        location.href='index.html';
+    },3000);
+
+}

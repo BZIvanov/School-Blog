@@ -99,3 +99,11 @@ $(function () {
     $('#formSet').submit(function (e) { e.preventDefault(); checkFields();showHomeW() });
 
 });
+function logout() {
+    showInfo('Log out');
+    sessionStorage.clear();
+    window.setTimeout(function () {
+        location.href='index.html';
+    },3000);
+
+}

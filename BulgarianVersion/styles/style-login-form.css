@@ -99,7 +99,7 @@ input[type=password] {
     border: none;
     /*background-color: #65567F;*/
 }
-input[type=button] {
+button[type=submit] {
     padding: 10px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -109,7 +109,7 @@ input[type=button] {
     float: right;
     font-size: 25pt;
 }
-input[type=button]:hover {
+button[type=submit] :hover {
     cursor: pointer;
     border: 1px solid #fff;
     padding:9px;

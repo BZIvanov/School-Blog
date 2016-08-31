@@ -132,7 +132,9 @@ input[type=button] {
     float: right;
     font-size: 25pt;
 }
-
+#passwordConfirm{
+    margin-left: 35px;
+}
 .sectionsForm{
     text-shadow: 1px 1px  #2C2738;
 }

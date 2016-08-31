@@ -5,6 +5,7 @@ $(document).ready(function () {
 });
 function showLogoutNotification(mesgText) {
     $('#LogOutHomeWork').text(mesgText).show().delay(1500).fadeOut(2000);
+}
     let methodShow = "GET";
     let userAtuhStudent = "Kinvey " + sessionStorage.getItem('authToken');
     let headersStudent = {};
@@ -32,7 +33,7 @@ function showLogoutNotification(mesgText) {
             listSt.append(innerSt);
         }
     });
-}
+
     function logout() {
         showLogoutNotification('Log out');
         sessionStorage.clear();

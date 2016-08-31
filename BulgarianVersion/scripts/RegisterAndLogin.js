@@ -33,7 +33,7 @@ function login() {
     });
     function loginSucces(data) {
         sessionStorage.authToken = data._kmd.authtoken;
-        showInfo('Login successful');
+        showInfo('Успешен вход!');
         window.setTimeout(function () {
             location.href = 'base-form.html';
             },3000);

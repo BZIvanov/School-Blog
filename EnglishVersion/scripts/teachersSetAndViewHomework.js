@@ -96,7 +96,7 @@ $(document).ready(function () {
     });
 });
 $(function () {
-    $('#formSet').submit(function (e) { e.preventDefault(); checkFields();showHomeW() });
+    $('#formSet').submit(function (e) { e.preventDefault(); checkFields();});
 
 });
 function logout() {

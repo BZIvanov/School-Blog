@@ -3,8 +3,8 @@ $(document).ready(function () {
         $('#showTeachHome').show();
     });
 });
-function showLogoutNotification(mesgText) {
-    $('#LogOutHomeWork').text(mesgText).show().delay(1500).fadeOut(2000);
+function showLogoutNotificationBG(mesgText) {
+    $('#LogOutHomeWorkBG').text(mesgText).show().delay(1500).fadeOut(2000);
 }
     let methodShow = "GET";
     let userAtuhStudent = "Kinvey " + sessionStorage.getItem('authToken');
@@ -35,7 +35,7 @@ function showLogoutNotification(mesgText) {
     });
 
     function logout() {
-        showLogoutNotification('Log out');
+        showLogoutNotificationBG('Log out');
         sessionStorage.clear();
         window.setTimeout(function () {
             location.href = 'index.html';

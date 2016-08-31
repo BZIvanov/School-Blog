@@ -136,7 +136,7 @@ div#showStHome.homeworksFromSt div{
     background-image: url("../images/books-1.jpg")
 
 }
-#LogOutHomeWork {
+#LogOutHomeWorkBG {
     font-size: 35px;
     border-bottom: 2px solid green;
     display: none;

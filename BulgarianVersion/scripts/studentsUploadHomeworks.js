@@ -1,26 +1,26 @@
 $(document).on({
     ajaxStart: function () {
-        $('#infoStudent').show();
+        $('#infoStudentBG').show();
     },
     ajaxStart: function () {
-        $('#errorStudent').hide();
+        $('#errorStudentBG').hide();
     }
 });
-function showInfoStuden(mesgText) {
-    $('#infoStudent').text(mesgText).show().delay(1500).fadeOut(2000);
+function showInfoStudenBG(mesgText) {
+    $('#infoStudentBG').text(mesgText).show().delay(1500).fadeOut(2000);
 }
 function studentsValidation() {
     let nameOfStudent = $('#studentName').val();
     let nameOfTheme = $('#themeOfHomework').val();
     let descrOfHmrkSt = $('#descriptionOfHomeWork').val();
     if (nameOfStudent === "") {
-        showInfoStuden("-ИМЕ на ученик- не може да бъде празно");
+        showInfoStudenBG("-ИМЕ на ученик- не може да бъде празно");
     }
     else if (nameOfTheme === "") {
-        showInfoStuden("-ТЕМА/ПРЕДМЕТ- не може да бъде празно");
+        showInfoStudenBG("-ТЕМА/ПРЕДМЕТ- не може да бъде празно");
     }
     else if (descrOfHmrkSt.length <= 4) {
-        showInfoStuden("Домашната е прекалено кратка");
+        showInfoStudenBG("Домашната е прекалено кратка");
     }
     else {
         uploadHomeworks();
@@ -89,3 +89,11 @@ function studentsValidation() {
                 });
             });
         });
+function logout() {
+    showInfoStudenBG('Log out');
+    sessionStorage.clear();
+    window.setTimeout(function () {
+        location.href='index.html';
+    },3000);
+
+}

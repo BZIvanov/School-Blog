@@ -100,7 +100,7 @@ $(function () {
 
 });
 function logout() {
-    showInfo('Log out');
+    showInfo("Log out");
     sessionStorage.clear();
     window.setTimeout(function () {
         location.href='index.html';

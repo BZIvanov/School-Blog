@@ -4,18 +4,18 @@ const appSecrets = '9887cd73e9a84e26875688775c120525';
 /* Ajax "Loading" event listener */
 $(document).on({
     ajaxStart: function () {
-        $('#infoBox').show();
+        $('#infoBoxBG').show();
     },
     ajaxStart: function () {
-        $('#infoBox').hide();
+        $('#infoBoxBG').hide();
     }
 });
-function showInfo(mesgText) {
-    $('#infoBox').text(mesgText).show().delay(1500).fadeOut(2000);
+function showInfoBG(mesgText) {
+    $('#infoBoxBG').text(mesgText).show().delay(1500).fadeOut(2000);
 }
 function ajaxError(data) {
     let errorMsg = "Опитай пак!";
-    $('#errorBox').text(errorMsg).show().delay(1500).fadeOut(2000);
+    $('#errorBoxBG').text(errorMsg).show().delay(1500).fadeOut(2000);
 
 }
 function login() {
@@ -33,7 +33,7 @@ function login() {
     });
     function loginSucces(data) {
         sessionStorage.authToken = data._kmd.authtoken;
-        showInfo('Успешен вход!');
+        showInfoBG('Успешен вход!');
         window.setTimeout(function () {
             location.href = 'base-form.html';
             },3000);
@@ -45,16 +45,16 @@ function register() {
     let password = $('#passInput').val();
     let passwordConf = $('#passwordConfirm').val();
     if (fName === "") {
-        showInfo("Опитай пак! -Име- не може да бъде празно");
+        showInfoBG("Опитай пак! -Име- не може да бъде празно");
     }
     else if(uName === ""){
-        showInfo("Оитай пак! -Потрeбител- не може да бъде празно");
+        showInfoBG("Оитай пак! -Потрeбител- не може да бъде празно");
     }
     else if(password.length <= 4){
-        showInfo("Паролата трябва да бъде повече от 4 символа.");
+        showInfoBG("Паролата трябва да бъде повече от 4 символа.");
     }
     else if(password != passwordConf){
-        showInfo("Паролите не съвпадат");
+        showInfoBG("Паролите не съвпадат");
     }
     else {
         registerMe();
@@ -82,7 +82,7 @@ function register() {
 
             function registerSucces(data) {
                 sessionStorage.authToken = data._kmd.authtoken;
-                showInfo('Успешна регистрация');
+                showInfoBG('Успешна регистрация');
                 window.setTimeout(function () {
                     location.href = 'login-form.html';
                 },3000);
@@ -96,7 +96,7 @@ $(function () {
 });
 
 function logout() {
-    showInfo('Log out');
+    showInfoBG('Log out');
     sessionStorage.clear();
     window.setTimeout(function () {
         location.href='index.html';

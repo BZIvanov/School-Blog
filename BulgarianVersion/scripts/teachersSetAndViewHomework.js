@@ -4,27 +4,27 @@
 
 $(document).on({
     ajaxStart: function () {
-        $('#infoTeachers').show();
+        $('#infoTeachersBG').show();
     },
     ajaxStart: function () {
-        $('#infoTeachers').hide();
+        $('#infoTeachersBG').hide();
     }
 });
-function showInfo(mesgText) {
-    $('#infoTeachers').text(mesgText).show().delay(2000).fadeOut(2000);
+function showInfoBGteachers(mesgText) {
+    $('#infoTeachersBG').text(mesgText).show().delay(2000).fadeOut(2000);
 }
 function checkFields() {
     let nameOfTeach = $('#simpleName').val();
     let subj = $('#subject').val();
     let descrHomeWork = $('#dHomeWork').val();
     if (nameOfTeach === "") {
-        showInfo("-ИМЕ- на учител не може да бъде празно")
+        showInfoBGteachers("-ИМЕ- на учител не може да бъде празно")
     }
     else if (subj === "") {
-        showInfo("Въведи -ТЕМА/ПРЕДМЕТ-");
+        showInfoBGteachers("Въведи -ТЕМА/ПРЕДМЕТ-");
     }
     else if (descrHomeWork.length <= 3) {
-        showInfo("Описанието е твърде кратко");
+        showInfoBGteachers("Описанието е твърде кратко");
     }
     else {
         setHomerowk();
@@ -50,7 +50,7 @@ function checkFields() {
         });
         function setOk(data) {
            // sessionStorage.authToken = data._kmd.authtoken;
-            showInfo('Успешно добавена домашна');
+            showInfoBGteachers('Успешно добавена домашна');
             window.setTimeout(function () {
                 location.href = 'teacher-page.html';
             },1500);
@@ -100,7 +100,7 @@ $(function () {
 
 });
 function logout() {
-    showInfo('Log out');
+    showInfoBGteachers('Log out');
     sessionStorage.clear();
     window.setTimeout(function () {
         location.href='index.html';

@@ -283,7 +283,7 @@ footer{
     font-family: Lucida Sans Unicode;
 
 }
-#errorStudent {
+#errorStudentBG {
     font-size:35px;
     border-bottom: 2px solid red;
     display: none;
@@ -335,7 +335,7 @@ footer{
 }
 
 
-#infoStudent {
+#infoStudentBG {
     font-size: 35px;
     border-bottom: 2px solid green;
     display: none;

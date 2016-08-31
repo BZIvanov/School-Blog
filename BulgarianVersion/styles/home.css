@@ -131,7 +131,7 @@ input[type=image]{
     font-family: Constantia;
     line-height: 1.3;
 }
-#errorBox {
+#errorBoxBG {
     font-size:35px;
     border-bottom: 2px solid red;
     display: none;
@@ -182,7 +182,7 @@ input[type=image]{
     50%{}
 }
 
-#infoBox {
+#infoBoxBG {
     font-size: 35px;
     border-bottom: 2px solid green;
     display: none;

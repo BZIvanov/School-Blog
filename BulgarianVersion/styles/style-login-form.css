@@ -145,7 +145,7 @@ a{
     text-align: center;
     padding-bottom: 20px;
 }
-#errorBox {
+#errorBoxBG {
     font-size:35px;
     border-bottom: 2px solid red;
     display: none;
@@ -197,7 +197,7 @@ a{
 }
 
 
-#infoBox {
+#infoBoxBG {
     font-size: 35px;
     border-bottom: 2px solid green;
     display: none;

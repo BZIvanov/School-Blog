@@ -161,7 +161,7 @@ a{
     margin-bottom: 30px;
 }
 
-#loadingBox{
+#loadingBoxBG{
     background: #80CD8B;
     width: 0%;
     margin: 10px auto;
@@ -171,7 +171,7 @@ a{
     border-radius: 3px;
 }
 
-#errorBox {
+#errorBoxBG {
     font-size:35px;
     border-bottom: 2px solid red;
     display: none;
@@ -223,7 +223,7 @@ a{
 }
 
 
-#infoBox {
+#infoBoxBG {
     font-size: 35px;
     border-bottom: 2px solid green;
     display: none;

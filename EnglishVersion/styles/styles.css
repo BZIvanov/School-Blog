@@ -81,6 +81,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     font-family: Lucida Sans Unicode;
+    background-color: #ffffff;
 }
 ol, ul {
     list-style: none;

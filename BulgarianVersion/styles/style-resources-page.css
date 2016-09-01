@@ -367,7 +367,7 @@ p{
     border: 2px solid #ffffff;
     background: #CCCCCC;
 }
-#errorBox {
+#errorhomeWorkBGRes {
     font-size:35px;
     border-bottom: 2px solid red;
     display: none;
@@ -419,7 +419,7 @@ p{
 }
 
 
-#infoBox {
+#LogOutHomeWorkBGRes{
     font-size: 35px;
     border-bottom: 2px solid green;
     display: none;

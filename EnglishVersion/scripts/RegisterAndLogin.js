@@ -36,7 +36,7 @@ function login() {
         showInfo('Login successful');
         window.setTimeout(function () {
             location.href = 'base-form.html';
-            },3000);
+        },3000);
     }
 }
 function register() {
@@ -51,7 +51,7 @@ function register() {
         showInfo("Try again.User name cant be empty");
     }
     else if(password.length <= 4){
-        showInfo("The password must be more than 4 symbols");
+        showInfo("The password must be minimum 4 symbols");
     }
     else if(password != passwordConf){
         showInfo("The two fields with passwords must be the same!");
@@ -59,48 +59,48 @@ function register() {
     else {
         registerMe();
     }
-        function registerMe() {
-            let typeOfUser = $("input[name=check]:checked").val();
-            let registerData = {
-                name: $('#fullName').val(),
-                username: $('#userName').val(),
-                password: $('#passInput').val(),
-                passwordConf: $('#passwordConfirm').val(),
-                typeofuser: typeOfUser,
-            };
-            $.ajax({
-                method: "POST",
-                url: kinveyBaseUrl + 'user/' + kinveyAppID + '/',
-                data: registerData,
-                headers: {
-                    "Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)
-                },
-                success: registerSucces,
-                error: ajaxError,
+    function registerMe() {
+        let typeOfUser = $("input[name=check]:checked").val();
+        let registerData = {
+            name: $('#fullName').val(),
+            username: $('#userName').val(),
+            password: $('#passInput').val(),
+            passwordConf: $('#passwordConfirm').val(),
+            typeofuser: typeOfUser,
+        };
+        $.ajax({
+            method: "POST",
+            url: kinveyBaseUrl + 'user/' + kinveyAppID + '/',
+            data: registerData,
+            headers: {
+                "Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)
+            },
+            success: registerSucces,
+            error: ajaxError,
 
-            });
+        });
 
-            function registerSucces(data) {
-                sessionStorage.authToken = data._kmd.authtoken;
-                showInfo('User registered successfully');
-                window.setTimeout(function () {
-                    location.href = 'login-form.html';
-                },3000);
+        function registerSucces(data) {
+            sessionStorage.authToken = data._kmd.authtoken;
+            showInfo('User registered successfully');
+            window.setTimeout(function () {
+                location.href = 'login-form.html';
+            },3000);
 
-            }
         }
     }
+}
 $(function () {
     $('#formLogin').submit(function (e) { e.preventDefault(); login() });
     $('#formRegister').submit(function (e) { e.preventDefault(); register() });
 });
 
 function logout() {
-    showInfo('Log out');
+    alert('Logout');
     sessionStorage.clear();
     window.setTimeout(function () {
         location.href='index.html';
-    },3000);
+    },1500);
 
 }
 

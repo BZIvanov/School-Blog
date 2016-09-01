@@ -4,18 +4,18 @@ const appSecrets = '9887cd73e9a84e26875688775c120525';
 /* Ajax "Loading" event listener */
 $(document).on({
     ajaxStart: function () {
-        $('#infoBoxBG').show();
+        $('#infoBox').show();
     },
     ajaxStart: function () {
-        $('#infoBoxBG').hide();
+        $('#infoBox').hide();
     }
 });
-function showInfoBG(mesgText) {
-    $('#infoBoxBG').text(mesgText).show().delay(1500).fadeOut(2000);
+function showInfo(mesgText) {
+    $('#infoBox').text(mesgText).show().delay(1500).fadeOut(2000);
 }
 function ajaxError(data) {
     let errorMsg = "Опитай пак!";
-    $('#errorBoxBG').text(errorMsg).show().delay(1500).fadeOut(2000);
+    $('#errorBox').text(errorMsg).show().delay(1500).fadeOut(2000);
 
 }
 function login() {
@@ -33,10 +33,10 @@ function login() {
     });
     function loginSucces(data) {
         sessionStorage.authToken = data._kmd.authtoken;
-        showInfoBG('Успешен вход!');
+        showInfo('Login successful');
         window.setTimeout(function () {
             location.href = 'base-form.html';
-            },3000);
+        },3000);
     }
 }
 function register() {
@@ -45,62 +45,62 @@ function register() {
     let password = $('#passInput').val();
     let passwordConf = $('#passwordConfirm').val();
     if (fName === "") {
-        showInfoBG("Опитай пак! -Име- не може да бъде празно");
+        showInfo("Опитай пак! -Име- Не трябва да бъде празно!");
     }
     else if(uName === ""){
-        showInfoBG("Оитай пак! -Потрeбител- не може да бъде празно");
+        showInfo("Опитай пак! -Потребител- Не трябва да бъде празно!");
     }
     else if(password.length <= 4){
-        showInfoBG("Паролата трябва да бъде повече от 4 символа.");
+        showInfo("Паролата трябва да бъде по-дълга от 4 символа!");
     }
     else if(password != passwordConf){
-        showInfoBG("Паролите не съвпадат");
+        showInfo("Паролите не съвпадат!");
     }
     else {
         registerMe();
     }
-        function registerMe() {
-            let typeOfUser = $("input[name=check]:checked").val();
-            let registerData = {
-                name: $('#fullName').val(),
-                username: $('#userName').val(),
-                password: $('#passInput').val(),
-                passwordConf: $('#passwordConfirm').val(),
-                typeofuser: typeOfUser,
-            };
-            $.ajax({
-                method: "POST",
-                url: kinveyBaseUrl + 'user/' + kinveyAppID + '/',
-                data: registerData,
-                headers: {
-                    "Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)
-                },
-                success: registerSucces,
-                error: ajaxError,
+    function registerMe() {
+        let typeOfUser = $("input[name=check]:checked").val();
+        let registerData = {
+            name: $('#fullName').val(),
+            username: $('#userName').val(),
+            password: $('#passInput').val(),
+            passwordConf: $('#passwordConfirm').val(),
+            typeofuser: typeOfUser,
+        };
+        $.ajax({
+            method: "POST",
+            url: kinveyBaseUrl + 'user/' + kinveyAppID + '/',
+            data: registerData,
+            headers: {
+                "Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets)
+            },
+            success: registerSucces,
+            error: ajaxError,
 
-            });
+        });
 
-            function registerSucces(data) {
-                sessionStorage.authToken = data._kmd.authtoken;
-                showInfoBG('Успешна регистрация');
-                window.setTimeout(function () {
-                    location.href = 'login-form.html';
-                },3000);
+        function registerSucces(data) {
+            sessionStorage.authToken = data._kmd.authtoken;
+            showInfo('User registered successfully');
+            window.setTimeout(function () {
+                location.href = 'login-form.html';
+            },3000);
 
-            }
         }
     }
+}
 $(function () {
     $('#formLogin').submit(function (e) { e.preventDefault(); login() });
     $('#formRegister').submit(function (e) { e.preventDefault(); register() });
 });
 
 function logout() {
-    showInfoBG('Log out');
+    alert('Logout');
     sessionStorage.clear();
     window.setTimeout(function () {
         location.href='index.html';
-    },3000);
+    },1500);
 
 }
 

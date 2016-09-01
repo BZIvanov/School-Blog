@@ -4,18 +4,18 @@ const appSecrets = '9887cd73e9a84e26875688775c120525';
 /* Ajax "Loading" event listener */
 $(document).on({
     ajaxStart: function () {
-        $('#infoBox').show();
+        $('#infoBoxBG').show();
     },
     ajaxStart: function () {
-        $('#infoBox').hide();
+        $('#infoBoxBG').hide();
     }
 });
 function showInfo(mesgText) {
-    $('#infoBox').text(mesgText).show().delay(1500).fadeOut(2000);
+    $('#infoBoxBG').text(mesgText).show().delay(1500).fadeOut(2000);
 }
 function ajaxError(data) {
     let errorMsg = "Опитай пак!";
-    $('#errorBox').text(errorMsg).show().delay(1500).fadeOut(2000);
+    $('#errorBoxBG').text(errorMsg).show().delay(1500).fadeOut(2000);
 
 }
 function login() {
@@ -33,7 +33,7 @@ function login() {
     });
     function loginSucces(data) {
         sessionStorage.authToken = data._kmd.authtoken;
-        showInfo('Login successful');
+        showInfo('Логнахте се успешно');
         window.setTimeout(function () {
             location.href = 'base-form.html';
         },3000);
@@ -47,13 +47,13 @@ function register() {
     if (fName === "") {
         showInfo("Опитай пак! -Име- Не трябва да бъде празно!");
     }
-    else if(uName === ""){
+    else if (uName === "") {
         showInfo("Опитай пак! -Потребител- Не трябва да бъде празно!");
     }
-    else if(password.length <= 4){
+    else if (password.length <= 4) {
         showInfo("Паролата трябва да бъде по-дълга от 4 символа!");
     }
-    else if(password != passwordConf){
+    else if (password != passwordConf) {
         showInfo("Паролите не съвпадат!");
     }
     else {
@@ -82,11 +82,10 @@ function register() {
 
         function registerSucces(data) {
             sessionStorage.authToken = data._kmd.authtoken;
-            showInfo('User registered successfully');
+            showInfo("Регистраран потребител");
             window.setTimeout(function () {
                 location.href = 'login-form.html';
-            },3000);
-
+            }, 3000);
         }
     }
 }

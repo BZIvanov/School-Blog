@@ -13,8 +13,8 @@ $(document).on({
 function showInfo(mesgText) {
     $('#infoBox').text(mesgText).show().delay(1500).fadeOut(2000);
 }
-function ajaxError(data) {
-    let errorMsg = "Try Again";
+function ajaxError() {
+    let errorMsg = "Try again!";
     $('#errorBox').text(errorMsg).show().delay(1500).fadeOut(2000);
 
 }
@@ -29,7 +29,7 @@ function login() {
         data: loginData,
         headers: { "Authorization": "Basic " + btoa(kinveyAppID + ":" + appSecrets) },
         success: loginSucces,
-        error: ajaxError
+        error: ajaxError,
     });
     function loginSucces(data) {
         sessionStorage.authToken = data._kmd.authtoken;
@@ -47,13 +47,13 @@ function register() {
     if (fName === "") {
         showInfo("Try again.Full name cant be empty");
     }
-    else if(uName === ""){
+    else if (uName === "") {
         showInfo("Try again.User name cant be empty");
     }
-    else if(password.length <= 4){
+    else if (password.length <= 4) {
         showInfo("The password must be minimum 4 symbols");
     }
-    else if(password != passwordConf){
+    else if (password != passwordConf) {
         showInfo("The two fields with passwords must be the same!");
     }
     else {
@@ -85,7 +85,7 @@ function register() {
             showInfo('User registered successfully');
             window.setTimeout(function () {
                 location.href = 'login-form.html';
-            },3000);
+            }, 3000);
 
         }
     }
@@ -95,14 +95,7 @@ $(function () {
     $('#formRegister').submit(function (e) { e.preventDefault(); register() });
 });
 
-function logout() {
-    alert('Logout');
-    sessionStorage.clear();
-    window.setTimeout(function () {
-        location.href='index.html';
-    },1500);
 
-}
 
 /*scroll-to-top button*/
 $(document).ready(function () {
@@ -124,4 +117,4 @@ $(document).ready(function () {
 function link() {
     var link_s = document.getElementById('link_id').value;
     document.getElementById('link_str').innerHTML = link_s.link()
-}
+};

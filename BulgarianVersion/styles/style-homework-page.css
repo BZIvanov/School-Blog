@@ -123,7 +123,7 @@ div#showStHome.homeworksFromSt div {
   list-style-type: none;
   color: #fff;
   padding-left: 50px;
-  background-image: url('../images/books-1.jpg');
+  background-image: url('../../common/images/books-1.jpg');
 }
 #LogOutHomeWorkBG {
   font-size: 35px;

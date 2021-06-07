@@ -9,13 +9,15 @@ $(document).on({
     $('#errorPosts').hide();
   },
 });
+
 function showInfoPosts(mesgText) {
   $('#infoPosts').text(mesgText).show().delay(2000).fadeOut(2000);
 }
+
 function postsValidation() {
-  let author = $('#postAuthor').val();
-  let title = $('#postTitle').val();
-  let description = $('#postDescription').val();
+  const author = $('#postAuthor').val();
+  const title = $('#postTitle').val();
+  const description = $('#postDescription').val();
   if (author === '') {
     showInfoPosts("Title field can't be empty!");
   } else if (title === '') {
@@ -26,6 +28,7 @@ function postsValidation() {
     createPost();
   }
 }
+
 function showPostsView() {
   $('#posts').text(''); //Loading...
 
@@ -48,7 +51,7 @@ function showPostsView() {
     } else {
     }
 
-    let postsTable = $('<table>').append(
+    const postsTable = $('<table>').append(
       $('<tr>').append(
         '<th>Title</th>',
         '<th>Author</th>',
@@ -69,12 +72,12 @@ function showPostsView() {
 }
 
 function createPost() {
-  let setPostsUrl = kinveyBaseUrl + 'appdata/' + kinveyAppID + '/Posts';
-  let authHeaders = {
+  const setPostsUrl = kinveyBaseUrl + 'appdata/' + kinveyAppID + '/Posts';
+  const authHeaders = {
     Authorization: 'Kinvey ' + sessionStorage.getItem('authToken'),
   };
 
-  let createPostData = {
+  const createPostData = {
     author: $('#postAuthor').val(),
     title: $('#postTitle').val(),
     description: $('#postDescription').val(),
@@ -92,7 +95,7 @@ function createPost() {
     //error: showAjaxError
   });
 
-  function createPostSuccess(data) {
+  function createPostSuccess() {
     showInfoPosts('Post created successfully!');
     window.setTimeout(function () {
       location.href = 'forum-page.html';
@@ -101,8 +104,8 @@ function createPost() {
 }
 
 function addComment(postData, commentText, commentAuthor) {
-  let setPostsUrl = kinveyBaseUrl + 'appdata/' + kinveyAppID + '/Posts';
-  let authHeaders = {
+  const setPostsUrl = kinveyBaseUrl + 'appdata/' + kinveyAppID + '/Posts';
+  const authHeaders = {
     Authorization: 'Kinvey ' + sessionStorage.getItem('authToken'),
     'Content-type': 'application/json',
   };
@@ -124,7 +127,7 @@ function addComment(postData, commentText, commentAuthor) {
     error: showAjaxError,
   });
 
-  function addPostCommentSuccess(data) {
+  function addPostCommentSuccess() {
     showPostsView();
     showInfoPosts('Post comments added.');
   }

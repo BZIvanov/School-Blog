@@ -125,7 +125,7 @@ div#showStHome.homeworksFromSt div {
   padding-left: 50px;
   background-image: url('../../common/images/books-1.jpg');
 }
-#LogOutHomeWorkBG {
+#LogOutHomeWork {
   font-size: 35px;
   border-bottom: 2px solid green;
   display: none;

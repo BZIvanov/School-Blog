@@ -13,12 +13,12 @@ $(document).on({
 function showInfo(mesgText) {
   $('#infoBox').text(mesgText).show().delay(1500).fadeOut(2000);
 }
-function ajaxError() {
-  let errorMsg = 'Try again!';
-  $('#errorBox').text(errorMsg).show().delay(1500).fadeOut(2000);
+function ajaxError(data) {
+  const errorMsg = translations.errorMsg.en;
+  $('#errorBoxBG').text(errorMsg).show().delay(1500).fadeOut(2000);
 }
 function login() {
-  let loginData = {
+  const loginData = {
     username: $('#loginUser').val(),
     password: $('#loginPass').val(),
   };
@@ -32,31 +32,31 @@ function login() {
   });
   function loginSucces(data) {
     sessionStorage.authToken = data._kmd.authtoken;
-    showInfo('Login successful');
+    showInfo(translations.loginSuccess.en);
     window.setTimeout(function () {
       location.href = 'base-form.html';
     }, 3000);
   }
 }
 function register() {
-  let fName = $('#fullName').val();
-  let uName = $('#userName').val();
-  let password = $('#passInput').val();
-  let passwordConf = $('#passwordConfirm').val();
+  const fName = $('#fullName').val();
+  const uName = $('#userName').val();
+  const password = $('#passInput').val();
+  const passwordConf = $('#passwordConfirm').val();
   if (fName === '') {
-    showInfo('Try again.Full name cant be empty');
+    showInfo(translations.emptyName.en);
   } else if (uName === '') {
-    showInfo('Try again.User name cant be empty');
+    showInfo(translations.emptyUser.en);
   } else if (password.length <= 4) {
-    showInfo('The password must be minimum 4 symbols');
-  } else if (password != passwordConf) {
-    showInfo('The two fields with passwords must be the same!');
+    showInfo(translations.emptyPassword.en);
+  } else if (password !== passwordConf) {
+    showInfo(translations.passwordsMismatch.en);
   } else {
     registerMe();
   }
   function registerMe() {
-    let typeOfUser = $('input[name=check]:checked').val();
-    let registerData = {
+    const typeOfUser = $('input[name=check]:checked').val();
+    const registerData = {
       name: $('#fullName').val(),
       username: $('#userName').val(),
       password: $('#passInput').val(),
@@ -76,7 +76,7 @@ function register() {
 
     function registerSucces(data) {
       sessionStorage.authToken = data._kmd.authtoken;
-      showInfo('User registered successfully');
+      showInfo('Регистраран потребител');
       window.setTimeout(function () {
         location.href = 'login-form.html';
       }, 3000);
@@ -94,10 +94,18 @@ $(function () {
   });
 });
 
+function logout() {
+  alert('Logout');
+  sessionStorage.clear();
+  window.setTimeout(function () {
+    location.href = 'index.html';
+  }, 1500);
+}
+
 /*scroll-to-top button*/
 $(document).ready(function () {
-  var offset = 220;
-  var duration = 500;
+  const offset = 220;
+  const duration = 500;
   $(window).scroll(function () {
     if ($(this).scrollTop() > offset) {
       $('#scrollToTop').fadeIn(duration);
@@ -112,6 +120,6 @@ $(document).ready(function () {
   });
 });
 function link() {
-  var link_s = document.getElementById('link_id').value;
+  const link_s = document.getElementById('link_id').value;
   document.getElementById('link_str').innerHTML = link_s.link();
 }

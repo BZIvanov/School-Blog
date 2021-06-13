@@ -179,7 +179,7 @@ div#field.fields li {
   text-align: center;
   cursor: pointer;
 }
-#errorTeachBG {
+#errorTeach {
   font-size: 35px;
   border-bottom: 2px solid red;
   display: none;
@@ -234,7 +234,7 @@ div#field.fields li {
   }
 }
 
-#infoTeachersBG {
+#infoTeachers {
   font-size: 35px;
   border-bottom: 2px solid green;
   display: none;

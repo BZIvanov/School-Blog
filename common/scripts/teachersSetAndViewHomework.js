@@ -18,11 +18,11 @@ function checkFields() {
   let subj = $('#subject').val();
   let descrHomeWork = $('#dHomeWork').val();
   if (nameOfTeach === '') {
-    showInfo('Name of teacher cant be empty!');
+    showInfo(translations.teacherName.en);
   } else if (subj === '') {
-    showInfo('Please input subject field.Try again');
+    showInfo(translations.teacherSubject.en);
   } else if (descrHomeWork.length <= 3) {
-    showInfo('The description is too short!');
+    showInfo(translations.homeworkDescription.en);
   } else {
     setHomerowk();
   }
@@ -47,7 +47,7 @@ function checkFields() {
     });
     function setOk(data) {
       // sessionStorage.authToken = data._kmd.authtoken;
-      showInfo('Homework added successfully!');
+      showInfo(translations.homeworkSubmission.en);
       window.setTimeout(function () {
         location.href = 'teacher-page.html';
       }, 1500);
@@ -98,7 +98,7 @@ $(function () {
   });
 });
 function logout() {
-  showInfo('Log out');
+  showInfo(translations.logout.en);
   sessionStorage.clear();
   window.setTimeout(function () {
     location.href = 'index.html';

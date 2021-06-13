@@ -27,4 +27,24 @@ const translations = {
     en: 'User registered successfully',
     bg: 'Регистраран потребител',
   },
+  studentName: {
+    en: 'Name field cant be empty',
+    bg: '-ИМЕ на ученик- не може да бъде празно',
+  },
+  studentSubject: {
+    en: 'Theme field cant be empty',
+    bg: '-ТЕМА/ПРЕДМЕТ- не може да бъде празно',
+  },
+  studentHomework: {
+    en: 'Homework is too short!',
+    bg: 'Домашната е прекалено кратка',
+  },
+  homeworkSubmission: {
+    en: 'Homework added successfully!',
+    bg: 'Усешно предаване на домашна',
+  },
+  logout: {
+    en: 'Log out',
+    bg: 'Излизане',
+  },
 };

@@ -6,7 +6,7 @@ $(document).on({
     $('#errorStudent').hide();
   },
 });
-function showInfoStuden(mesgText) {
+function showInfoStudent(mesgText) {
   $('#infoStudent').text(mesgText).show().delay(1500).fadeOut(2000);
 }
 function studentsValidation() {
@@ -14,11 +14,11 @@ function studentsValidation() {
   let nameOfTheme = $('#themeOfHomework').val();
   let descrOfHmrkSt = $('#descriptionOfHomeWork').val();
   if (nameOfStudent === '') {
-    showInfoStuden('Name field cant be empty');
+    showInfoStudent(translations.studentName.en);
   } else if (nameOfTheme === '') {
-    showInfoStuden('Theme field cant be empty');
+    showInfoStudent(translations.studentSubject.en);
   } else if (descrOfHmrkSt.length <= 4) {
-    showInfoStuden('Homework is too short!');
+    showInfoStudent(translations.studentHomework);
   } else {
     uploadHomeworks();
   }
@@ -42,7 +42,7 @@ function uploadHomeworks() {
     success: uploadOk(),
   });
   function uploadOk() {
-    showInfoStuden('Homework added successfully!');
+    showInfoStudent(translations.homeworkSubmission.en);
     window.setTimeout(function () {
       location.href = 'student-page.html';
     }, 1500);
@@ -86,7 +86,7 @@ $(document).ready(function () {
   });
 });
 function logout() {
-  showInfoStuden('Log out');
+  showInfoStudent(translations.logout.en);
   sessionStorage.clear();
   window.setTimeout(function () {
     location.href = 'index.html';

@@ -47,4 +47,16 @@ const translations = {
     en: 'Log out',
     bg: 'Излизане',
   },
+  teacherName: {
+    en: 'Name field cant be empty',
+    bg: '-ИМЕ на ученик- не може да бъде празно',
+  },
+  teacherSubject: {
+    en: 'Theme field cant be empty',
+    bg: '-ТЕМА/ПРЕДМЕТ- не може да бъде празно',
+  },
+  homeworkDescription: {
+    en: 'Homework is too short!',
+    bg: 'Домашната е прекалено кратка',
+  },
 };

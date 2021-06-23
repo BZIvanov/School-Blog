@@ -13,7 +13,7 @@ header {
   margin: 100px auto;
   display: block;
   text-align: center;
-  font-size: 50px;
+  font-size: 45px;
   border-bottom: 0.5px solid #fff;
   width: 75%;
   text-shadow: 1px 3px #7f7e7e;
@@ -469,7 +469,7 @@ footer {
   font-family: Lucida Sans Unicode;
 }
 .button-to-top:hover {
-  bacground-color: #ed702b;
+  background-color: #ed702b;
   text-decoration: none;
 }
 
